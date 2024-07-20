@@ -36,7 +36,20 @@ public class Socket
       });
       return await tcs.Task;
    }
-   
+
+   public async Task<string?> routeCancel(string signalName)
+   {
+      await client.EmitAsync("routeCancel", signalName);
+      var tcs = new TaskCompletionSource<string?>();
+      client.On("routeCancelResult", response =>
+      {
+         var elapsedData = response.GetValue<string?>();
+         tcs.SetResult(elapsedData);
+      });
+      return await tcs.Task;
+   }
+
+
    public async Task<List<TrackCircuitInfo>> getAllSignal()
    {
       await client.EmitAsync("getAllSignal");
