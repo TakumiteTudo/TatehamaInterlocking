@@ -36,12 +36,12 @@ namespace TatehamaInterlocking.Tsuzaki
             MainWindow.RouteButtonList.Add("津崎上り出発3R", BT_5R);
             MainWindow.RouteButtonImage0.Add("津崎上り出発3R", Properties.Resources.BT_5R_RC_Y_0);
             MainWindow.RouteButtonImage1.Add("津崎上り出発3R", Properties.Resources.BT_5R_RC_Y_1);
-            MainWindow.RouteButtonList.Add("津崎上り出発3LA", BT_6LC);
-            MainWindow.RouteButtonImage0.Add("津崎上り出発3LA", Properties.Resources.BT_6LC_LC_Y_0);
-            MainWindow.RouteButtonImage1.Add("津崎上り出発3LA", Properties.Resources.BT_6LC_LC_Y_1);
-            MainWindow.RouteButtonList.Add("津崎上り出発3LB", BT_6LD);
-            MainWindow.RouteButtonImage0.Add("津崎上り出発3LB", Properties.Resources.BT_6LCD_LL_Y_0);
-            MainWindow.RouteButtonImage1.Add("津崎上り出発3LB", Properties.Resources.BT_6LCD_LL_Y_1);
+            MainWindow.RouteButtonList.Add("津崎上り場内3LA", BT_6LC);
+            MainWindow.RouteButtonImage0.Add("津崎上り場内3LA", Properties.Resources.BT_6LC_LC_Y_0);
+            MainWindow.RouteButtonImage1.Add("津崎上り場内3LA", Properties.Resources.BT_6LC_LC_Y_1);
+            MainWindow.RouteButtonList.Add("津崎上り場内3LB", BT_6LD);
+            MainWindow.RouteButtonImage0.Add("津崎上り場内3LB", Properties.Resources.BT_6LCD_LL_Y_0);
+            MainWindow.RouteButtonImage1.Add("津崎上り場内3LB", Properties.Resources.BT_6LCD_LL_Y_1);
             MainWindow.RouteButtonList.Add("津崎下り出発1L", BT_2L);
             MainWindow.RouteButtonImage0.Add("津崎下り出発1L", Properties.Resources.BT_2L_LC_Y_0);
             MainWindow.RouteButtonImage1.Add("津崎下り出発1L", Properties.Resources.BT_2L_LC_Y_1);
@@ -104,14 +104,14 @@ namespace TatehamaInterlocking.Tsuzaki
 
         private void BT_6LC_Click(object sender, EventArgs e)
         {
-            MainWindow.ButtonPush("津崎下り出発3LA", !Cancel);
+            MainWindow.ButtonPush("津崎下り場内3LA", !Cancel);
             CancelBtn.Image = Properties.Resources.BT_Cancel_0;
             Cancel = false;
         }
 
         private void BT_6LD_Click(object sender, EventArgs e)
         {
-            MainWindow.ButtonPush("津崎下り出発3LB", !Cancel);
+            MainWindow.ButtonPush("津崎下り場内3LB", !Cancel);
             CancelBtn.Image = Properties.Resources.BT_Cancel_0;
             Cancel = false;
         }

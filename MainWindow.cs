@@ -44,9 +44,30 @@ namespace TatehamaInterlocking
                 if (error.Length > 0)
                 {
                     // Todo: エラーメッセージがでるので、それを表示する
+                    Debug.WriteLine(error);
+                    if (error == "開通中")
+                    {
+                        RouteSet(Name);
+                    }
+                    if (error == "閉鎖中")
+                    {
+                        RouteReset(Name);
+                    }
+                    if (error == "進入中")
+                    {
+                        RouteReset(Name);
+                    }
                     return;
                 }
                 // Todo: 該当箇所を光らせる
+                if (Teihan)
+                {
+                    RouteSet(Name);
+                }
+                else
+                {
+                    RouteReset(Name);
+                }
             });
         }
 
@@ -56,6 +77,7 @@ namespace TatehamaInterlocking
         static internal void RouteSet(string Name)
         {
             Debug.WriteLine($"Set:{Name}");
+            Debug.WriteLine($"Set:{RouteButtonImage1[Name]}");
             RouteButtonList[Name].Image = RouteButtonImage1[Name];
         }
 
@@ -65,6 +87,7 @@ namespace TatehamaInterlocking
         static internal void RouteReset(string Name)
         {
             Debug.WriteLine($"Reset:{Name}");
+            Debug.WriteLine($"Set:{RouteButtonImage0[Name]}");
             RouteButtonList[Name].Image = RouteButtonImage0[Name];
         }
 

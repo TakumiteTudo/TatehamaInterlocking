@@ -58,7 +58,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("ＭＳ ゴシック", 9F, FontStyle.Regular, GraphicsUnit.Point, 128);
             label1.ForeColor = Color.LightCoral;
-            label1.Location = new Point(726, 238);
+            label1.Location = new Point(843, 238);
             label1.Name = "label1";
             label1.Size = new Size(41, 12);
             label1.TabIndex = 0;
@@ -70,7 +70,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("ＭＳ ゴシック", 9F, FontStyle.Regular, GraphicsUnit.Point, 128);
             label2.ForeColor = Color.LightCoral;
-            label2.Location = new Point(726, 253);
+            label2.Location = new Point(843, 253);
             label2.Name = "label2";
             label2.Size = new Size(59, 12);
             label2.TabIndex = 0;
@@ -82,7 +82,7 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("ＭＳ ゴシック", 9F, FontStyle.Regular, GraphicsUnit.Point, 128);
             label3.ForeColor = Color.LightCoral;
-            label3.Location = new Point(726, 268);
+            label3.Location = new Point(843, 268);
             label3.Name = "label3";
             label3.Size = new Size(41, 12);
             label3.TabIndex = 0;
@@ -94,7 +94,7 @@
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("ＭＳ ゴシック", 9F, FontStyle.Regular, GraphicsUnit.Point, 128);
             label4.ForeColor = Color.LightCoral;
-            label4.Location = new Point(726, 283);
+            label4.Location = new Point(843, 283);
             label4.Name = "label4";
             label4.Size = new Size(41, 12);
             label4.TabIndex = 0;
@@ -106,7 +106,7 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("ＭＳ ゴシック", 9F, FontStyle.Regular, GraphicsUnit.Point, 128);
             label5.ForeColor = Color.LightCoral;
-            label5.Location = new Point(614, 215);
+            label5.Location = new Point(676, 215);
             label5.Name = "label5";
             label5.Size = new Size(41, 12);
             label5.TabIndex = 0;
@@ -130,7 +130,7 @@
             label7.BackColor = Color.Transparent;
             label7.Font = new Font("ＭＳ ゴシック", 9F, FontStyle.Regular, GraphicsUnit.Point, 128);
             label7.ForeColor = Color.LightCoral;
-            label7.Location = new Point(428, 183);
+            label7.Location = new Point(385, 183);
             label7.Name = "label7";
             label7.Size = new Size(41, 12);
             label7.TabIndex = 0;
@@ -142,7 +142,7 @@
             label8.BackColor = Color.Transparent;
             label8.Font = new Font("ＭＳ ゴシック", 9F, FontStyle.Regular, GraphicsUnit.Point, 128);
             label8.ForeColor = Color.LightCoral;
-            label8.Location = new Point(690, 129);
+            label8.Location = new Point(850, 129);
             label8.Name = "label8";
             label8.Size = new Size(41, 12);
             label8.TabIndex = 0;
@@ -154,7 +154,7 @@
             label12.BackColor = Color.Transparent;
             label12.Font = new Font("ＭＳ ゴシック", 9F, FontStyle.Regular, GraphicsUnit.Point, 128);
             label12.ForeColor = Color.LightCoral;
-            label12.Location = new Point(428, 269);
+            label12.Location = new Point(385, 269);
             label12.Name = "label12";
             label12.Size = new Size(41, 12);
             label12.TabIndex = 0;
@@ -166,7 +166,7 @@
             label14.BackColor = Color.Transparent;
             label14.Font = new Font("ＭＳ ゴシック", 9F, FontStyle.Regular, GraphicsUnit.Point, 128);
             label14.ForeColor = Color.LightCoral;
-            label14.Location = new Point(166, 215);
+            label14.Location = new Point(123, 215);
             label14.Name = "label14";
             label14.Size = new Size(41, 12);
             label14.TabIndex = 0;
@@ -274,13 +274,13 @@
             CancelBtn.TabStop = false;
             CancelBtn.Click += CancelBtn_Click;
             // 
-            // TsuzakiWindow
+            // ShinNozakiWindow
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.Tsuzaki;
+            BackgroundImage = Properties.Resources.ShinNozaki;
             BackgroundImageLayout = ImageLayout.None;
-            ClientSize = new Size(1106, 341);
+            ClientSize = new Size(1031, 355);
             Controls.Add(CancelBtn);
             Controls.Add(BT_1RB);
             Controls.Add(BT_1RA);
@@ -301,7 +301,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
-            Name = "TsuzakiWindow";
+            Name = "ShinNozakiWindow";
             RightToLeft = RightToLeft.No;
             Text = "TsuzakiWindow";
             ((System.ComponentModel.ISupportInitialize)BT_1RA).EndInit();
