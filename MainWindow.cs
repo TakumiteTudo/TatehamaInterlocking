@@ -27,14 +27,25 @@ namespace TatehamaInterlocking
         static internal void ButtonPush(string Name, bool Teihan)
         {
             Debug.WriteLine($"Push:{Name}/{Teihan}");
-            if (Teihan)
+            Task.Run(async () =>
             {
-                socket.routeOpen(Name);
-            }
-            else
-            {
-                //Todo: routeClose
-            }
+                string? error;
+                if (Teihan)
+                {
+                    error = await socket.routeOpen(Name);
+                }
+                else
+                {
+                    // Todo: routeClose
+                    error = await socket.routeCancel(Name);
+                }
+                if (error != null)
+                {
+                    // Todo: エラーメッセージがでるので、それを表示する
+                    return;
+                }
+                // Todo: 該当箇所を光らせる
+            });
         }
 
         /// <summary>
