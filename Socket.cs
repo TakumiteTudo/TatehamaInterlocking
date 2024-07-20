@@ -3,10 +3,10 @@ using SocketIOClient;
 
 public class TrackCircuitInfo
 {
-   public string name { get; set; }
-   public double startMeter { get; set; }
-   public double endMeter { get; set; }
+   public string signalName { get; set; }
    public string signalType { get; set; }
+   public double signalPhase { get; set; }
+   public string? diaName { get; set; }
 }
 
 public class Socket
