@@ -223,6 +223,26 @@ namespace TatehamaInterlocking.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
+        internal static System.Drawing.Bitmap BT_Cancel_0 {
+            get {
+                object obj = ResourceManager.GetObject("BT_Cancel_0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap BT_Cancel_1 {
+            get {
+                object obj = ResourceManager.GetObject("BT_Cancel_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
         internal static System.Drawing.Bitmap BT_G_0 {
             get {
                 object obj = ResourceManager.GetObject("BT_G_0", resourceCulture);

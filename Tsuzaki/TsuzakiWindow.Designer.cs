@@ -38,7 +38,7 @@
             label8 = new Label();
             label12 = new Label();
             label14 = new Label();
-            label9 = new Label();
+            L_No74 = new Label();
             label10 = new Label();
             label11 = new Label();
             label13 = new Label();
@@ -46,8 +46,10 @@
             label16 = new Label();
             BT_1RA = new PictureBox();
             BT_1RB = new PictureBox();
+            CancelBtn = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)BT_1RA).BeginInit();
             ((System.ComponentModel.ISupportInitialize)BT_1RB).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)CancelBtn).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -170,17 +172,17 @@
             label14.TabIndex = 0;
             label14.Text = "回1234";
             // 
-            // label9
+            // L_No74
             // 
-            label9.AutoSize = true;
-            label9.BackColor = Color.Transparent;
-            label9.Font = new Font("ＭＳ ゴシック", 9F, FontStyle.Regular, GraphicsUnit.Point, 128);
-            label9.ForeColor = Color.LightCoral;
-            label9.Location = new Point(131, 106);
-            label9.Name = "label9";
-            label9.Size = new Size(41, 12);
-            label9.TabIndex = 1;
-            label9.Text = "回1234";
+            L_No74.AutoSize = true;
+            L_No74.BackColor = Color.Transparent;
+            L_No74.Font = new Font("ＭＳ ゴシック", 9F, FontStyle.Regular, GraphicsUnit.Point, 128);
+            L_No74.ForeColor = Color.LightCoral;
+            L_No74.Location = new Point(131, 106);
+            L_No74.Name = "L_No74";
+            L_No74.Size = new Size(41, 12);
+            L_No74.TabIndex = 1;
+            L_No74.Text = "回1234";
             // 
             // label10
             // 
@@ -244,7 +246,7 @@
             // 
             // BT_1RA
             // 
-            BT_1RA.Image = Properties.Resources.BT_1RA_RL_Y_1;
+            BT_1RA.Image = Properties.Resources.BT_1RA_RL_Y_0;
             BT_1RA.Location = new Point(161, 123);
             BT_1RA.Name = "BT_1RA";
             BT_1RA.Size = new Size(27, 17);
@@ -254,13 +256,23 @@
             // 
             // BT_1RB
             // 
-            BT_1RB.Image = Properties.Resources.BT_1RB_RC_Y_1;
+            BT_1RB.Image = Properties.Resources.BT_1RB_RC_Y_0;
             BT_1RB.Location = new Point(161, 142);
             BT_1RB.Name = "BT_1RB";
             BT_1RB.Size = new Size(27, 17);
             BT_1RB.TabIndex = 7;
             BT_1RB.TabStop = false;
             BT_1RB.Click += BT_1RB_Click;
+            // 
+            // CancelBtn
+            // 
+            CancelBtn.Image = Properties.Resources.BT_Cancel_0;
+            CancelBtn.Location = new Point(228, 60);
+            CancelBtn.Name = "CancelBtn";
+            CancelBtn.Size = new Size(27, 17);
+            CancelBtn.TabIndex = 8;
+            CancelBtn.TabStop = false;
+            CancelBtn.Click += CancelBtn_Click;
             // 
             // TsuzakiWindow
             // 
@@ -269,10 +281,11 @@
             BackgroundImage = Properties.Resources.Tsuzaki;
             BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(1106, 341);
+            Controls.Add(CancelBtn);
             Controls.Add(BT_1RB);
             Controls.Add(BT_1RA);
             Controls.Add(label15);
-            Controls.Add(label9);
+            Controls.Add(L_No74);
             Controls.Add(label10);
             Controls.Add(label11);
             Controls.Add(label13);
@@ -293,6 +306,7 @@
             Text = "TsuzakiWindow";
             ((System.ComponentModel.ISupportInitialize)BT_1RA).EndInit();
             ((System.ComponentModel.ISupportInitialize)BT_1RB).EndInit();
+            ((System.ComponentModel.ISupportInitialize)CancelBtn).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -309,7 +323,7 @@
         private Label label8;
         private Label label12;
         private Label label14;
-        private Label label9;
+        private Label L_No74;
         private Label label10;
         private Label label11;
         private Label label13;
@@ -317,5 +331,6 @@
         private Label label16;
         private PictureBox BT_1RA;
         private PictureBox BT_1RB;
+        private PictureBox CancelBtn;
     }
 }

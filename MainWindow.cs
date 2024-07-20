@@ -1,3 +1,5 @@
+using System.Diagnostics;
+using System.Net.Sockets;
 using TatehamaInterlocking.Tsuzaki;
 
 namespace TatehamaInterlocking
@@ -5,6 +7,7 @@ namespace TatehamaInterlocking
     public partial class MainWindow : Form
     {
         static private TsuzakiWindow tsuzakiWindow = new TsuzakiWindow();
+        static private Socket socket = new Socket(Program.ServerAddress);
         public MainWindow()
         {
             InitializeComponent();
@@ -23,6 +26,15 @@ namespace TatehamaInterlocking
         /// <param name="Teihan">íËà (F)Ç©îΩà (T)Ç©</param>
         static internal void ButtonPush(string Name, bool Teihan)
         {
+            Debug.WriteLine($"Push:{Name}/{Teihan}");
+            if (Teihan)
+            {
+                socket.routeOpen(Name);
+            }
+            else
+            {
+                //Todo: routeClose
+            }
         }
 
         /// <summary>
@@ -30,6 +42,7 @@ namespace TatehamaInterlocking
         /// </summary>
         static internal void RouteSet(string Name)
         {
+            Debug.WriteLine($"Set:{Name}");
             RouteButtonList[Name].Image = RouteButtonImage1[Name];
         }
 
@@ -38,6 +51,7 @@ namespace TatehamaInterlocking
         /// </summary>
         static internal void RouteReset(string Name)
         {
+            Debug.WriteLine($"Reset:{Name}");
             RouteButtonList[Name].Image = RouteButtonImage0[Name];
         }
 
@@ -48,6 +62,7 @@ namespace TatehamaInterlocking
         /// <param name="Train">óÒé‘î‘çÜ</param>
         static internal void TrackChenge(string Name, string Train)
         {
+            Debug.WriteLine($"Chenge:{Name}/{Train}");
             tsuzakiWindow.TrackChenge(Name, Train);
         }
     }
