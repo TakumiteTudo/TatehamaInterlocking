@@ -8,6 +8,7 @@ namespace TatehamaInterlocking
     {
         static private TsuzakiWindow tsuzakiWindow = new TsuzakiWindow();
         static private Socket socket = new Socket(Program.ServerAddress);
+
         public MainWindow()
         {
             InitializeComponent();
@@ -36,10 +37,9 @@ namespace TatehamaInterlocking
                 }
                 else
                 {
-                    // Todo: routeClose
                     error = await socket.routeCancel(Name);
                 }
-                if (error != null)
+                if (error.Length > 0)
                 {
                     // Todo: エラーメッセージがでるので、それを表示する
                     return;
