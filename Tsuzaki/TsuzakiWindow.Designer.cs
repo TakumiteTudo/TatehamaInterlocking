@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            PictureBox BT_5R;
+            BT_6LC = new PictureBox();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
@@ -47,10 +49,43 @@
             BT_1RA = new PictureBox();
             BT_1RB = new PictureBox();
             CancelBtn = new PictureBox();
+            BT_4R = new PictureBox();
+            BT_6LD = new PictureBox();
+            BT_2L = new PictureBox();
+            BT_3L = new PictureBox();
+            BT_5R = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)BT_5R).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)BT_6LC).BeginInit();
             ((System.ComponentModel.ISupportInitialize)BT_1RA).BeginInit();
             ((System.ComponentModel.ISupportInitialize)BT_1RB).BeginInit();
             ((System.ComponentModel.ISupportInitialize)CancelBtn).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)BT_4R).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)BT_6LD).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)BT_2L).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)BT_3L).BeginInit();
             SuspendLayout();
+            // 
+            // BT_5R
+            // 
+            BT_5R.BackColor = SystemColors.Control;
+            BT_5R.Image = Properties.Resources.BT_5R_RC_Y_0;
+            BT_5R.Location = new Point(500, 142);
+            BT_5R.Name = "BT_5R";
+            BT_5R.Size = new Size(27, 17);
+            BT_5R.TabIndex = 10;
+            BT_5R.TabStop = false;
+            BT_5R.Click += BT_5R_Click;
+            // 
+            // BT_6LC
+            // 
+            BT_6LC.BackColor = SystemColors.Control;
+            BT_6LC.Image = Properties.Resources.BT_6LC_LC_Y_0;
+            BT_6LC.Location = new Point(726, 196);
+            BT_6LC.Name = "BT_6LC";
+            BT_6LC.Size = new Size(27, 17);
+            BT_6LC.TabIndex = 11;
+            BT_6LC.TabStop = false;
+            BT_6LC.Click += BT_6LC_Click;
             // 
             // label1
             // 
@@ -274,6 +309,50 @@
             CancelBtn.TabStop = false;
             CancelBtn.Click += CancelBtn_Click;
             // 
+            // BT_4R
+            // 
+            BT_4R.BackColor = SystemColors.Control;
+            BT_4R.Image = Properties.Resources.BT_4R_RC_Y_0;
+            BT_4R.Location = new Point(500, 88);
+            BT_4R.Name = "BT_4R";
+            BT_4R.Size = new Size(27, 17);
+            BT_4R.TabIndex = 9;
+            BT_4R.TabStop = false;
+            BT_4R.Click += BT_4R_Click;
+            // 
+            // BT_6LD
+            // 
+            BT_6LD.BackColor = SystemColors.Control;
+            BT_6LD.Image = Properties.Resources.BT_6LCD_LL_Y_0;
+            BT_6LD.Location = new Point(726, 215);
+            BT_6LD.Name = "BT_6LD";
+            BT_6LD.Size = new Size(27, 17);
+            BT_6LD.TabIndex = 12;
+            BT_6LD.TabStop = false;
+            BT_6LD.Click += BT_6LD_Click;
+            // 
+            // BT_2L
+            // 
+            BT_2L.BackColor = SystemColors.Control;
+            BT_2L.Image = Properties.Resources.BT_2L_LC_Y_0;
+            BT_2L.Location = new Point(387, 196);
+            BT_2L.Name = "BT_2L";
+            BT_2L.Size = new Size(27, 17);
+            BT_2L.TabIndex = 13;
+            BT_2L.TabStop = false;
+            BT_2L.Click += BT_2L_Click;
+            // 
+            // BT_3L
+            // 
+            BT_3L.BackColor = SystemColors.Control;
+            BT_3L.Image = Properties.Resources.BT_3L_LC_Y_0;
+            BT_3L.Location = new Point(387, 250);
+            BT_3L.Name = "BT_3L";
+            BT_3L.Size = new Size(27, 17);
+            BT_3L.TabIndex = 14;
+            BT_3L.TabStop = false;
+            BT_3L.Click += BT_3L_Click;
+            // 
             // TsuzakiWindow
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -281,6 +360,12 @@
             BackgroundImage = Properties.Resources.Tsuzaki;
             BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(1106, 341);
+            Controls.Add(BT_3L);
+            Controls.Add(BT_2L);
+            Controls.Add(BT_6LD);
+            Controls.Add(BT_6LC);
+            Controls.Add(BT_5R);
+            Controls.Add(BT_4R);
             Controls.Add(CancelBtn);
             Controls.Add(BT_1RB);
             Controls.Add(BT_1RA);
@@ -304,9 +389,15 @@
             Name = "TsuzakiWindow";
             RightToLeft = RightToLeft.No;
             Text = "TsuzakiWindow";
+            ((System.ComponentModel.ISupportInitialize)BT_5R).EndInit();
+            ((System.ComponentModel.ISupportInitialize)BT_6LC).EndInit();
             ((System.ComponentModel.ISupportInitialize)BT_1RA).EndInit();
             ((System.ComponentModel.ISupportInitialize)BT_1RB).EndInit();
             ((System.ComponentModel.ISupportInitialize)CancelBtn).EndInit();
+            ((System.ComponentModel.ISupportInitialize)BT_4R).EndInit();
+            ((System.ComponentModel.ISupportInitialize)BT_6LD).EndInit();
+            ((System.ComponentModel.ISupportInitialize)BT_2L).EndInit();
+            ((System.ComponentModel.ISupportInitialize)BT_3L).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -332,5 +423,11 @@
         private PictureBox BT_1RA;
         private PictureBox BT_1RB;
         private PictureBox CancelBtn;
+        private PictureBox BT_4R;
+        private PictureBox BT_5R;
+        private PictureBox BT_6LC;
+        private PictureBox BT_6LD;
+        private PictureBox BT_2L;
+        private PictureBox BT_3L;
     }
 }
