@@ -6,12 +6,14 @@ namespace TatehamaInterlocking
 {
     public partial class MainWindow : Form
     {
+        private bool showtsuzakiWindow;
         static private TsuzakiWindow tsuzakiWindow = new TsuzakiWindow();
         static private Socket socket = new Socket(Program.ServerAddress);
         public MainWindow()
         {
             InitializeComponent();
-            tsuzakiWindow.Show();
+            tsuzakiWindow.Hide();
+            showtsuzakiWindow = false;
         }
 
         static internal Dictionary<string, PictureBox> RouteButtonList = new Dictionary<string, PictureBox>();
@@ -64,6 +66,19 @@ namespace TatehamaInterlocking
         {
             Debug.WriteLine($"Chenge:{Name}/{Train}");
             tsuzakiWindow.TrackChenge(Name, Train);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            showtsuzakiWindow = !showtsuzakiWindow;
+            if (showtsuzakiWindow)
+            {
+                tsuzakiWindow.Show();
+            }
+            else
+            {
+                tsuzakiWindow.Hide();
+            }
         }
     }
 }
