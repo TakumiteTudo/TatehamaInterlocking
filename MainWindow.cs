@@ -4,11 +4,10 @@ namespace TatehamaInterlocking
 {
     public partial class MainWindow : Form
     {
-        private TsuzakiWindow tsuzakiWindow;
+        static private TsuzakiWindow tsuzakiWindow = new TsuzakiWindow();
         public MainWindow()
         {
             InitializeComponent();
-            tsuzakiWindow = new TsuzakiWindow();
             tsuzakiWindow.Show();
         }
 
@@ -22,14 +21,14 @@ namespace TatehamaInterlocking
         /// </summary>
         /// <param name="Name">i˜H–¼Ì(I‘¤)</param>     
         /// <param name="Teihan">’èˆÊ(F)‚©”½ˆÊ(T)‚©</param>
-        internal void ButtonPush(string Name, bool Teihan)
+        static internal void ButtonPush(string Name, bool Teihan)
         {
         }
 
         /// <summary>
         /// i˜H‚ª”½ˆÊ‚É‚È‚Á‚½‚Æ‚«‚É‘–‚ç‚¹‚éŠÖ”B
         /// </summary>
-        internal void RouteSet(string Name)
+        static internal void RouteSet(string Name)
         {
             RouteButtonList[Name].Image = RouteButtonImage1[Name];
         }
@@ -37,7 +36,7 @@ namespace TatehamaInterlocking
         /// <summary>
         /// i˜H‚ª’èˆÊ‚É‚È‚Á‚½‚Æ‚«‚É‘–‚ç‚¹‚éŠÖ”B
         /// </summary>
-        internal void RouteReset(string Name)
+        static internal void RouteReset(string Name)
         {
             RouteButtonList[Name].Image = RouteButtonImage0[Name];
         }
@@ -47,7 +46,7 @@ namespace TatehamaInterlocking
         /// </summary>   
         /// <param name="Name">‰ñ˜H–¼Ì(I‘¤)</param>     
         /// <param name="Train">—ñÔ”Ô†</param>
-        internal void TrackChenge(string Name, string Train)
+        static internal void TrackChenge(string Name, string Train)
         {
             tsuzakiWindow.TrackChenge(Name, Train);
         }
