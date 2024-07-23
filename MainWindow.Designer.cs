@@ -47,6 +47,7 @@
             button1.TabIndex = 0;
             button1.Text = "館　浜";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -92,6 +93,7 @@
             button5.TabIndex = 4;
             button5.Text = "新野崎";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // button6
             // 

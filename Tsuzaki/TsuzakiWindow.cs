@@ -68,6 +68,8 @@ namespace TatehamaInterlocking.Tsuzaki
             }
         }
 
+
+
         private void CancelBtn_Click(object sender, EventArgs e)
         {
             Cancel = true;

@@ -18,9 +18,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Update="ShinNozaki\ShinNozakiWindow.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="ShinNozaki\ShinNozakiWindow.cs" />
   </ItemGroup>
 
   <ItemGroup>

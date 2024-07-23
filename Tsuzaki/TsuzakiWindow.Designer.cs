@@ -323,7 +323,7 @@
             // BT_6LD
             // 
             BT_6LD.BackColor = SystemColors.Control;
-            BT_6LD.Image = Properties.Resources.BT_6LCD_LL_Y_0;
+            BT_6LD.Image = Properties.Resources.BT_6LD_LL_Y_0;
             BT_6LD.Location = new Point(726, 215);
             BT_6LD.Name = "BT_6LD";
             BT_6LD.Size = new Size(27, 17);

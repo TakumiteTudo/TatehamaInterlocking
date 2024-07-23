@@ -133,37 +133,19 @@
   <data name="BT_1RA_RL_Y_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Common\Button\BT_1RA_RL_Y_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_1RA_RL_Y_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_1RA_RL_Y_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="BT_1RA_RL_Y_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_1RA_RL_Y_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BT_1RA_RL_Y_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Common\Button\BT_1RA_RL_Y_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BT_1RB_RC_Y_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Common\Button\BT_1RB_RC_Y_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_1RB_RC_Y_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_1RB_RC_Y_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="BT_1RB_RC_Y_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_1RB_RC_Y_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BT_1RB_RC_Y_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Common\Button\BT_1RB_RC_Y_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BT_2L_LC_Y_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Common\Button\BT_2L_LC_Y_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_2L_LC_Y_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_2L_LC_Y_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="BT_2L_LC_Y_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_2L_LC_Y_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BT_2L_LC_Y_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Common\Button\BT_2L_LC_Y_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BT_31L_LC_G_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -205,13 +187,7 @@
   <data name="BT_3L_LC_Y_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Common\Button\BT_3L_LC_Y_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_3L_LC_Y_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_3L_LC_Y_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="BT_3L_LC_Y_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_3L_LC_Y_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BT_3L_LC_Y_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Common\Button\BT_3L_LC_Y_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BT_4L_LC_Y_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -223,13 +199,7 @@
   <data name="BT_4R_RC_Y_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Common\Button\BT_4R_RC_Y_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_4R_RC_Y_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_4R_RC_Y_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="BT_4R_RC_Y_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_4R_RC_Y_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BT_4R_RC_Y_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Common\Button\BT_4R_RC_Y_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BT_5L_LC_Y_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -241,38 +211,20 @@
   <data name="BT_5R_RC_Y_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Common\Button\BT_5R_RC_Y_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_5R_RC_Y_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_5R_RC_Y_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="BT_5R_RC_Y_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Common\Button\BT_5R_RC_Y_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_5R_RC_Y_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_5R_RC_Y_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BT_6LCD_LL_Y_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_6LCD_LL_Y_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BT_6LCD_LL_Y_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_6LCD_LL_Y_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BT_6LCD_LL_Y_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_6LCD_LL_Y_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BT_6LCD_LL_Y_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_6LCD_LL_Y_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="BT_6LC_LC_Y_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_6LC_LC_Y_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BT_6LC_LC_Y_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Common\Button\BT_6LC_LC_Y_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BT_6LC_LC_Y_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Common\Button\BT_6LC_LC_Y_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_6LC_LC_Y_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_6LC_LC_Y_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BT_6LD_LL_Y_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Common\Button\BT_6LD_LL_Y_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BT_6LD_LL_Y_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Common\Button\BT_6LD_LL_Y_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BT_6R_RC_Y_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Common\Button\BT_6R_RC_Y_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -301,62 +253,14 @@
   <data name="BT_Cancel_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Common\Button\BT_Cancel_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_Cancel_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_Cancel_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="BT_Cancel_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Common\Button\BT_Cancel_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_Cancel_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_Cancel_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Lamp_G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Common\Lamp_G.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_G_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\BT_G_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BT_G_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\BT_G_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BT_Y_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\BT_Y_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BT_Y_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\BT_Y_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LL01_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\LL01_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LL01_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\LL01_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LL01_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\LL01_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LL02_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\LL02_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LL02_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\LL02_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LL02_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\LL02_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LL03_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\LL03_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LL03_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\LL03_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LL03_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\LL03_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LL04_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\LL04_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LL04_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\LL04_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LL04_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\LL04_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Lamp_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Common\Lamp_Y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ShinNozaki" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ShinNozaki\ShinNozaki.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

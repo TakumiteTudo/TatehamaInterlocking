@@ -113,29 +113,9 @@ namespace TatehamaInterlocking.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
-        internal static System.Drawing.Bitmap BT_1RA_RL_Y_01 {
-            get {
-                object obj = ResourceManager.GetObject("BT_1RA_RL_Y_01", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
         internal static System.Drawing.Bitmap BT_1RA_RL_Y_1 {
             get {
                 object obj = ResourceManager.GetObject("BT_1RA_RL_Y_1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static System.Drawing.Bitmap BT_1RA_RL_Y_11 {
-            get {
-                object obj = ResourceManager.GetObject("BT_1RA_RL_Y_11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,29 +133,9 @@ namespace TatehamaInterlocking.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
-        internal static System.Drawing.Bitmap BT_1RB_RC_Y_01 {
-            get {
-                object obj = ResourceManager.GetObject("BT_1RB_RC_Y_01", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
         internal static System.Drawing.Bitmap BT_1RB_RC_Y_1 {
             get {
                 object obj = ResourceManager.GetObject("BT_1RB_RC_Y_1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static System.Drawing.Bitmap BT_1RB_RC_Y_11 {
-            get {
-                object obj = ResourceManager.GetObject("BT_1RB_RC_Y_11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,29 +153,9 @@ namespace TatehamaInterlocking.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
-        internal static System.Drawing.Bitmap BT_2L_LC_Y_01 {
-            get {
-                object obj = ResourceManager.GetObject("BT_2L_LC_Y_01", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
         internal static System.Drawing.Bitmap BT_2L_LC_Y_1 {
             get {
                 object obj = ResourceManager.GetObject("BT_2L_LC_Y_1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static System.Drawing.Bitmap BT_2L_LC_Y_11 {
-            get {
-                object obj = ResourceManager.GetObject("BT_2L_LC_Y_11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -353,29 +293,9 @@ namespace TatehamaInterlocking.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
-        internal static System.Drawing.Bitmap BT_3L_LC_Y_01 {
-            get {
-                object obj = ResourceManager.GetObject("BT_3L_LC_Y_01", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
         internal static System.Drawing.Bitmap BT_3L_LC_Y_1 {
             get {
                 object obj = ResourceManager.GetObject("BT_3L_LC_Y_1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static System.Drawing.Bitmap BT_3L_LC_Y_11 {
-            get {
-                object obj = ResourceManager.GetObject("BT_3L_LC_Y_11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -413,29 +333,9 @@ namespace TatehamaInterlocking.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
-        internal static System.Drawing.Bitmap BT_4R_RC_Y_01 {
-            get {
-                object obj = ResourceManager.GetObject("BT_4R_RC_Y_01", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
         internal static System.Drawing.Bitmap BT_4R_RC_Y_1 {
             get {
                 object obj = ResourceManager.GetObject("BT_4R_RC_Y_1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static System.Drawing.Bitmap BT_4R_RC_Y_11 {
-            get {
-                object obj = ResourceManager.GetObject("BT_4R_RC_Y_11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -473,29 +373,9 @@ namespace TatehamaInterlocking.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
-        internal static System.Drawing.Bitmap BT_5R_RC_Y_01 {
-            get {
-                object obj = ResourceManager.GetObject("BT_5R_RC_Y_01", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
         internal static System.Drawing.Bitmap BT_5R_RC_Y_1 {
             get {
                 object obj = ResourceManager.GetObject("BT_5R_RC_Y_1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static System.Drawing.Bitmap BT_5R_RC_Y_11 {
-            get {
-                object obj = ResourceManager.GetObject("BT_5R_RC_Y_11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -513,16 +393,6 @@ namespace TatehamaInterlocking.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
-        internal static System.Drawing.Bitmap BT_6LC_LC_Y_01 {
-            get {
-                object obj = ResourceManager.GetObject("BT_6LC_LC_Y_01", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
         internal static System.Drawing.Bitmap BT_6LC_LC_Y_1 {
             get {
                 object obj = ResourceManager.GetObject("BT_6LC_LC_Y_1", resourceCulture);
@@ -533,9 +403,9 @@ namespace TatehamaInterlocking.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
-        internal static System.Drawing.Bitmap BT_6LC_LC_Y_11 {
+        internal static System.Drawing.Bitmap BT_6LD_LL_Y_0 {
             get {
-                object obj = ResourceManager.GetObject("BT_6LC_LC_Y_11", resourceCulture);
+                object obj = ResourceManager.GetObject("BT_6LD_LL_Y_0", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -543,39 +413,9 @@ namespace TatehamaInterlocking.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
-        internal static System.Drawing.Bitmap BT_6LCD_LL_Y_0 {
+        internal static System.Drawing.Bitmap BT_6LD_LL_Y_1 {
             get {
-                object obj = ResourceManager.GetObject("BT_6LCD_LL_Y_0", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static System.Drawing.Bitmap BT_6LCD_LL_Y_01 {
-            get {
-                object obj = ResourceManager.GetObject("BT_6LCD_LL_Y_01", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static System.Drawing.Bitmap BT_6LCD_LL_Y_1 {
-            get {
-                object obj = ResourceManager.GetObject("BT_6LCD_LL_Y_1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static System.Drawing.Bitmap BT_6LCD_LL_Y_11 {
-            get {
-                object obj = ResourceManager.GetObject("BT_6LCD_LL_Y_11", resourceCulture);
+                object obj = ResourceManager.GetObject("BT_6LD_LL_Y_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -673,16 +513,6 @@ namespace TatehamaInterlocking.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
-        internal static System.Drawing.Bitmap BT_Cancel_01 {
-            get {
-                object obj = ResourceManager.GetObject("BT_Cancel_01", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
         internal static System.Drawing.Bitmap BT_Cancel_1 {
             get {
                 object obj = ResourceManager.GetObject("BT_Cancel_1", resourceCulture);
@@ -693,9 +523,9 @@ namespace TatehamaInterlocking.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
-        internal static System.Drawing.Bitmap BT_Cancel_11 {
+        internal static System.Drawing.Bitmap Lamp_G {
             get {
-                object obj = ResourceManager.GetObject("BT_Cancel_11", resourceCulture);
+                object obj = ResourceManager.GetObject("Lamp_G", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -703,159 +533,9 @@ namespace TatehamaInterlocking.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
-        internal static System.Drawing.Bitmap BT_G_0 {
+        internal static System.Drawing.Bitmap Lamp_Y {
             get {
-                object obj = ResourceManager.GetObject("BT_G_0", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static System.Drawing.Bitmap BT_G_1 {
-            get {
-                object obj = ResourceManager.GetObject("BT_G_1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static System.Drawing.Bitmap BT_Y_0 {
-            get {
-                object obj = ResourceManager.GetObject("BT_Y_0", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static System.Drawing.Bitmap BT_Y_1 {
-            get {
-                object obj = ResourceManager.GetObject("BT_Y_1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static System.Drawing.Bitmap LL01_0 {
-            get {
-                object obj = ResourceManager.GetObject("LL01_0", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static System.Drawing.Bitmap LL01_1 {
-            get {
-                object obj = ResourceManager.GetObject("LL01_1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static System.Drawing.Bitmap LL01_2 {
-            get {
-                object obj = ResourceManager.GetObject("LL01_2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static System.Drawing.Bitmap LL02_0 {
-            get {
-                object obj = ResourceManager.GetObject("LL02_0", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static System.Drawing.Bitmap LL02_1 {
-            get {
-                object obj = ResourceManager.GetObject("LL02_1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static System.Drawing.Bitmap LL02_2 {
-            get {
-                object obj = ResourceManager.GetObject("LL02_2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static System.Drawing.Bitmap LL03_0 {
-            get {
-                object obj = ResourceManager.GetObject("LL03_0", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static System.Drawing.Bitmap LL03_1 {
-            get {
-                object obj = ResourceManager.GetObject("LL03_1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static System.Drawing.Bitmap LL03_2 {
-            get {
-                object obj = ResourceManager.GetObject("LL03_2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static System.Drawing.Bitmap LL04_0 {
-            get {
-                object obj = ResourceManager.GetObject("LL04_0", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static System.Drawing.Bitmap LL04_1 {
-            get {
-                object obj = ResourceManager.GetObject("LL04_1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static System.Drawing.Bitmap LL04_2 {
-            get {
-                object obj = ResourceManager.GetObject("LL04_2", resourceCulture);
+                object obj = ResourceManager.GetObject("Lamp_Y", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

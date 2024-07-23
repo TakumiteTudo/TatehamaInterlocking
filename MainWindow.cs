@@ -8,13 +8,20 @@ namespace TatehamaInterlocking
     {
         private bool showtsuzakiWindow;
         static private TsuzakiWindow tsuzakiWindow = new TsuzakiWindow();
+        private bool showshinNozakiWindow;
+        static private ShinNozakiWindow shinNozakiWindow = new ShinNozakiWindow();
+        private bool showdee;
+        static private Dee Dee = new Dee();
         static private Socket socket = new Socket(Program.ServerAddress);
 
         public MainWindow()
         {
             InitializeComponent();
             tsuzakiWindow.Hide();
+            shinNozakiWindow.Hide();
             showtsuzakiWindow = false;
+            showshinNozakiWindow = false;
+            showdee = false;
         }
 
         static internal Dictionary<string, PictureBox> RouteButtonList = new Dictionary<string, PictureBox>();
@@ -32,74 +39,78 @@ namespace TatehamaInterlocking
             Debug.WriteLine($"Push:{Name}/{Teihan}");
             Task.Run(async () =>
             {
-                string? error;
-                if (Teihan)
+                try
                 {
-                    error = await socket.routeOpen(Name);
-                }
-                else
-                {
-                    error = await socket.routeCancel(Name);
-                }
-                if (error.Length > 0)
-                {
-                    // Todo: エラーメッセージがでるので、それを表示する
-                    Debug.WriteLine(error);
-                    if (error == "開通中")
+                    string? error;
+                    if (Teihan)
                     {
-                        RouteSet(Name);
+                        error = await socket.routeOpen(Name);
                     }
-                    if (error == "閉鎖中")
+                    else
                     {
-                        RouteReset(Name);
+                        error = await socket.routeCancel(Name);
                     }
-                    if (error == "進入中")
+                    if (error.Length > 0)
                     {
-                        RouteReset(Name);
+                        // Todo: エラーメッセージがでるので、それを表示する
+                        Debug.WriteLine(error);
+                        if (RouteButtonList.ContainsKey(Name))
+                        {
+                            RouteButtonList[Name].Invoke((MethodInvoker)(() =>
+                            {
+                                if (error == "開通中")
+                                {
+                                    RouteButtonList[Name].Visible = true;
+                                }
+                                else if (error == "閉鎖中" || error == "進入中")
+                                {
+                                    RouteButtonList[Name].Visible = false;
+                                }
+                            }));
+                        }
+                        return;
                     }
-                    return;
+                    // Todo: 該当箇所を光らせる     
+                    if (RouteButtonList.ContainsKey(Name))
+                    {
+                        RouteButtonList[Name].Invoke((MethodInvoker)(() =>
+                        {
+                            RouteButtonList[Name].Visible = Teihan;
+                        }));
+                    }
                 }
-                // Todo: 該当箇所を光らせる
-                if (Teihan)
+                catch (Exception e)
                 {
-                    RouteSet(Name);
-                }
-                else
-                {
-                    RouteReset(Name);
+                    Debug.WriteLine($"{e}");
                 }
             });
         }
 
-        /// <summary>
-        /// 進路が反位になったときに走らせる関数。
-        /// </summary>
-        static internal void RouteSet(string Name)
+        static internal void enterSignal(string signalName, string trainName)
         {
-            Debug.WriteLine($"Set:{Name}");
-            Debug.WriteLine($"Set:{RouteButtonImage1[Name]}");
-            RouteButtonList[Name].Image = RouteButtonImage1[Name];
+            socket.enterSignal(signalName, trainName);
         }
 
-        /// <summary>
-        /// 進路が定位になったときに走らせる関数。
-        /// </summary>
-        static internal void RouteReset(string Name)
+        static internal void leaveSignal(string signalName, string trainName)
         {
-            Debug.WriteLine($"Reset:{Name}");
-            Debug.WriteLine($"Set:{RouteButtonImage0[Name]}");
-            RouteButtonList[Name].Image = RouteButtonImage0[Name];
+            socket.leaveSignal(signalName, trainName);
+        }
+
+        static internal void enteringComplete(string signalName, string trainName)
+        {
+            socket.enteringComplete(signalName, trainName);
         }
 
         /// <summary>
         /// 列車の在線状況が変化したときに呼ばれる関数。
         /// </summary>   
-        /// <param name="Name">回路名称(鯖側)</param>     
-        /// <param name="Train">列車番号</param>
-        static internal void TrackChenge(string Name, string Train)
+        /// <param name="info">回路情報</param>     
+        /// <param name="first">初回かどうか</param>
+        static internal void TrackChenge(TrackCircuitInfo info, bool first = false)
         {
-            Debug.WriteLine($"Chenge:{Name}/{Train}");
-            tsuzakiWindow.TrackChenge(Name, Train);
+            Debug.WriteLine($"{info}");
+            tsuzakiWindow.TrackChenge(info, first);
+            shinNozakiWindow.TrackChenge(info, first);
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -112,6 +123,32 @@ namespace TatehamaInterlocking
             else
             {
                 tsuzakiWindow.Hide();
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            showshinNozakiWindow = !showshinNozakiWindow;
+            if (showshinNozakiWindow)
+            {
+                shinNozakiWindow.Show();
+            }
+            else
+            {
+                shinNozakiWindow.Hide();
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            showdee = !showdee;
+            if (showdee)
+            {
+                Dee.Show();
+            }
+            else
+            {
+                Dee.Hide();
             }
         }
     }
