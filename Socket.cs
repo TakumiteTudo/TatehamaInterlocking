@@ -11,11 +11,29 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
 
 public class TrackCircuitInfo
 {
+    /// <summary>
+    /// 閉塞名
+    /// </summary>
     public string signalName { get; set; }
+    /// <summary>
+    /// 信号タイプ
+    /// </summary>
     public string signalType { get; set; }
+    /// <summary>
+    /// 
+    /// </summary>
     public string signalPhase { get; set; }
+    /// <summary>
+    /// 在線列番
+    /// </summary>
     public string? diaName { get; set; }
+    /// <summary>
+    /// 絶対閉塞か
+    /// </summary>
     public bool isClosure { get; set; }
+    /// <summary>
+    /// 進路の状況
+    /// </summary>
     public StationStatus stationStatus { get; set; }
 
     public bool IsDiaEqual(TrackCircuitInfo info)
@@ -26,7 +44,7 @@ public class TrackCircuitInfo
     }
     public override string ToString()
     {
-        return $"{signalName}/{isClosure}/{stationStatus}/{diaName}";
+        return $"{signalName}/isClosure:{isClosure}/signalType:{signalType}/signalPhase:{signalPhase}/stationStatus:{stationStatus}/diaName:{diaName}";
     }
 }
 public enum StationStatus

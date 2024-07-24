@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
+using System.DirectoryServices.ActiveDirectory;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
 
 namespace TatehamaInterlocking.Tsuzaki
 {
@@ -15,59 +18,280 @@ namespace TatehamaInterlocking.Tsuzaki
     {
         private bool Cancel;
 
+        private StationArrTrackText OutboundTexts;
+        private StationArrTrackText InboundTexts;
+
         public TsuzakiWindow()
         {
             InitializeComponent();
-            this.Shown += TsuzakiWindow_Shown;
+            InboundTexts = new StationArrTrackText(new List<Label> { Text_In1, Text_In2, Text_In3, Text_In4 });
+            OutboundTexts = new StationArrTrackText(new List<Label> { Text_Out1, Text_Out2, Text_Out3, Text_Out4 });
+            MainWindow.RouteButtonList.Add("津崎上り場内1RB", BT_1RA);
+            MainWindow.RouteButtonImage0.Add("津崎上り場内1RB", Properties.Resources.BT_1RA_RL_R_0);
+            MainWindow.RouteButtonImage1.Add("津崎上り場内1RB", Properties.Resources.BT_1RA_RL_R_1);
+            MainWindow.RouteButtonList.Add("津崎上り場内1RA", BT_1RB);
+            MainWindow.RouteButtonImage0.Add("津崎上り場内1RA", Properties.Resources.BT_1RB_RC_R_0);
+            MainWindow.RouteButtonImage1.Add("津崎上り場内1RA", Properties.Resources.BT_1RB_RC_R_1);
+            MainWindow.RouteButtonList.Add("津崎上り出発2R", BT_4R);
+            MainWindow.RouteButtonImage0.Add("津崎上り出発2R", Properties.Resources.BT_4R_RC_R_0);
+            MainWindow.RouteButtonImage1.Add("津崎上り出発2R", Properties.Resources.BT_4R_RC_R_1);
+            MainWindow.RouteButtonList.Add("津崎上り出発3R", BT_5R);
+            MainWindow.RouteButtonImage0.Add("津崎上り出発3R", Properties.Resources.BT_5R_RC_R_0);
+            MainWindow.RouteButtonImage1.Add("津崎上り出発3R", Properties.Resources.BT_5R_RC_R_1);
+            MainWindow.RouteButtonList.Add("津崎下り場内3LA", BT_6LC);
+            MainWindow.RouteButtonImage0.Add("津崎下り場内3LA", Properties.Resources.BT_6LC_LC_R_0);
+            MainWindow.RouteButtonImage1.Add("津崎下り場内3LA", Properties.Resources.BT_6LC_LC_R_1);
+            MainWindow.RouteButtonList.Add("津崎下り場内3LB", BT_6LD);
+            MainWindow.RouteButtonImage0.Add("津崎下り場内3LB", Properties.Resources.BT_6LD_LL_R_0);
+            MainWindow.RouteButtonImage1.Add("津崎下り場内3LB", Properties.Resources.BT_6LD_LL_R_1);
+            MainWindow.RouteButtonList.Add("津崎下り出発1L", BT_2L);
+            MainWindow.RouteButtonImage0.Add("津崎下り出発1L", Properties.Resources.BT_2L_LC_R_0);
+            MainWindow.RouteButtonImage1.Add("津崎下り出発1L", Properties.Resources.BT_2L_LC_R_1);
+            MainWindow.RouteButtonList.Add("津崎下り出発2L", BT_3L);
+            MainWindow.RouteButtonImage0.Add("津崎下り出発2L", Properties.Resources.BT_3L_LC_R_0);
+            MainWindow.RouteButtonImage1.Add("津崎下り出発2L", Properties.Resources.BT_3L_LC_R_1);
             Cancel = false;
         }
 
         private void TsuzakiWindow_Shown(object? sender, EventArgs e)
         {
-            MainWindow.RouteButtonList.Add("津崎上り場内1RA", BT_1RA);
-            MainWindow.RouteButtonImage0.Add("津崎上り場内1RA", Properties.Resources.BT_1RA_RL_Y_0);
-            MainWindow.RouteButtonImage1.Add("津崎上り場内1RA", Properties.Resources.BT_1RA_RL_Y_1);
-            MainWindow.RouteButtonList.Add("津崎上り場内1RB", BT_1RB);
-            MainWindow.RouteButtonImage0.Add("津崎上り場内1RB", Properties.Resources.BT_1RB_RC_Y_0);
-            MainWindow.RouteButtonImage1.Add("津崎上り場内1RB", Properties.Resources.BT_1RB_RC_Y_1);
-            MainWindow.RouteButtonList.Add("津崎上り出発2R", BT_4R);
-            MainWindow.RouteButtonImage0.Add("津崎上り出発2R", Properties.Resources.BT_4R_RC_Y_0);
-            MainWindow.RouteButtonImage1.Add("津崎上り出発2R", Properties.Resources.BT_4R_RC_Y_1);
-            MainWindow.RouteButtonList.Add("津崎上り出発3R", BT_5R);
-            MainWindow.RouteButtonImage0.Add("津崎上り出発3R", Properties.Resources.BT_5R_RC_Y_0);
-            MainWindow.RouteButtonImage1.Add("津崎上り出発3R", Properties.Resources.BT_5R_RC_Y_1);
-            MainWindow.RouteButtonList.Add("津崎上り場内3LA", BT_6LC);
-            MainWindow.RouteButtonImage0.Add("津崎上り場内3LA", Properties.Resources.BT_6LC_LC_Y_0);
-            MainWindow.RouteButtonImage1.Add("津崎上り場内3LA", Properties.Resources.BT_6LC_LC_Y_1);
-            MainWindow.RouteButtonList.Add("津崎上り場内3LB", BT_6LD);
-            MainWindow.RouteButtonImage0.Add("津崎上り場内3LB", Properties.Resources.BT_6LCD_LL_Y_0);
-            MainWindow.RouteButtonImage1.Add("津崎上り場内3LB", Properties.Resources.BT_6LCD_LL_Y_1);
-            MainWindow.RouteButtonList.Add("津崎下り出発1L", BT_2L);
-            MainWindow.RouteButtonImage0.Add("津崎下り出発1L", Properties.Resources.BT_2L_LC_Y_0);
-            MainWindow.RouteButtonImage1.Add("津崎下り出発1L", Properties.Resources.BT_2L_LC_Y_1);
-            MainWindow.RouteButtonList.Add("津崎下り出発2L", BT_3L);
-            MainWindow.RouteButtonImage0.Add("津崎下り出発2L", Properties.Resources.BT_3L_LC_Y_0);
-            MainWindow.RouteButtonImage1.Add("津崎下り出発2L", Properties.Resources.BT_3L_LC_Y_1);
         }
 
 
         /// <summary>
         /// 列車の在線状況が変化したときに呼ばれる関数。
         /// </summary>   
-        /// <param name="Name">回路名称(鯖側)</param>     
-        /// <param name="Train">列車番号</param>
-        internal void TrackChenge(string Name, string Train)
+        internal void TrackChenge(TrackCircuitInfo info, bool first)
         {
-            switch (Name)
+            if (this.InvokeRequired)
             {
+                this.Invoke(new Action(() => TrackChenge(info, first)));
+                return;
+            }
+            var Train = info.diaName;
+            var name = info.signalName;
+            switch (name)
+            {
+                case "上り閉塞56":
+                    InboundTexts.TrackAddChenge(Train);
+                    break;
+                case "上り閉塞62":
+                    InboundTexts.TrackAddChenge(Train);
+                    break;
+                case "上り閉塞68":
+                    InboundTexts.TrackAddChenge(Train);
+                    break;
                 case "上り閉塞74":
-                    L_No74.Text = Train;
+                    InboundTexts.TrackAddChenge(Train);
+                    break;
+                case "津崎上り場内1RB":
+                    SetTrainHome(Text_1RAT, Text_1RT, InboundTexts, Train, info.stationStatus, first);
+                    break;
+                case "津崎上り場内1RA":
+                    SetTrainHome(Text_1RBT, Text_1RT, InboundTexts, Train, info.stationStatus, first);
+                    break;
+                case "津崎上り出発2R":
+                case "津崎上り出発3R":
+                    SetTrainDep(Text_SST, new List<Label> { Text_1RAT, Text_1RBT }, Train, first);
+                    break;
+                case "浜園下り場内2L":
+                    OutboundTexts.TrackAddChenge(Train);
+                    break;
+                case "浜園入換101L":
+                    OutboundTexts.TrackAddChenge(Train);
+                    break;
+                case "浜園下り出発1L":
+                    OutboundTexts.TrackAddChenge(Train);
+                    break;
+                case "下り閉塞89":
+                    OutboundTexts.TrackAddChenge(Train);
+                    break;
+                case "津崎下り場内3LA":
+                    SetTrainHome(Text_6LCT, Text_6LT, OutboundTexts, Train, info.stationStatus, first);
+                    break;
+                case "津崎下り場内3LB":
+                    SetTrainHome(Text_6LDT, Text_6LT, OutboundTexts, Train, info.stationStatus, first);
+                    break;
+                case "津崎下り出発1L":
+                case "津崎下り出発2L":
+                    SetTrainDep(Text_TST, new List<Label> { Text_6LCT, Text_6LDT }, Train, first);
                     break;
                 default:
                     break;
             }
         }
 
+
+
+        internal void SignalChenge(TrackCircuitInfo info)
+        {
+            if (this.InvokeRequired)
+            {
+                this.Invoke(new Action(() => SignalChenge(info)));
+                return;
+            }
+            var name = info.signalName;
+
+            var on = info.signalPhase != "R";
+            switch (name)
+            {
+                case "津崎上り場内1RB":
+                    L_1RA.Visible = on;
+                    break;
+                case "津崎上り場内1RA":
+                    L_1RB.Visible = on;
+                    break;
+                case "津崎上り出発2R":
+                    L_4R.Visible = on;
+                    break;
+                case "津崎上り出発3R":
+                    L_5R.Visible = on;
+                    break;
+                case "津崎下り場内3LA":
+                    L_6LC.Visible = on;
+                    break;
+                case "津崎下り場内3LB":
+                    L_6LD.Visible = on;
+                    break;
+                case "津崎下り出発1L":
+                    L_2L.Visible = on;
+                    break;
+                case "津崎下り出発2L":
+                    L_3L.Visible = on;
+                    break;
+            }
+        }
+
+        /// <summary>
+        /// 出発進路の車両表示を制御する関数
+        /// </summary>
+        /// <param name="targetLabel">操作される回路表示</param>             
+        /// <param name="beforeLabel">列車が来た可能性のある回路全て</param>
+        /// <param name="Train">列車名</param>
+        /// <param name="first">初回かどうか</param>
+        private void SetTrainDep(Label targetLabel, List<Label> beforeLabels, string Train, bool first)
+        {
+            if (first && !(targetLabel.Text != "回1234" || targetLabel.Text != "-"))
+            {
+                targetLabel.Text += Train;
+            }
+            else
+            {
+                targetLabel.Text = Train;
+            }
+
+            if (!first)
+            {
+                foreach (var label in beforeLabels)
+                {
+                    if (label.Text == Train)
+                    {
+                        label.Text = "";
+                    }
+                }
+            }
+        }
+
+        /// <summary>
+        /// 出発進路の車両表示を制御する関数
+        /// </summary>
+        /// <param name="targetLabel">操作される回路表示</param>
+        /// <param name="beforeLabel">列車が来た可能性のある回路全て</param>
+        /// <param name="Train">列車名</param>
+        /// <param name="first">初回かどうか</param>
+        private void SetTrainDep(Label targetLabel, Label beforeLabel, string Train, bool first)
+        {
+            SetTrainDep(targetLabel, new List<Label> { beforeLabel }, Train, first);
+        }
+
+
+        /// <summary>
+        /// 場内・入換進路の車両表示を制御する関数
+        /// </summary>                                          
+        /// <param name="targetFormLabel">操作されるホーム回路表示</param>    
+        /// <param name="targetLabel">操作される場内-ホーム間回路表示</param>       
+        /// <param name="beforeLabel">列車が来た可能性のある回路全て</param>
+        /// <param name="Train">列車名</param>
+        /// <param name="first">初回かどうか</param>
+        private void SetTrainHome(Label targetFormLabel, Label targetLabel, List<Label> beforeLabels, string Train, StationStatus stationStatus, bool first)
+        {
+            if (stationStatus == StationStatus.ROUTE_ENTERED)
+            {
+                if (first && !(targetFormLabel.Text != "回1234" || targetFormLabel.Text != "-"))
+                {
+                    targetFormLabel.Text += Train;
+                }
+                else
+                {
+                    targetFormLabel.Text = Train;
+                }
+                if (first && (targetLabel.Text == "回1234" || targetLabel.Text == "-"))
+                {
+                    targetLabel.Text = "";
+                }
+                if (!first)
+                {
+                    targetLabel.Text = "";
+                }
+            }
+            else
+            {
+                if (first && !(targetLabel.Text != "回1234" || targetLabel.Text != "-"))
+                {
+                    targetLabel.Text += Train;
+                }
+                else
+                {
+                    targetLabel.Text = Train;
+                }
+                if (first && (targetLabel.Text == "回1234" || targetLabel.Text == "-"))
+                {
+                    targetLabel.Text = "";
+                }
+                if (Train == null)
+                {
+                    targetFormLabel.Text = "";
+                }
+            }
+
+            if (!first)
+            {
+                foreach (var label in beforeLabels)
+                {
+                    if (label.Text == Train)
+                    {
+                        label.Text = Train;
+                    }
+                }
+            }
+        }
+
+        /// <summary>
+        /// 場内・入換進路の車両表示を制御する関数
+        /// </summary>                                          
+        /// <param name="targetFormLabel">操作されるホーム回路表示</param>    
+        /// <param name="targetLabel">操作される場内-ホーム間回路表示</param>       
+        /// <param name="beforeLabel">列車が来た可能性のある回路全て</param>
+        /// <param name="Train">列車名</param>
+        /// <param name="first">初回かどうか</param>
+        private void SetTrainHome(Label targetFormLabel, Label targetLabel, Label beforeLabels, string Train, StationStatus stationStatus, bool first)
+        {
+            SetTrainHome(targetFormLabel, targetLabel, new List<Label> { beforeLabels }, Train, stationStatus, first);
+        }
+
+        /// <summary>
+        /// 場内・入換進路の車両表示を制御する関数
+        /// </summary>                                          
+        /// <param name="targetFormLabel">操作されるホーム回路表示</param>    
+        /// <param name="targetLabel">操作される場内-ホーム間回路表示</param>       
+        /// <param name="beforeLabel">列車が来た可能性のある回路全て</param>
+        /// <param name="Train">列車名</param>
+        /// <param name="first">初回かどうか</param>
+        private void SetTrainHome(Label targetFormLabel, Label targetLabel, StationArrTrackText beforeLabel, string Train, StationStatus stationStatus, bool first)
+        {
+            SetTrainHome(targetFormLabel, targetLabel, new List<Label> { }, Train, stationStatus, first);
+            beforeLabel.TrackRemoveChenge(Train);
+        }
 
 
         private void CancelBtn_Click(object sender, EventArgs e)
@@ -78,14 +302,14 @@ namespace TatehamaInterlocking.Tsuzaki
 
         private void BT_1RA_Click(object sender, EventArgs e)
         {
-            MainWindow.ButtonPush("津崎上り場内1RA", !Cancel);
+            MainWindow.ButtonPush("津崎上り場内1RB", !Cancel);
             CancelBtn.Image = Properties.Resources.BT_Cancel_0;
             Cancel = false;
         }
 
         private void BT_1RB_Click(object sender, EventArgs e)
         {
-            MainWindow.ButtonPush("津崎上り場内1RB", !Cancel);
+            MainWindow.ButtonPush("津崎上り場内1RA", !Cancel);
             CancelBtn.Image = Properties.Resources.BT_Cancel_0;
             Cancel = false;
         }

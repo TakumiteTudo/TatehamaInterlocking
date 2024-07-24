@@ -35,6 +35,7 @@
             button5 = new Button();
             button6 = new Button();
             button7 = new Button();
+            ButtonPushError = new Label();
             SuspendLayout();
             // 
             // button1
@@ -117,12 +118,22 @@
             button7.Text = "大道寺";
             button7.UseVisualStyleBackColor = false;
             // 
+            // ButtonPushError
+            // 
+            ButtonPushError.AutoSize = true;
+            ButtonPushError.Location = new Point(5, 424);
+            ButtonPushError.Name = "ButtonPushError";
+            ButtonPushError.Size = new Size(55, 16);
+            ButtonPushError.TabIndex = 7;
+            ButtonPushError.Text = "label1";
+            // 
             // MainWindow
             // 
             AutoScaleDimensions = new SizeF(8F, 16F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SeaShell;
             ClientSize = new Size(675, 444);
+            Controls.Add(ButtonPushError);
             Controls.Add(button7);
             Controls.Add(button6);
             Controls.Add(button5);
@@ -135,6 +146,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "指令卓選択 | 館浜電鉄　ダイヤ運転";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -146,5 +158,6 @@
         private Button button5;
         private Button button6;
         private Button button7;
+        private Label ButtonPushError;
     }
 }

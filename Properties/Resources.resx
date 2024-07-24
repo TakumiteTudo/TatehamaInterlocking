@@ -118,35 +118,35 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="BT_10LC_LC_Y_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_10LC_LC_Y_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BT_10LC_LC_R_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Common\Button\BT_10LC_LC_R_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_10LC_LC_Y_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_10LC_LC_Y_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BT_10LC_LC_R_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Common\Button\BT_10LC_LC_R_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_10LD_LL_Y_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_10LD_LL_Y_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BT_10LD_LL_R_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Common\Button\BT_10LD_LL_R_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_10LD_LL_Y_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_10LD_LL_Y_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BT_10LD_LL_R_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Common\Button\BT_10LD_LL_R_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_1RA_RL_Y_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_1RA_RL_Y_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BT_1RA_RL_R_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Common\Button\BT_1RA_RL_R_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_1RA_RL_Y_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_1RA_RL_Y_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BT_1RA_RL_R_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Common\Button\BT_1RA_RL_R_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_1RB_RC_Y_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_1RB_RC_Y_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BT_1RB_RC_R_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Common\Button\BT_1RB_RC_R_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_1RB_RC_Y_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_1RB_RC_Y_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BT_1RB_RC_R_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Common\Button\BT_1RB_RC_R_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_2L_LC_Y_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_2L_LC_Y_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BT_2L_LC_R_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Common\Button\BT_2L_LC_R_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_2L_LC_Y_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_2L_LC_Y_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BT_2L_LC_R_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Common\Button\BT_2L_LC_R_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BT_31L_LC_G_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Common\Button\BT_31L_LC_G_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,71 +184,71 @@
   <data name="BT_35LD_LL_G_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Common\Button\BT_35LD_LL_G_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_3L_LC_Y_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_3L_LC_Y_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BT_3L_LC_R_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Common\Button\BT_3L_LC_R_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_3L_LC_Y_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_3L_LC_Y_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BT_3L_LC_R_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Common\Button\BT_3L_LC_R_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_4L_LC_Y_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_4L_LC_Y_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BT_4L_LC_R_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Common\Button\BT_4L_LC_R_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_4L_LC_Y_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_4L_LC_Y_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BT_4L_LC_R_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Common\Button\BT_4L_LC_R_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_4R_RC_Y_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_4R_RC_Y_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BT_4R_RC_R_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Common\Button\BT_4R_RC_R_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_4R_RC_Y_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_4R_RC_Y_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BT_4R_RC_R_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Common\Button\BT_4R_RC_R_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_5L_LC_Y_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_5L_LC_Y_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BT_5L_LC_R_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Common\Button\BT_5L_LC_R_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_5L_LC_Y_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_5L_LC_Y_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BT_5L_LC_R_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Common\Button\BT_5L_LC_R_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_5R_RC_Y_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_5R_RC_Y_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BT_5R_RC_R_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Common\Button\BT_5R_RC_R_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_5R_RC_Y_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_5R_RC_Y_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BT_5R_RC_R_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Common\Button\BT_5R_RC_R_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_6LC_LC_Y_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_6LC_LC_Y_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BT_6LC_LC_R_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Common\Button\BT_6LC_LC_R_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_6LC_LC_Y_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_6LC_LC_Y_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BT_6LC_LC_R_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Common\Button\BT_6LC_LC_R_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_6LD_LL_Y_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_6LD_LL_Y_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BT_6LD_LL_R_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Common\Button\BT_6LD_LL_R_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_6LD_LL_Y_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_6LD_LL_Y_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BT_6LD_LL_R_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Common\Button\BT_6LD_LL_R_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_6R_RC_Y_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_6R_RC_Y_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BT_6R_RC_R_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Common\Button\BT_6R_RC_R_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_6R_RC_Y_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_6R_RC_Y_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BT_6R_RC_R_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Common\Button\BT_6R_RC_R_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_7R_RC_Y_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_7R_RC_Y_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BT_7R_RC_R_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Common\Button\BT_7R_RC_R_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_7R_RC_Y_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_7R_RC_Y_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BT_7R_RC_R_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Common\Button\BT_7R_RC_R_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_8R_RC_Y_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_8R_RC_Y_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BT_8R_RC_R_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Common\Button\BT_8R_RC_R_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_8R_RC_Y_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_8R_RC_Y_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BT_8R_RC_R_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Common\Button\BT_8R_RC_R_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_9R_RC_Y_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_9R_RC_Y_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BT_9R_RC_R_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Common\Button\BT_9R_RC_R_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BT_9R_RC_Y_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Common\Button\BT_9R_RC_Y_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BT_9R_RC_R_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Common\Button\BT_9R_RC_R_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BT_Cancel_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Common\Button\BT_Cancel_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
