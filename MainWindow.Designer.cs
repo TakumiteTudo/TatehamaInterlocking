@@ -36,15 +36,16 @@
             button6 = new Button();
             button7 = new Button();
             ButtonPushError = new Label();
+            button8 = new Button();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.BackColor = Color.Violet;
+            button1.BackColor = Color.SpringGreen;
             button1.Font = new Font("ＭＳ ゴシック", 18F, FontStyle.Bold);
-            button1.Location = new Point(12, 12);
+            button1.Location = new Point(20, 20);
             button1.Name = "button1";
-            button1.Size = new Size(129, 92);
+            button1.Size = new Size(130, 60);
             button1.TabIndex = 0;
             button1.Text = "館　浜";
             button1.UseVisualStyleBackColor = false;
@@ -52,11 +53,11 @@
             // 
             // button2
             // 
-            button2.BackColor = Color.Violet;
+            button2.BackColor = Color.SpringGreen;
             button2.Font = new Font("ＭＳ ゴシック", 18F, FontStyle.Bold);
-            button2.Location = new Point(147, 12);
+            button2.Location = new Point(160, 20);
             button2.Name = "button2";
-            button2.Size = new Size(129, 92);
+            button2.Size = new Size(130, 60);
             button2.TabIndex = 1;
             button2.Text = "駒　野";
             button2.UseVisualStyleBackColor = false;
@@ -65,9 +66,9 @@
             // 
             button3.BackColor = Color.LightSkyBlue;
             button3.Font = new Font("ＭＳ ゴシック", 18F, FontStyle.Bold);
-            button3.Location = new Point(14, 110);
+            button3.Location = new Point(20, 120);
             button3.Name = "button3";
-            button3.Size = new Size(129, 92);
+            button3.Size = new Size(130, 60);
             button3.TabIndex = 2;
             button3.Text = "津　崎";
             button3.UseVisualStyleBackColor = false;
@@ -77,20 +78,20 @@
             // 
             button4.BackColor = Color.LightSkyBlue;
             button4.Font = new Font("ＭＳ ゴシック", 18F, FontStyle.Bold);
-            button4.Location = new Point(149, 110);
+            button4.Location = new Point(160, 120);
             button4.Name = "button4";
-            button4.Size = new Size(129, 92);
+            button4.Size = new Size(130, 60);
             button4.TabIndex = 3;
             button4.Text = "浜　園";
             button4.UseVisualStyleBackColor = false;
             // 
             // button5
             // 
-            button5.BackColor = Color.SpringGreen;
+            button5.BackColor = Color.LightSkyBlue;
             button5.Font = new Font("ＭＳ ゴシック", 18F, FontStyle.Bold);
-            button5.Location = new Point(14, 208);
+            button5.Location = new Point(300, 120);
             button5.Name = "button5";
-            button5.Size = new Size(129, 92);
+            button5.Size = new Size(130, 60);
             button5.TabIndex = 4;
             button5.Text = "新野崎";
             button5.UseVisualStyleBackColor = false;
@@ -100,9 +101,9 @@
             // 
             button6.BackColor = Color.LightSalmon;
             button6.Font = new Font("ＭＳ ゴシック", 18F, FontStyle.Bold);
-            button6.Location = new Point(12, 306);
+            button6.Location = new Point(20, 220);
             button6.Name = "button6";
-            button6.Size = new Size(129, 92);
+            button6.Size = new Size(130, 60);
             button6.TabIndex = 5;
             button6.Text = "江ノ原信";
             button6.UseVisualStyleBackColor = false;
@@ -111,9 +112,9 @@
             // 
             button7.BackColor = Color.LightSalmon;
             button7.Font = new Font("ＭＳ ゴシック", 18F, FontStyle.Bold);
-            button7.Location = new Point(149, 306);
+            button7.Location = new Point(160, 220);
             button7.Name = "button7";
-            button7.Size = new Size(129, 92);
+            button7.Size = new Size(130, 60);
             button7.TabIndex = 6;
             button7.Text = "大道寺";
             button7.UseVisualStyleBackColor = false;
@@ -123,16 +124,28 @@
             ButtonPushError.AutoSize = true;
             ButtonPushError.Location = new Point(5, 424);
             ButtonPushError.Name = "ButtonPushError";
-            ButtonPushError.Size = new Size(55, 16);
+            ButtonPushError.Size = new Size(143, 16);
             ButtonPushError.TabIndex = 7;
-            ButtonPushError.Text = "label1";
+            ButtonPushError.Text = "Ver0.3.0　CN:新町";
+            // 
+            // button8
+            // 
+            button8.BackColor = Color.DarkGray;
+            button8.Font = new Font("ＭＳ ゴシック", 18F, FontStyle.Bold);
+            button8.Location = new Point(580, 320);
+            button8.Name = "button8";
+            button8.Size = new Size(130, 60);
+            button8.TabIndex = 8;
+            button8.Text = "全線TID";
+            button8.UseVisualStyleBackColor = false;
             // 
             // MainWindow
             // 
             AutoScaleDimensions = new SizeF(8F, 16F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SeaShell;
-            ClientSize = new Size(675, 444);
+            ClientSize = new Size(724, 446);
+            Controls.Add(button8);
             Controls.Add(ButtonPushError);
             Controls.Add(button7);
             Controls.Add(button6);
@@ -159,5 +172,6 @@
         private Button button6;
         private Button button7;
         private Label ButtonPushError;
+        private Button button8;
     }
 }

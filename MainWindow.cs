@@ -1,8 +1,11 @@
 using System.Diagnostics;
+using System.Drawing.Text;
 using System.Linq.Expressions;
 using System.Net.Sockets;
+using System.Reflection;
 using TatehamaInterlocking.Tsuzaki;
 using static System.Runtime.InteropServices.JavaScript.JSType;
+using MethodInvoker = System.Windows.Forms.MethodInvoker;
 
 namespace TatehamaInterlocking
 {
@@ -31,8 +34,37 @@ namespace TatehamaInterlocking
             showtsuzakiWindow = false;
             showshinNozakiWindow = false;
             showdee = false;
+            LoadCustomFont();
         }
 
+        private void LoadCustomFont()
+        {
+            // 埋め込みリソースの名前を設定
+            string fontResourceName = "TatehamaInterlocking.KawashiroLED_K16TB.ttf";
+
+            // フォントを読み込むためのストリームを取得
+            Stream fontStream = Assembly.GetExecutingAssembly().GetManifestResourceStream(fontResourceName);
+            if (fontStream == null)
+            {
+                throw new Exception("フォントリソースが見つかりませんでした。");
+            }
+
+            // ストリームからバイト配列にフォントデータを読み込む
+            byte[] fontData = new byte[fontStream.Length];
+            fontStream.Read(fontData, 0, (int)fontStream.Length);
+            fontStream.Close();
+
+            // PrivateFontCollectionにフォントを追加
+            PrivateFontCollection pfc = new PrivateFontCollection();
+            IntPtr fontPtr = System.Runtime.InteropServices.Marshal.AllocCoTaskMem(fontData.Length);
+            System.Runtime.InteropServices.Marshal.Copy(fontData, 0, fontPtr, fontData.Length);
+            pfc.AddMemoryFont(fontPtr, fontData.Length);
+            System.Runtime.InteropServices.Marshal.FreeCoTaskMem(fontPtr);
+
+            // フォントの適用
+            Font yourFont = new Font(pfc.Families[0], 12); // フォントサイズを指定
+            Font = yourFont;
+        }
 
         /// <summary>
         /// 進路ボタンが押された時走る関数。
@@ -108,9 +140,10 @@ namespace TatehamaInterlocking
                 if (!info.isClosure)
                 {
                     tsuzakiWindow.SignalChenge(info);
+                    shinNozakiWindow.SignalChenge(info);
                     if (RouteButtonList.ContainsKey(info.signalName))
                     {
-                        if (info.stationStatus == StationStatus.ROUTE_CLOSED)
+                        if (info.stationStatus == StationStatus.ROUTE_CLOSED || info.stationStatus == StationStatus.ROUTE_ENTERED)
                         {
                             RouteButtonList[info.signalName].Invoke((MethodInvoker)(() =>
                             {

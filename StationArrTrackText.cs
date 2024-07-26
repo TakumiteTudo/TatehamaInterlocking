@@ -15,6 +15,7 @@ namespace TatehamaInterlocking
         {
             LabelList = labelList;
             TrainList = new List<string>();
+            TrackSet();
         }
 
         internal void TrackAddChenge(string Train)

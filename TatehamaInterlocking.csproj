@@ -7,9 +7,20 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Common\KawashiroLED_K16TB.ttf" />
+  </ItemGroup>
   
   <ItemGroup>
     <PackageReference Include="SocketIOClient" Version="3.1.1" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <EmbeddedResource Include="KawashiroLED_K16TB.ttf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CustomToolNamespace></CustomToolNamespace>
+    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
