@@ -183,6 +183,26 @@ namespace TatehamaInterlocking.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
+        internal static System.Drawing.Bitmap BT_31LZ_LC_Y_0 {
+            get {
+                object obj = ResourceManager.GetObject("BT_31LZ_LC_Y_0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap BT_31LZ_LC_Y_1 {
+            get {
+                object obj = ResourceManager.GetObject("BT_31LZ_LC_Y_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
         internal static System.Drawing.Bitmap BT_32L_LC_G_0 {
             get {
                 object obj = ResourceManager.GetObject("BT_32L_LC_G_0", resourceCulture);
@@ -196,6 +216,26 @@ namespace TatehamaInterlocking.Properties {
         internal static System.Drawing.Bitmap BT_32L_LC_G_1 {
             get {
                 object obj = ResourceManager.GetObject("BT_32L_LC_G_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap BT_32LZ_LC_Y_0 {
+            get {
+                object obj = ResourceManager.GetObject("BT_32LZ_LC_Y_0", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap BT_32LZ_LC_Y_1 {
+            get {
+                object obj = ResourceManager.GetObject("BT_32LZ_LC_Y_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

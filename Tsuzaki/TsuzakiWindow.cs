@@ -1,18 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics;
-using System.DirectoryServices.ActiveDirectory;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
-
-namespace TatehamaInterlocking.Tsuzaki
+﻿namespace TatehamaInterlocking.Tsuzaki
 {
     public partial class TsuzakiWindow : Form
     {
@@ -32,6 +18,12 @@ namespace TatehamaInterlocking.Tsuzaki
             MainWindow.RouteButtonList.Add("津崎上り場内1RA", BT_1RB);
             MainWindow.RouteButtonImage0.Add("津崎上り場内1RA", Properties.Resources.BT_1RB_RC_R_0);
             MainWindow.RouteButtonImage1.Add("津崎上り場内1RA", Properties.Resources.BT_1RB_RC_R_1);
+            MainWindow.RouteButtonList.Add("津崎下り出発1L", BT_2L);
+            MainWindow.RouteButtonImage0.Add("津崎下り出発1L", Properties.Resources.BT_2L_LC_R_0);
+            MainWindow.RouteButtonImage1.Add("津崎下り出発1L", Properties.Resources.BT_2L_LC_R_1);
+            MainWindow.RouteButtonList.Add("津崎下り出発2L", BT_3L);
+            MainWindow.RouteButtonImage0.Add("津崎下り出発2L", Properties.Resources.BT_3L_LC_R_0);
+            MainWindow.RouteButtonImage1.Add("津崎下り出発2L", Properties.Resources.BT_3L_LC_R_1);
             MainWindow.RouteButtonList.Add("津崎上り出発2R", BT_4R);
             MainWindow.RouteButtonImage0.Add("津崎上り出発2R", Properties.Resources.BT_4R_RC_R_0);
             MainWindow.RouteButtonImage1.Add("津崎上り出発2R", Properties.Resources.BT_4R_RC_R_1);
@@ -44,17 +36,7 @@ namespace TatehamaInterlocking.Tsuzaki
             MainWindow.RouteButtonList.Add("津崎下り場内3LB", BT_6LD);
             MainWindow.RouteButtonImage0.Add("津崎下り場内3LB", Properties.Resources.BT_6LD_LL_R_0);
             MainWindow.RouteButtonImage1.Add("津崎下り場内3LB", Properties.Resources.BT_6LD_LL_R_1);
-            MainWindow.RouteButtonList.Add("津崎下り出発1L", BT_2L);
-            MainWindow.RouteButtonImage0.Add("津崎下り出発1L", Properties.Resources.BT_2L_LC_R_0);
-            MainWindow.RouteButtonImage1.Add("津崎下り出発1L", Properties.Resources.BT_2L_LC_R_1);
-            MainWindow.RouteButtonList.Add("津崎下り出発2L", BT_3L);
-            MainWindow.RouteButtonImage0.Add("津崎下り出発2L", Properties.Resources.BT_3L_LC_R_0);
-            MainWindow.RouteButtonImage1.Add("津崎下り出発2L", Properties.Resources.BT_3L_LC_R_1);
             Cancel = false;
-        }
-
-        private void TsuzakiWindow_Shown(object? sender, EventArgs e)
-        {
         }
 
 
@@ -239,14 +221,17 @@ namespace TatehamaInterlocking.Tsuzaki
                 if (first && !(targetLabel.Text != "回1234" || targetLabel.Text != "-"))
                 {
                     targetLabel.Text += Train;
+                    targetFormLabel.Text = "";
                 }
                 else
                 {
                     targetLabel.Text = Train;
+                    targetFormLabel.Text = "";
                 }
                 if (first && (targetLabel.Text == "回1234" || targetLabel.Text == "-"))
                 {
                     targetLabel.Text = "";
+                    targetFormLabel.Text = "";
                 }
                 if (Train == null)
                 {

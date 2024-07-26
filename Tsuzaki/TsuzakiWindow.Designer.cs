@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            BT_5R = new PictureBox();
             BT_6LC = new PictureBox();
             Text_Out1 = new Label();
             Text_Out2 = new Label();
@@ -60,7 +61,6 @@
             L_3L = new PictureBox();
             L_6LC = new PictureBox();
             L_6LD = new PictureBox();
-            BT_5R = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)BT_5R).BeginInit();
             ((System.ComponentModel.ISupportInitialize)BT_6LC).BeginInit();
             ((System.ComponentModel.ISupportInitialize)BT_1RA).BeginInit();
@@ -483,7 +483,7 @@
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "TsuzakiWindow";
             RightToLeft = RightToLeft.No;
-            Text = "TsuzakiWindow";
+            Text = "津　崎 | 連動盤 | 館浜電鉄　ダイヤ運転";
             ((System.ComponentModel.ISupportInitialize)BT_5R).EndInit();
             ((System.ComponentModel.ISupportInitialize)BT_6LC).EndInit();
             ((System.ComponentModel.ISupportInitialize)BT_1RA).EndInit();
