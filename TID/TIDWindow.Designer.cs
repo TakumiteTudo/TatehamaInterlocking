@@ -91,15 +91,15 @@
             label61 = new Label();
             label62 = new Label();
             label63 = new Label();
-            label64 = new Label();
-            label65 = new Label();
-            label66 = new Label();
-            label67 = new Label();
-            label68 = new Label();
-            label69 = new Label();
-            label70 = new Label();
+            Text_W10_TST = new Label();
+            Text_W10_Track1 = new Label();
+            Text_W10_Track2 = new Label();
+            Text_W10_Track3 = new Label();
+            Text_W10_Track4 = new Label();
+            Text_W10_10L = new Label();
+            Text_W10_Track5 = new Label();
             label71 = new Label();
-            label72 = new Label();
+            Text_137 = new Label();
             label73 = new Label();
             label74 = new Label();
             label75 = new Label();
@@ -184,23 +184,23 @@
             panel62 = new Panel();
             panel63 = new Panel();
             panel64 = new Panel();
-            panel65 = new Panel();
+            Line_W10_TST = new Panel();
             panel66 = new Panel();
             panel67 = new Panel();
-            panel68 = new Panel();
+            Line_W10_Track1 = new Panel();
             panel69 = new Panel();
-            panel70 = new Panel();
+            Line_W10_Track2 = new Panel();
             panel71 = new Panel();
-            panel72 = new Panel();
-            panel73 = new Panel();
+            Line_W10_Track3 = new Panel();
+            Line_W10_Track4 = new Panel();
             panel74 = new Panel();
-            panel75 = new Panel();
+            Line_W10_10L = new Panel();
             panel76 = new Panel();
             panel77 = new Panel();
-            panel78 = new Panel();
+            Line_W10_Track5 = new Panel();
             panel79 = new Panel();
             panel80 = new Panel();
-            panel81 = new Panel();
+            Line_137 = new Panel();
             panel82 = new Panel();
             panel83 = new Panel();
             panel84 = new Panel();
@@ -293,18 +293,27 @@
             panel4 = new Panel();
             label3 = new Label();
             panel5 = new Panel();
-            label10 = new Label();
-            panel6 = new Panel();
+            Text_W10_1R = new Label();
+            Line_W10_1R = new Panel();
+            Track_W10_Track1 = new PictureBox();
+            Track_W10_Track2 = new PictureBox();
+            Track_W10_Track3 = new PictureBox();
+            Track_W10_Track4 = new PictureBox();
+            Text_W10_SST = new Label();
+            Line_W10_SST = new Panel();
+            panel7 = new Panel();
+            Track_137 = new PictureBox();
+            Track_W10_Track5 = new PictureBox();
             panel63.SuspendLayout();
-            panel65.SuspendLayout();
+            Line_W10_TST.SuspendLayout();
             panel67.SuspendLayout();
             panel69.SuspendLayout();
             panel71.SuspendLayout();
-            panel73.SuspendLayout();
-            panel75.SuspendLayout();
+            Line_W10_Track4.SuspendLayout();
+            Line_W10_10L.SuspendLayout();
             panel77.SuspendLayout();
             panel79.SuspendLayout();
-            panel81.SuspendLayout();
+            Line_137.SuspendLayout();
             panel83.SuspendLayout();
             panel85.SuspendLayout();
             panel87.SuspendLayout();
@@ -364,6 +373,13 @@
             ((System.ComponentModel.ISupportInitialize)Track_89).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Track_W10_W).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Track_W10_E).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Track_W10_Track1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Track_W10_Track2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Track_W10_Track3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Track_W10_Track4).BeginInit();
+            Line_W10_SST.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)Track_137).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Track_W10_Track5).BeginInit();
             SuspendLayout();
             // 
             // Text_W01_SST
@@ -996,75 +1012,75 @@
             label63.TabIndex = 62;
             label63.Text = "回1234A";
             // 
-            // label64
+            // Text_W10_TST
             // 
-            label64.AutoSize = true;
-            label64.BackColor = Color.Transparent;
-            label64.Location = new Point(912, 162);
-            label64.Name = "label64";
-            label64.Size = new Size(47, 12);
-            label64.TabIndex = 63;
-            label64.Text = "回1234A";
+            Text_W10_TST.AutoSize = true;
+            Text_W10_TST.BackColor = Color.Transparent;
+            Text_W10_TST.Location = new Point(925, 162);
+            Text_W10_TST.Name = "Text_W10_TST";
+            Text_W10_TST.Size = new Size(47, 12);
+            Text_W10_TST.TabIndex = 63;
+            Text_W10_TST.Text = "回1234A";
             // 
-            // label65
+            // Text_W10_Track1
             // 
-            label65.AutoSize = true;
-            label65.BackColor = Color.Transparent;
-            label65.Location = new Point(986, 57);
-            label65.Name = "label65";
-            label65.Size = new Size(47, 12);
-            label65.TabIndex = 64;
-            label65.Text = "回1234A";
+            Text_W10_Track1.AutoSize = true;
+            Text_W10_Track1.BackColor = Color.Transparent;
+            Text_W10_Track1.Location = new Point(986, 57);
+            Text_W10_Track1.Name = "Text_W10_Track1";
+            Text_W10_Track1.Size = new Size(47, 12);
+            Text_W10_Track1.TabIndex = 64;
+            Text_W10_Track1.Text = "回1234A";
             // 
-            // label66
+            // Text_W10_Track2
             // 
-            label66.AutoSize = true;
-            label66.BackColor = Color.Transparent;
-            label66.Location = new Point(986, 84);
-            label66.Name = "label66";
-            label66.Size = new Size(47, 12);
-            label66.TabIndex = 65;
-            label66.Text = "回1234A";
+            Text_W10_Track2.AutoSize = true;
+            Text_W10_Track2.BackColor = Color.Transparent;
+            Text_W10_Track2.Location = new Point(986, 84);
+            Text_W10_Track2.Name = "Text_W10_Track2";
+            Text_W10_Track2.Size = new Size(47, 12);
+            Text_W10_Track2.TabIndex = 65;
+            Text_W10_Track2.Text = "回1234A";
             // 
-            // label67
+            // Text_W10_Track3
             // 
-            label67.AutoSize = true;
-            label67.BackColor = Color.Transparent;
-            label67.Location = new Point(975, 139);
-            label67.Name = "label67";
-            label67.Size = new Size(47, 12);
-            label67.TabIndex = 66;
-            label67.Text = "回1234A";
+            Text_W10_Track3.AutoSize = true;
+            Text_W10_Track3.BackColor = Color.Transparent;
+            Text_W10_Track3.Location = new Point(975, 139);
+            Text_W10_Track3.Name = "Text_W10_Track3";
+            Text_W10_Track3.Size = new Size(47, 12);
+            Text_W10_Track3.TabIndex = 66;
+            Text_W10_Track3.Text = "回1234A";
             // 
-            // label68
+            // Text_W10_Track4
             // 
-            label68.AutoSize = true;
-            label68.BackColor = Color.Transparent;
-            label68.Location = new Point(975, 166);
-            label68.Name = "label68";
-            label68.Size = new Size(47, 12);
-            label68.TabIndex = 67;
-            label68.Text = "回1234A";
+            Text_W10_Track4.AutoSize = true;
+            Text_W10_Track4.BackColor = Color.Transparent;
+            Text_W10_Track4.Location = new Point(975, 166);
+            Text_W10_Track4.Name = "Text_W10_Track4";
+            Text_W10_Track4.Size = new Size(47, 12);
+            Text_W10_Track4.TabIndex = 67;
+            Text_W10_Track4.Text = "回1234A";
             // 
-            // label69
+            // Text_W10_10L
             // 
-            label69.AutoSize = true;
-            label69.BackColor = Color.Transparent;
-            label69.Location = new Point(1032, 162);
-            label69.Name = "label69";
-            label69.Size = new Size(47, 12);
-            label69.TabIndex = 68;
-            label69.Text = "回1234A";
+            Text_W10_10L.AutoSize = true;
+            Text_W10_10L.BackColor = Color.Transparent;
+            Text_W10_10L.Location = new Point(1032, 162);
+            Text_W10_10L.Name = "Text_W10_10L";
+            Text_W10_10L.Size = new Size(47, 12);
+            Text_W10_10L.TabIndex = 68;
+            Text_W10_10L.Text = "回1234A";
             // 
-            // label70
+            // Text_W10_Track5
             // 
-            label70.AutoSize = true;
-            label70.BackColor = Color.Transparent;
-            label70.Location = new Point(1070, 76);
-            label70.Name = "label70";
-            label70.Size = new Size(47, 12);
-            label70.TabIndex = 69;
-            label70.Text = "回1234A";
+            Text_W10_Track5.AutoSize = true;
+            Text_W10_Track5.BackColor = Color.Transparent;
+            Text_W10_Track5.Location = new Point(1070, 76);
+            Text_W10_Track5.Name = "Text_W10_Track5";
+            Text_W10_Track5.Size = new Size(47, 12);
+            Text_W10_Track5.TabIndex = 69;
+            Text_W10_Track5.Text = "回1234A";
             // 
             // label71
             // 
@@ -1076,15 +1092,15 @@
             label71.TabIndex = 70;
             label71.Text = "回1234A";
             // 
-            // label72
+            // Text_137
             // 
-            label72.AutoSize = true;
-            label72.BackColor = Color.Transparent;
-            label72.Location = new Point(1108, 177);
-            label72.Name = "label72";
-            label72.Size = new Size(47, 12);
-            label72.TabIndex = 71;
-            label72.Text = "回1234A";
+            Text_137.AutoSize = true;
+            Text_137.BackColor = Color.Transparent;
+            Text_137.Location = new Point(1108, 177);
+            Text_137.Name = "Text_137";
+            Text_137.Size = new Size(47, 12);
+            Text_137.TabIndex = 71;
+            Text_137.Text = "回1234A";
             // 
             // label73
             // 
@@ -1739,13 +1755,13 @@
             panel64.Size = new Size(41, 18);
             panel64.TabIndex = 96;
             // 
-            // panel65
+            // Line_W10_TST
             // 
-            panel65.Controls.Add(panel66);
-            panel65.Location = new Point(914, 174);
-            panel65.Name = "panel65";
-            panel65.Size = new Size(41, 1);
-            panel65.TabIndex = 97;
+            Line_W10_TST.Controls.Add(panel66);
+            Line_W10_TST.Location = new Point(927, 174);
+            Line_W10_TST.Name = "Line_W10_TST";
+            Line_W10_TST.Size = new Size(41, 1);
+            Line_W10_TST.TabIndex = 97;
             // 
             // panel66
             // 
@@ -1756,56 +1772,56 @@
             // 
             // panel67
             // 
-            panel67.Controls.Add(panel68);
+            panel67.Controls.Add(Line_W10_Track1);
             panel67.Location = new Point(988, 69);
             panel67.Name = "panel67";
             panel67.Size = new Size(41, 1);
             panel67.TabIndex = 97;
             // 
-            // panel68
+            // Line_W10_Track1
             // 
-            panel68.Location = new Point(0, 0);
-            panel68.Name = "panel68";
-            panel68.Size = new Size(41, 18);
-            panel68.TabIndex = 96;
+            Line_W10_Track1.Location = new Point(0, 0);
+            Line_W10_Track1.Name = "Line_W10_Track1";
+            Line_W10_Track1.Size = new Size(41, 18);
+            Line_W10_Track1.TabIndex = 96;
             // 
             // panel69
             // 
-            panel69.Controls.Add(panel70);
+            panel69.Controls.Add(Line_W10_Track2);
             panel69.Location = new Point(988, 96);
             panel69.Name = "panel69";
             panel69.Size = new Size(41, 1);
             panel69.TabIndex = 97;
             // 
-            // panel70
+            // Line_W10_Track2
             // 
-            panel70.Location = new Point(0, 0);
-            panel70.Name = "panel70";
-            panel70.Size = new Size(41, 18);
-            panel70.TabIndex = 96;
+            Line_W10_Track2.Location = new Point(0, 0);
+            Line_W10_Track2.Name = "Line_W10_Track2";
+            Line_W10_Track2.Size = new Size(41, 18);
+            Line_W10_Track2.TabIndex = 96;
             // 
             // panel71
             // 
-            panel71.Controls.Add(panel72);
+            panel71.Controls.Add(Line_W10_Track3);
             panel71.Location = new Point(977, 151);
             panel71.Name = "panel71";
             panel71.Size = new Size(41, 1);
             panel71.TabIndex = 97;
             // 
-            // panel72
+            // Line_W10_Track3
             // 
-            panel72.Location = new Point(0, 0);
-            panel72.Name = "panel72";
-            panel72.Size = new Size(41, 18);
-            panel72.TabIndex = 96;
+            Line_W10_Track3.Location = new Point(0, 0);
+            Line_W10_Track3.Name = "Line_W10_Track3";
+            Line_W10_Track3.Size = new Size(41, 18);
+            Line_W10_Track3.TabIndex = 96;
             // 
-            // panel73
+            // Line_W10_Track4
             // 
-            panel73.Controls.Add(panel74);
-            panel73.Location = new Point(977, 178);
-            panel73.Name = "panel73";
-            panel73.Size = new Size(41, 1);
-            panel73.TabIndex = 97;
+            Line_W10_Track4.Controls.Add(panel74);
+            Line_W10_Track4.Location = new Point(977, 178);
+            Line_W10_Track4.Name = "Line_W10_Track4";
+            Line_W10_Track4.Size = new Size(41, 1);
+            Line_W10_Track4.TabIndex = 97;
             // 
             // panel74
             // 
@@ -1814,13 +1830,13 @@
             panel74.Size = new Size(41, 18);
             panel74.TabIndex = 96;
             // 
-            // panel75
+            // Line_W10_10L
             // 
-            panel75.Controls.Add(panel76);
-            panel75.Location = new Point(1034, 174);
-            panel75.Name = "panel75";
-            panel75.Size = new Size(41, 1);
-            panel75.TabIndex = 97;
+            Line_W10_10L.Controls.Add(panel76);
+            Line_W10_10L.Location = new Point(1034, 174);
+            Line_W10_10L.Name = "Line_W10_10L";
+            Line_W10_10L.Size = new Size(41, 1);
+            Line_W10_10L.TabIndex = 97;
             // 
             // panel76
             // 
@@ -1831,18 +1847,18 @@
             // 
             // panel77
             // 
-            panel77.Controls.Add(panel78);
+            panel77.Controls.Add(Line_W10_Track5);
             panel77.Location = new Point(1072, 88);
             panel77.Name = "panel77";
             panel77.Size = new Size(41, 1);
             panel77.TabIndex = 97;
             // 
-            // panel78
+            // Line_W10_Track5
             // 
-            panel78.Location = new Point(0, 0);
-            panel78.Name = "panel78";
-            panel78.Size = new Size(41, 18);
-            panel78.TabIndex = 96;
+            Line_W10_Track5.Location = new Point(0, 0);
+            Line_W10_Track5.Name = "Line_W10_Track5";
+            Line_W10_Track5.Size = new Size(41, 18);
+            Line_W10_Track5.TabIndex = 96;
             // 
             // panel79
             // 
@@ -1859,13 +1875,13 @@
             panel80.Size = new Size(41, 18);
             panel80.TabIndex = 96;
             // 
-            // panel81
+            // Line_137
             // 
-            panel81.Controls.Add(panel82);
-            panel81.Location = new Point(1110, 189);
-            panel81.Name = "panel81";
-            panel81.Size = new Size(41, 1);
-            panel81.TabIndex = 97;
+            Line_137.Controls.Add(panel82);
+            Line_137.Location = new Point(1110, 189);
+            Line_137.Name = "Line_137";
+            Line_137.Size = new Size(41, 1);
+            Line_137.TabIndex = 97;
             // 
             // panel82
             // 
@@ -2601,7 +2617,7 @@
             // 
             Track_W10_W.BackColor = Color.Transparent;
             Track_W10_W.BackgroundImageLayout = ImageLayout.None;
-            Track_W10_W.Image = Properties.Resources.TID_Track_W10_3L_YR;
+            Track_W10_W.Image = Properties.Resources.TID_Track_W10_3L_Y;
             Track_W10_W.Location = new Point(931, 72);
             Track_W10_W.Name = "Track_W10_W";
             Track_W10_W.Size = new Size(57, 92);
@@ -2612,7 +2628,7 @@
             // 
             Track_W10_E.BackColor = Color.Transparent;
             Track_W10_E.BackgroundImageLayout = ImageLayout.None;
-            Track_W10_E.Image = Properties.Resources.TID_Track_W10_35LD_YR;
+            Track_W10_E.Image = Properties.Resources.TID_Track_W10_35LD_Y;
             Track_W10_E.Location = new Point(1018, 72);
             Track_W10_E.Name = "Track_W10_E";
             Track_W10_E.Size = new Size(111, 92);
@@ -2670,22 +2686,107 @@
             panel5.Size = new Size(41, 1);
             panel5.TabIndex = 96;
             // 
-            // label10
+            // Text_W10_1R
             // 
-            label10.AutoSize = true;
-            label10.BackColor = Color.Transparent;
-            label10.Location = new Point(936, 61);
-            label10.Name = "label10";
-            label10.Size = new Size(47, 12);
-            label10.TabIndex = 58;
-            label10.Text = "回1234A";
+            Text_W10_1R.AutoSize = true;
+            Text_W10_1R.BackColor = Color.Transparent;
+            Text_W10_1R.Location = new Point(936, 61);
+            Text_W10_1R.Name = "Text_W10_1R";
+            Text_W10_1R.Size = new Size(47, 12);
+            Text_W10_1R.TabIndex = 58;
+            Text_W10_1R.Text = "回1234A";
             // 
-            // panel6
+            // Line_W10_1R
             // 
-            panel6.Location = new Point(938, 73);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(41, 1);
-            panel6.TabIndex = 96;
+            Line_W10_1R.Location = new Point(938, 73);
+            Line_W10_1R.Name = "Line_W10_1R";
+            Line_W10_1R.Size = new Size(41, 1);
+            Line_W10_1R.TabIndex = 96;
+            // 
+            // Track_W10_Track1
+            // 
+            Track_W10_Track1.BackColor = Color.Transparent;
+            Track_W10_Track1.Image = Properties.Resources.TID_Track_F_W;
+            Track_W10_Track1.Location = new Point(988, 72);
+            Track_W10_Track1.Name = "Track_W10_Track1";
+            Track_W10_Track1.Size = new Size(41, 2);
+            Track_W10_Track1.TabIndex = 100;
+            Track_W10_Track1.TabStop = false;
+            // 
+            // Track_W10_Track2
+            // 
+            Track_W10_Track2.BackColor = Color.Transparent;
+            Track_W10_Track2.Image = Properties.Resources.TID_Track_F_W;
+            Track_W10_Track2.Location = new Point(988, 99);
+            Track_W10_Track2.Name = "Track_W10_Track2";
+            Track_W10_Track2.Size = new Size(41, 2);
+            Track_W10_Track2.TabIndex = 100;
+            Track_W10_Track2.TabStop = false;
+            // 
+            // Track_W10_Track3
+            // 
+            Track_W10_Track3.BackColor = Color.Transparent;
+            Track_W10_Track3.Image = Properties.Resources.TID_Track_F_W;
+            Track_W10_Track3.Location = new Point(977, 135);
+            Track_W10_Track3.Name = "Track_W10_Track3";
+            Track_W10_Track3.Size = new Size(41, 2);
+            Track_W10_Track3.TabIndex = 100;
+            Track_W10_Track3.TabStop = false;
+            // 
+            // Track_W10_Track4
+            // 
+            Track_W10_Track4.BackColor = Color.Transparent;
+            Track_W10_Track4.Image = Properties.Resources.TID_Track_F_W;
+            Track_W10_Track4.Location = new Point(977, 162);
+            Track_W10_Track4.Name = "Track_W10_Track4";
+            Track_W10_Track4.Size = new Size(41, 2);
+            Track_W10_Track4.TabIndex = 100;
+            Track_W10_Track4.TabStop = false;
+            // 
+            // Text_W10_SST
+            // 
+            Text_W10_SST.AutoSize = true;
+            Text_W10_SST.BackColor = Color.Transparent;
+            Text_W10_SST.Location = new Point(1033, 46);
+            Text_W10_SST.Name = "Text_W10_SST";
+            Text_W10_SST.Size = new Size(47, 12);
+            Text_W10_SST.TabIndex = 68;
+            Text_W10_SST.Text = "回1234A";
+            // 
+            // Line_W10_SST
+            // 
+            Line_W10_SST.Controls.Add(panel7);
+            Line_W10_SST.Location = new Point(1035, 58);
+            Line_W10_SST.Name = "Line_W10_SST";
+            Line_W10_SST.Size = new Size(41, 1);
+            Line_W10_SST.TabIndex = 97;
+            // 
+            // panel7
+            // 
+            panel7.Location = new Point(0, 0);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(41, 18);
+            panel7.TabIndex = 96;
+            // 
+            // Track_137
+            // 
+            Track_137.BackColor = Color.Transparent;
+            Track_137.Image = Properties.Resources.TID_Track_F_R;
+            Track_137.Location = new Point(1110, 135);
+            Track_137.Name = "Track_137";
+            Track_137.Size = new Size(34, 2);
+            Track_137.TabIndex = 108;
+            Track_137.TabStop = false;
+            // 
+            // Track_W10_Track5
+            // 
+            Track_W10_Track5.BackColor = Color.Transparent;
+            Track_W10_Track5.Image = Properties.Resources.TID_Track_F_W;
+            Track_W10_Track5.Location = new Point(1072, 72);
+            Track_W10_Track5.Name = "Track_W10_Track5";
+            Track_W10_Track5.Size = new Size(41, 2);
+            Track_W10_Track5.TabIndex = 100;
+            Track_W10_Track5.TabStop = false;
             // 
             // TIDWindow
             // 
@@ -2717,6 +2818,7 @@
             Controls.Add(Track_42);
             Controls.Add(Track_36);
             Controls.Add(Track_30);
+            Controls.Add(Track_137);
             Controls.Add(Track_26);
             Controls.Add(Track_9);
             Controls.Add(Track_8);
@@ -2727,6 +2829,11 @@
             Controls.Add(Track_W01_Track2);
             Controls.Add(Track_W06_Track4);
             Controls.Add(Track_W06_Track3);
+            Controls.Add(Track_W10_Track4);
+            Controls.Add(Track_W10_Track3);
+            Controls.Add(Track_W10_Track2);
+            Controls.Add(Track_W10_Track5);
+            Controls.Add(Track_W10_Track1);
             Controls.Add(Track_W06_Track2);
             Controls.Add(Track_W06_Track1);
             Controls.Add(Track_W01_Track1);
@@ -2751,20 +2858,21 @@
             Controls.Add(panel87);
             Controls.Add(panel85);
             Controls.Add(panel83);
-            Controls.Add(panel81);
+            Controls.Add(Line_137);
             Controls.Add(panel79);
             Controls.Add(panel77);
-            Controls.Add(panel75);
-            Controls.Add(panel73);
+            Controls.Add(Line_W10_SST);
+            Controls.Add(Line_W10_10L);
+            Controls.Add(Line_W10_Track4);
             Controls.Add(panel71);
             Controls.Add(panel69);
             Controls.Add(panel67);
-            Controls.Add(panel65);
+            Controls.Add(Line_W10_TST);
             Controls.Add(panel63);
             Controls.Add(panel62);
             Controls.Add(panel61);
             Controls.Add(panel60);
-            Controls.Add(panel6);
+            Controls.Add(Line_W10_1R);
             Controls.Add(panel5);
             Controls.Add(panel4);
             Controls.Add(panel59);
@@ -2848,17 +2956,18 @@
             Controls.Add(label75);
             Controls.Add(label74);
             Controls.Add(label73);
-            Controls.Add(label72);
+            Controls.Add(Text_137);
             Controls.Add(label71);
-            Controls.Add(label70);
-            Controls.Add(label69);
-            Controls.Add(label68);
-            Controls.Add(label67);
-            Controls.Add(label66);
-            Controls.Add(label65);
-            Controls.Add(label64);
+            Controls.Add(Text_W10_Track5);
+            Controls.Add(Text_W10_SST);
+            Controls.Add(Text_W10_10L);
+            Controls.Add(Text_W10_Track4);
+            Controls.Add(Text_W10_Track3);
+            Controls.Add(Text_W10_Track2);
+            Controls.Add(Text_W10_Track1);
+            Controls.Add(Text_W10_TST);
             Controls.Add(label63);
-            Controls.Add(label10);
+            Controls.Add(Text_W10_1R);
             Controls.Add(label62);
             Controls.Add(label3);
             Controls.Add(label61);
@@ -2937,15 +3046,15 @@
             Text = "TIDWindow";
             Load += TIDWindow_Load;
             panel63.ResumeLayout(false);
-            panel65.ResumeLayout(false);
+            Line_W10_TST.ResumeLayout(false);
             panel67.ResumeLayout(false);
             panel69.ResumeLayout(false);
             panel71.ResumeLayout(false);
-            panel73.ResumeLayout(false);
-            panel75.ResumeLayout(false);
+            Line_W10_Track4.ResumeLayout(false);
+            Line_W10_10L.ResumeLayout(false);
             panel77.ResumeLayout(false);
             panel79.ResumeLayout(false);
-            panel81.ResumeLayout(false);
+            Line_137.ResumeLayout(false);
             panel83.ResumeLayout(false);
             panel85.ResumeLayout(false);
             panel87.ResumeLayout(false);
@@ -3005,6 +3114,13 @@
             ((System.ComponentModel.ISupportInitialize)Track_89).EndInit();
             ((System.ComponentModel.ISupportInitialize)Track_W10_W).EndInit();
             ((System.ComponentModel.ISupportInitialize)Track_W10_E).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Track_W10_Track1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Track_W10_Track2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Track_W10_Track3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Track_W10_Track4).EndInit();
+            Line_W10_SST.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)Track_137).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Track_W10_Track5).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -3074,15 +3190,15 @@
         private Label label61;
         private Label label62;
         private Label label63;
-        private Label label64;
-        private Label label65;
-        private Label label66;
-        private Label label67;
-        private Label label68;
-        private Label label69;
-        private Label label70;
+        private Label Text_W10_TST;
+        private Label Text_W10_Track1;
+        private Label Text_W10_Track2;
+        private Label Text_W10_Track3;
+        private Label Text_W10_Track4;
+        private Label Text_W10_10L;
+        private Label Text_W10_Track5;
         private Label label71;
-        private Label label72;
+        private Label Text_137;
         private Label label73;
         private Label label74;
         private Label label75;
@@ -3167,23 +3283,23 @@
         private Panel panel62;
         private Panel panel63;
         private Panel panel64;
-        private Panel panel65;
+        private Panel Line_W10_TST;
         private Panel panel66;
         private Panel panel67;
-        private Panel panel68;
+        private Panel Line_W10_Track1;
         private Panel panel69;
-        private Panel panel70;
+        private Panel Line_W10_Track2;
         private Panel panel71;
-        private Panel panel72;
-        private Panel panel73;
+        private Panel Line_W10_Track3;
+        private Panel Line_W10_Track4;
         private Panel panel74;
-        private Panel panel75;
+        private Panel Line_W10_10L;
         private Panel panel76;
         private Panel panel77;
-        private Panel panel78;
+        private Panel Line_W10_Track5;
         private Panel panel79;
         private Panel panel80;
-        private Panel panel81;
+        private Panel Line_137;
         private Panel panel82;
         private Panel panel83;
         private Panel panel84;
@@ -3289,7 +3405,16 @@
         private Panel panel4;
         private Label label3;
         private Panel panel5;
-        private Label label10;
-        private Panel panel6;
+        private Label Text_W10_1R;
+        private Panel Line_W10_1R;
+        private PictureBox Track_W10_Track1;
+        private PictureBox Track_W10_Track2;
+        private PictureBox Track_W10_Track3;
+        private PictureBox Track_W10_Track4;
+        private Label Text_W10_SST;
+        private Panel Line_W10_SST;
+        private Panel panel7;
+        private PictureBox Track_137;
+        private PictureBox Track_W10_Track5;
     }
 }

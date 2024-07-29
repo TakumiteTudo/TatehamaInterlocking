@@ -138,6 +138,7 @@
             button8.TabIndex = 8;
             button8.Text = "全線TID";
             button8.UseVisualStyleBackColor = false;
+            button8.Click += button8_Click;
             // 
             // MainWindow
             // 

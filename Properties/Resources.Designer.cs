@@ -973,6 +973,16 @@ namespace TatehamaInterlocking.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
+        internal static System.Drawing.Bitmap TID_Track_W10_10LC_R {
+            get {
+                object obj = ResourceManager.GetObject("TID_Track_W10_10LC_R", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
         internal static System.Drawing.Bitmap TID_Track_W10_10LC_Y {
             get {
                 object obj = ResourceManager.GetObject("TID_Track_W10_10LC_Y", resourceCulture);
@@ -983,9 +993,9 @@ namespace TatehamaInterlocking.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
-        internal static System.Drawing.Bitmap TID_Track_W10_10LC_YR {
+        internal static System.Drawing.Bitmap TID_Track_W10_10LD_R {
             get {
-                object obj = ResourceManager.GetObject("TID_Track_W10_10LC_YR", resourceCulture);
+                object obj = ResourceManager.GetObject("TID_Track_W10_10LD_R", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1003,9 +1013,9 @@ namespace TatehamaInterlocking.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
-        internal static System.Drawing.Bitmap TID_Track_W10_10LD_YR {
+        internal static System.Drawing.Bitmap TID_Track_W10_1RA_R {
             get {
-                object obj = ResourceManager.GetObject("TID_Track_W10_10LD_YR", resourceCulture);
+                object obj = ResourceManager.GetObject("TID_Track_W10_1RA_R", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1023,9 +1033,9 @@ namespace TatehamaInterlocking.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
-        internal static System.Drawing.Bitmap TID_Track_W10_1RA_YR {
+        internal static System.Drawing.Bitmap TID_Track_W10_1RB_R {
             get {
-                object obj = ResourceManager.GetObject("TID_Track_W10_1RA_YR", resourceCulture);
+                object obj = ResourceManager.GetObject("TID_Track_W10_1RB_R", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1043,9 +1053,9 @@ namespace TatehamaInterlocking.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
-        internal static System.Drawing.Bitmap TID_Track_W10_1RB_YR {
+        internal static System.Drawing.Bitmap TID_Track_W10_2L_R {
             get {
-                object obj = ResourceManager.GetObject("TID_Track_W10_1RB_YR", resourceCulture);
+                object obj = ResourceManager.GetObject("TID_Track_W10_2L_R", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1063,9 +1073,9 @@ namespace TatehamaInterlocking.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
-        internal static System.Drawing.Bitmap TID_Track_W10_2L_YR {
+        internal static System.Drawing.Bitmap TID_Track_W10_33R_R {
             get {
-                object obj = ResourceManager.GetObject("TID_Track_W10_2L_YR", resourceCulture);
+                object obj = ResourceManager.GetObject("TID_Track_W10_33R_R", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1083,9 +1093,9 @@ namespace TatehamaInterlocking.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
-        internal static System.Drawing.Bitmap TID_Track_W10_33R_YR {
+        internal static System.Drawing.Bitmap TID_Track_W10_34R_R {
             get {
-                object obj = ResourceManager.GetObject("TID_Track_W10_33R_YR", resourceCulture);
+                object obj = ResourceManager.GetObject("TID_Track_W10_34R_R", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1103,9 +1113,9 @@ namespace TatehamaInterlocking.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
-        internal static System.Drawing.Bitmap TID_Track_W10_34R_YR {
+        internal static System.Drawing.Bitmap TID_Track_W10_35LC_R {
             get {
-                object obj = ResourceManager.GetObject("TID_Track_W10_34R_YR", resourceCulture);
+                object obj = ResourceManager.GetObject("TID_Track_W10_35LC_R", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1123,9 +1133,9 @@ namespace TatehamaInterlocking.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
-        internal static System.Drawing.Bitmap TID_Track_W10_35LC_YR {
+        internal static System.Drawing.Bitmap TID_Track_W10_35LD_R {
             get {
-                object obj = ResourceManager.GetObject("TID_Track_W10_35LC_YR", resourceCulture);
+                object obj = ResourceManager.GetObject("TID_Track_W10_35LD_R", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1143,9 +1153,9 @@ namespace TatehamaInterlocking.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
-        internal static System.Drawing.Bitmap TID_Track_W10_35LD_YR {
+        internal static System.Drawing.Bitmap TID_Track_W10_3L_R {
             get {
-                object obj = ResourceManager.GetObject("TID_Track_W10_35LD_YR", resourceCulture);
+                object obj = ResourceManager.GetObject("TID_Track_W10_3L_R", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1163,9 +1173,9 @@ namespace TatehamaInterlocking.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
-        internal static System.Drawing.Bitmap TID_Track_W10_3L_YR {
+        internal static System.Drawing.Bitmap TID_Track_W10_6R_R {
             get {
-                object obj = ResourceManager.GetObject("TID_Track_W10_3L_YR", resourceCulture);
+                object obj = ResourceManager.GetObject("TID_Track_W10_6R_R", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1183,9 +1193,9 @@ namespace TatehamaInterlocking.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
-        internal static System.Drawing.Bitmap TID_Track_W10_6R_YR {
+        internal static System.Drawing.Bitmap TID_Track_W10_7R_R {
             get {
-                object obj = ResourceManager.GetObject("TID_Track_W10_6R_YR", resourceCulture);
+                object obj = ResourceManager.GetObject("TID_Track_W10_7R_R", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1203,9 +1213,9 @@ namespace TatehamaInterlocking.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
-        internal static System.Drawing.Bitmap TID_Track_W10_7R_YR {
+        internal static System.Drawing.Bitmap TID_Track_W10_8R_R {
             get {
-                object obj = ResourceManager.GetObject("TID_Track_W10_7R_YR", resourceCulture);
+                object obj = ResourceManager.GetObject("TID_Track_W10_8R_R", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1223,9 +1233,9 @@ namespace TatehamaInterlocking.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
-        internal static System.Drawing.Bitmap TID_Track_W10_8R_YR {
+        internal static System.Drawing.Bitmap TID_Track_W10_9R_R {
             get {
-                object obj = ResourceManager.GetObject("TID_Track_W10_8R_YR", resourceCulture);
+                object obj = ResourceManager.GetObject("TID_Track_W10_9R_R", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1236,16 +1246,6 @@ namespace TatehamaInterlocking.Properties {
         internal static System.Drawing.Bitmap TID_Track_W10_9R_Y {
             get {
                 object obj = ResourceManager.GetObject("TID_Track_W10_9R_Y", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static System.Drawing.Bitmap TID_Track_W10_9R_YR {
-            get {
-                object obj = ResourceManager.GetObject("TID_Track_W10_9R_YR", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

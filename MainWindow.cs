@@ -3,6 +3,7 @@ using System.Drawing.Text;
 using System.Linq.Expressions;
 using System.Net.Sockets;
 using System.Reflection;
+using TatehamaInterlocking.TID;
 using TatehamaInterlocking.Tsuzaki;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using MethodInvoker = System.Windows.Forms.MethodInvoker;
@@ -11,28 +12,33 @@ namespace TatehamaInterlocking
 {
     public partial class MainWindow : Form
     {
-        private bool showtsuzakiWindow;
 
         static internal Dictionary<string, PictureBox> RouteButtonList = new Dictionary<string, PictureBox>();
         static internal Dictionary<string, Image> RouteButtonImage0 = new Dictionary<string, Image>();
         static internal Dictionary<string, Image> RouteButtonImage1 = new Dictionary<string, Image>();
 
+        private bool showtsuzakiWindow;
         static private TsuzakiWindow tsuzakiWindow = new TsuzakiWindow();
         private bool showshinNozakiWindow;
         static private ShinNozakiWindow shinNozakiWindow = new ShinNozakiWindow();
         private bool showdee;
         static private Dee Dee = new Dee();
+        private bool showTIDWindow;
+        static private TIDWindow TIDWindow = new TIDWindow();
         static private Socket socket = new Socket(Program.ServerAddress);
 
         public MainWindow()
         {
             InitializeComponent();
             tsuzakiWindow.Show();
-            shinNozakiWindow.Show();
             tsuzakiWindow.Hide();
+            shinNozakiWindow.Show();
             shinNozakiWindow.Hide();
+            TIDWindow.Show();
+            TIDWindow.Hide();
             showtsuzakiWindow = false;
             showshinNozakiWindow = false;
+            showTIDWindow = false;
             showdee = false;
             LoadCustomFont();
         }
@@ -137,6 +143,7 @@ namespace TatehamaInterlocking
                 //ç›ê¸óÒî‘ï\é¶çXêV
                 tsuzakiWindow.TrackChenge(info, first);
                 shinNozakiWindow.TrackChenge(info, first);
+                TIDWindow.TrackChenge(info);
                 if (!info.isClosure)
                 {
                     tsuzakiWindow.SignalChenge(info);
@@ -202,6 +209,19 @@ namespace TatehamaInterlocking
             else
             {
                 Dee.Hide();
+            }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            showTIDWindow = !showTIDWindow;
+            if (showTIDWindow)
+            {
+                TIDWindow.Show();
+            }
+            else
+            {
+                TIDWindow.Hide();
             }
         }
     }

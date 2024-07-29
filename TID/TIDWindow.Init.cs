@@ -41,6 +41,10 @@ namespace TatehamaInterlocking.TID
 
 
 
+            var TrackNo137 = new CommonTrack(Text_137, Line_137, Track_137, null);
+            TrackList["下り閉塞137"] = TrackNo137;
+            // 新野崎
+
             var TrackNo89 = new CommonTrack(Text_89, Line_89, Track_89, null);
             TrackList["下り閉塞89"] = TrackNo89;
 
@@ -188,8 +192,6 @@ namespace TatehamaInterlocking.TID
                 }
             );
 
-
-
             TrackList["津崎上り場内1RB"] = TsuzakiW;
             TrackList["津崎上り場内1RA"] = TsuzakiW;
             TrackList["津崎下り出発1L"] = TsuzakiW;
@@ -198,6 +200,112 @@ namespace TatehamaInterlocking.TID
             TrackList["津崎上り出発3R"] = TsuzakiE;
             TrackList["津崎下り場内3LA"] = TsuzakiE;
             TrackList["津崎下り場内3LB"] = TsuzakiE;
+
+            //新野崎   
+            var W10_Track1 = new CommonTrack(Text_W10_Track1, Line_W10_Track1, Track_W10_Track1, null);
+            var W10_Track2 = new CommonTrack(Text_W10_Track2, Line_W10_Track2, Track_W10_Track2, null);
+            var W10_Track3 = new CommonTrack(Text_W10_Track3, Line_W10_Track3, Track_W10_Track3, null);
+            var W10_Track4 = new CommonTrack(Text_W10_Track4, Line_W10_Track4, Track_W10_Track4, null);
+
+            var ShinNozakiW = new StationNearTrack
+            (
+                new CommonTrack(Text_W10_1R, Line_W10_1R, null, null),
+                new CommonTrack(Text_W10_TST, Line_W10_TST, null, null),
+                Track_W10_W, TrackNo74,
+                new Dictionary<string, string>
+                {
+                                {"新野崎上り場内1RB", "1番線" }  ,
+                                {"新野崎上り場内1RA", "2番線" }
+                },
+                new Dictionary<string, string>
+                {
+                                {"新野崎下り出発1L", "3番線" }  ,
+                                {"新野崎下り出発2L", "4番線" }
+                },
+                new Dictionary<string, TIDTrack>
+                {
+                                            {"1番線", W10_Track1 },
+                                            {"2番線", W10_Track2 },
+                                            {"3番線", W10_Track3 },
+                                            {"4番線", W10_Track4 }
+                },
+                new Dictionary<string, Image>{
+                                {"新野崎上り場内1RB", Properties.Resources.TID_Track_W10_1RA_Y } ,
+                                {"新野崎上り場内1RA", Properties.Resources.TID_Track_W10_1RB_Y } ,
+                                {"新野崎下り出発1L", Properties.Resources.TID_Track_W10_2L_Y } ,
+                                {"新野崎下り出発2L", Properties.Resources.TID_Track_W10_3L_Y }
+                },
+                new Dictionary<string, Image>{
+                                {"新野崎上り場内1RB", Properties.Resources.TID_Track_W10_1RA_R } ,
+                                {"新野崎上り場内1RA", Properties.Resources.TID_Track_W10_1RB_R } ,
+                                {"新野崎下り出発1L", Properties.Resources.TID_Track_W10_2L_R } ,
+                                {"新野崎下り出発2L", Properties.Resources.TID_Track_W10_3L_R }
+                }
+            );
+            var ShinNozakiE = new StationNearTrack
+            (
+            new CommonTrack(Text_W10_10L, Line_W10_10L, null, null),
+            new CommonTrack(Text_W10_SST, Line_W10_SST, null, null),
+            Track_W10_E, TrackNo137,
+            new Dictionary<string, string>
+            {
+                                            {"新野崎下り場内3L", "3番線" } ,
+                                            {"新野崎下り場内4L", "4番線" } ,
+                                            {"新野崎入換104L", "4番線" },
+                                            {"新野崎入換111R", "5番線" }
+            },
+            new Dictionary<string, string>
+            {
+                                            {"新野崎上り出発11R", "1番線" } ,
+                                            {"新野崎上り出発12R", "2番線" } ,
+                                            {"新野崎入換111R", "1番線" }
+            },
+            new Dictionary<string, TIDTrack>
+            {
+                                                        {"1番線", W10_Track1 },
+                                                        {"2番線", W10_Track2 },
+                                                        {"3番線", W10_Track3 },
+                                                        {"4番線", W10_Track4 },
+                                            {"5番線", new CommonTrack(Text_W10_Track5, Line_W10_Track5, Track_W10_Track5, null) }
+            },
+            new Dictionary<string, Image>{
+                                            {"新野崎下り場内3L", TIDTrack.TransPng } ,
+                                            {"新野崎下り場内4L", TIDTrack.TransPng } ,
+                                            {"新野崎上り出発11R", Properties.Resources.TID_Track_W10_8R_Y } ,
+                                            {"新野崎上り出発12R", Properties.Resources.TID_Track_W10_9R_Y } ,
+                                            {"新野崎下り場内5LA", Properties.Resources.TID_Track_W10_10LC_Y } ,
+                                            {"新野崎下り場内5LB", Properties.Resources.TID_Track_W10_10LD_Y } ,
+                                            {"新野崎入換104L", TIDTrack.TransPng } ,
+                                            {"新野崎入換111R", Properties.Resources.TID_Track_W10_33R_Y } ,
+                                            {"新野崎入換101L", Properties.Resources.TID_Track_W10_35LD_Y } ,
+            },
+            new Dictionary<string, Image>{
+                                            {"新野崎下り場内3L", TIDTrack.TransPng } ,
+                                            {"新野崎下り場内4L", TIDTrack.TransPng } ,
+                                            {"新野崎上り出発11R", Properties.Resources.TID_Track_W10_8R_R } ,
+                                            {"新野崎上り出発12R", Properties.Resources.TID_Track_W10_9R_R } ,
+                                            {"新野崎下り場内5LA", Properties.Resources.TID_Track_W10_10LC_R } ,
+                                            {"新野崎下り場内5LB", Properties.Resources.TID_Track_W10_10LD_R } ,
+                                            {"新野崎入換104L", TIDTrack.TransPng } ,
+                                            {"新野崎入換111R", Properties.Resources.TID_Track_W10_33R_R } ,
+                                            {"新野崎入換101L", Properties.Resources.TID_Track_W10_35LD_R } ,
+            }
+            );
+
+            TrackList["新野崎上り場内1RB"] = ShinNozakiW;
+            TrackList["新野崎上り場内1RA"] = ShinNozakiW;
+            TrackList["新野崎下り出発1L"] = ShinNozakiW;
+            TrackList["新野崎下り出発2L"] = ShinNozakiW;
+            TrackList["新野崎下り場内3L"] = ShinNozakiE;
+            TrackList["新野崎下り場内4L"] = ShinNozakiE;
+            TrackList["新野崎上り出発11R"] = ShinNozakiE;
+            TrackList["新野崎上り出発12R"] = ShinNozakiE;
+            TrackList["新野崎下り場内5LA"] = ShinNozakiE;
+            TrackList["新野崎下り場内5LB"] = ShinNozakiE;
+            TrackList["新野崎入換104L"] = ShinNozakiE;
+            TrackList["新野崎入換111R"] = ShinNozakiE;
+            TrackList["新野崎入換101L"] = ShinNozakiE;
+
 
 
             var W12_Track1 = new CommonTrack(Text_W12_Track1, Line_W12_Track1, Track_W12_Track1, null);
