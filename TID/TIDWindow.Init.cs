@@ -39,6 +39,13 @@ namespace TatehamaInterlocking.TID
             var TrackNo156 = new CommonTrack(Text_156, Line_156, Track_156, null);
             TrackList["上り閉塞156"] = TrackNo156;
 
+
+
+            var TrackNo89 = new CommonTrack(Text_89, Line_89, Track_89, null);
+            TrackList["下り閉塞89"] = TrackNo89;
+
+            //津崎    
+
             var TrackNo9 = new CommonTrack(Text_9, Line_9, Track_9, null);
             TrackList["下り閉塞9"] = TrackNo9;
             var TrackNo7 = new CommonTrack(Text_7, Line_7, Track_7, TrackNo9);
@@ -101,6 +108,97 @@ namespace TatehamaInterlocking.TID
             TrackList["館浜下り場内1LB"] = TatehamaE;
             TrackList["館浜下り場内1LC"] = TatehamaE;
             TrackList["館浜下り場内1LD"] = TatehamaE;
+               
+
+             //津崎   
+            var W06_Track1 = new CommonTrack(Text_W06_Track1, Line_W06_Track1, Track_W06_Track1, null);
+            var W06_Track2 = new CommonTrack(Text_W06_Track2, Line_W06_Track2, Track_W06_Track2, null);
+            var W06_Track3 = new CommonTrack(Text_W06_Track3, Line_W06_Track3, Track_W06_Track3, null);
+            var W06_Track4 = new CommonTrack(Text_W06_Track4, Line_W06_Track4, Track_W06_Track4, null);
+
+            var TsuzakiW = new StationNearTrack
+            (
+                new CommonTrack(Text_W06_1R, Line_W06_1R, null, null),
+                new CommonTrack(Text_W06_TST, Line_W06_TST, null, null),
+                Track_W06_W, TrackNo74,
+                new Dictionary<string, string>
+                {
+                    {"津崎上り場内1RB", "1番線" }  ,
+                    {"津崎上り場内1RA", "2番線" }
+                },
+                new Dictionary<string, string>
+                {
+                    {"津崎下り出発1L", "3番線" }  ,
+                    {"津崎下り出発2L", "4番線" }
+                },
+                new Dictionary<string, TIDTrack>
+                {
+                                {"1番線", W06_Track1 },
+                                {"2番線", W06_Track2 },
+                                {"3番線", W06_Track3 },
+                                {"4番線", W06_Track4 }
+                },
+                new Dictionary<string, Image>{
+                    {"津崎上り場内1RB", Properties.Resources.TID_Track_W06_1RA_Y } ,
+                    {"津崎上り場内1RA", Properties.Resources.TID_Track_W06_1RB_Y } ,
+                    {"津崎下り出発1L", Properties.Resources.TID_Track_W06_2L_Y } ,
+                    {"津崎下り出発2L", Properties.Resources.TID_Track_W06_3L_Y }
+                },
+                new Dictionary<string, Image>{
+                    {"津崎上り場内1RB", Properties.Resources.TID_Track_W06_1RA_R } ,
+                    {"津崎上り場内1RA", Properties.Resources.TID_Track_W06_1RB_R } ,
+                    {"津崎下り出発1L", Properties.Resources.TID_Track_W06_2L_R } ,
+                    {"津崎下り出発2L", Properties.Resources.TID_Track_W06_3L_R }
+                }
+            );
+
+            var TsuzakiE = new StationNearTrack
+            (
+                new CommonTrack(Text_W06_6L, Line_W06_6L, null, null),
+                new CommonTrack(Text_W06_SST, Line_W06_SST, null, null),
+                Track_W06_E, TrackNo89,
+                new Dictionary<string, string>
+                {
+                                {"津崎下り場内3LA", "3番線" }  ,
+                                {"津崎下り場内3LB", "4番線" }
+                },
+                new Dictionary<string, string>
+                {
+                                {"津崎上り出発2R", "1番線" }  ,
+                                {"津崎上り出発3R", "2番線" }
+                },
+                new Dictionary<string, TIDTrack>
+                {
+                                            {"1番線", W06_Track1 },
+                                            {"2番線", W06_Track2 },
+                                            {"3番線", W06_Track3 },
+                                            {"4番線", W06_Track4 }
+                },
+                new Dictionary<string, Image>{
+                                {"津崎上り出発2R", Properties.Resources.TID_Track_W06_4R_Y } ,
+                                {"津崎上り出発3R", Properties.Resources.TID_Track_W06_5R_Y } ,
+                                {"津崎下り場内3LA", Properties.Resources.TID_Track_W06_6LC_Y } ,
+                                {"津崎下り場内3LB", Properties.Resources.TID_Track_W06_6LD_Y }
+                },
+                new Dictionary<string, Image>{
+                                {"津崎上り出発2R", Properties.Resources.TID_Track_W06_4R_R } ,
+                                {"津崎上り出発3R", Properties.Resources.TID_Track_W06_5R_R } ,
+                                {"津崎下り場内3LA", Properties.Resources.TID_Track_W06_6LC_R } ,
+                                {"津崎下り場内3LB", Properties.Resources.TID_Track_W06_6LD_R }
+                }
+            );
+
+
+
+            TrackList["津崎上り場内1RB"] = TsuzakiW;
+            TrackList["津崎上り場内1RA"] = TsuzakiW;
+            TrackList["津崎下り出発1L"] = TsuzakiW;
+            TrackList["津崎下り出発2L"] = TsuzakiW;
+            TrackList["津崎上り出発2R"] = TsuzakiE;
+            TrackList["津崎上り出発3R"] = TsuzakiE;
+            TrackList["津崎下り場内3LA"] = TsuzakiE;
+            TrackList["津崎下り場内3LB"] = TsuzakiE;
+
 
             var W12_Track1 = new CommonTrack(Text_W12_Track1, Line_W12_Track1, Track_W12_Track1, null);
             var W12_Track2 = new CommonTrack(Text_W12_Track2, Line_W12_Track2, Track_W12_Track2, null);

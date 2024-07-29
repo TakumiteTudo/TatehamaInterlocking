@@ -57,9 +57,9 @@ namespace TatehamaInterlocking.TID
             }
             //出発番線一覧
             string depPlatform = "";
-            if (ArrRouteToPlatform.ContainsKey(info.signalName))
+            if (DepRouteToPlatform.ContainsKey(info.signalName))
             {
-                depPlatform = ArrRouteToPlatform[info.signalName];
+                depPlatform = DepRouteToPlatform[info.signalName];
             }
 
             //進入状態
@@ -67,6 +67,10 @@ namespace TatehamaInterlocking.TID
             {
                 stationNearTrackPic.RemoveImage(RouteToTrackY[info.signalName]);
                 stationNearTrackPic.RemoveImage(RouteToTrackR[info.signalName]);
+                if (arrPlatform != "")
+                {
+                    PlatformToTrack[arrPlatform].ResetRoute();
+                }
             }
             else if (info.stationStatus == StationStatus.ROUTE_OPENED)
             {
@@ -74,8 +78,6 @@ namespace TatehamaInterlocking.TID
                 stationNearTrackPic.RemoveImage(RouteToTrackR[info.signalName]);
                 if (arrPlatform != "")
                 {
-                    Debug.WriteLine($"目標番線あり{arrPlatform}");
-                    Debug.WriteLine($"目標番線あり{PlatformToTrack[arrPlatform]}");
                     PlatformToTrack[arrPlatform].SetRoute();
                 }
             }

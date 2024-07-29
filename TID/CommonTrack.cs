@@ -21,6 +21,7 @@ namespace TatehamaInterlocking.TID
             TrackUnderline = trackUnderline;
             TrackPic = trackPic;
             BeforeTrack = beforeTrack;
+            TrackUnderline.BackColor = TIDTrack.Trans;
         }
 
         public override void SetBeforeClass(TIDTrack track)
@@ -51,13 +52,13 @@ namespace TatehamaInterlocking.TID
             }
         }
 
-        public void SetRoute()
+        public override void SetRoute()
         {
             Debug.WriteLine($"目標番線あり{this}");
             TrackPic.Image = Properties.Resources.TID_Track_F_Y;
         }
 
-        public void ResetRoute()
+        public override void ResetRoute()
         {
             if (TrackText.Text != "")
             {

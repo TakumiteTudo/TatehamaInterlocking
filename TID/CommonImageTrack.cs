@@ -54,12 +54,12 @@ namespace TatehamaInterlocking.TID
             }
         }
 
-        public void SetRoute()
+        public override void SetRoute()
         {
             TrackPic.Image = Y;
         }
 
-        public void ResetRoute()
+        public override void ResetRoute()
         {
             if (TrackText.Text != "")
             {
