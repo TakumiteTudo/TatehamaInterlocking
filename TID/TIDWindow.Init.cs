@@ -35,69 +35,20 @@ namespace TatehamaInterlocking.TID
             var TrackNo74 = new CommonTrack(Text_74, Line_74, Track_74, TrackNo68);
             TrackList["上り閉塞74"] = TrackNo74;
 
-            //津崎
-            var TrackNo86 = new CommonTrack(Text_86, Line_86, Track_86, null);
-            TrackList["上り閉塞86"] = TrackNo86;
-            var TrackNo92 = new CommonTrack(Text_92, Line_92, Track_92, TrackNo86);
-            TrackList["上り閉塞92"] = TrackNo92;
-            //浜園
-            var TrackNo102 = new CommonTrack(Text_102, Line_102, Track_102, null);
-            TrackList["上り閉塞102"] = TrackNo102;
-            var TrackNo108 = new CommonTrack(Text_108, Line_108, Track_108, TrackNo102);
-            TrackList["上り閉塞108"] = TrackNo108;
-            var TrackNo114 = new CommonTrack(Text_114, Line_114, Track_114, TrackNo108);
-            TrackList["上り閉塞114"] = TrackNo114;
-            var TrackNo120 = new CommonTrack(Text_120, Line_120, Track_120, TrackNo114);
-            TrackList["上り閉塞120"] = TrackNo120;
-            var TrackNo124 = new CommonTrack(Text_124, Line_124, Track_124, TrackNo120);
-            TrackList["上り閉塞124"] = TrackNo124;
-            //新野崎
-            var TrackNo136 = new CommonTrack(Text_136, Line_136, Track_136, null);
-            TrackList["上り閉塞136"] = TrackNo136;
-            var TrackNo142 = new CommonTrack(Text_142, Line_142, Track_142, TrackNo136);
-            TrackList["上り閉塞142"] = TrackNo142;
-            var TrackNo146 = new CommonTrack(Text_146, Line_146, Track_146, TrackNo142);
-            TrackList["上り閉塞146"] = TrackNo146;
-            //江ノ原
+            //津崎              
             var TrackNo156 = new CommonTrack(Text_156, Line_156, Track_156, null);
             TrackList["上り閉塞156"] = TrackNo156;
 
 
-            //江ノ原
-            var TrackNo151 = new CommonTrack(Text_151, Line_151, Track_151, null);
-            TrackList["下り閉塞151"] = TrackNo151;
-            var TrackNo145 = new CommonTrack(Text_145, Line_145, Track_145, TrackNo151);
-            TrackList["下り閉塞145"] = TrackNo145;
-            var TrackNo143 = new CommonTrack(Text_143, Line_143, Track_143, TrackNo145);
-            TrackList["下り閉塞143"] = TrackNo143;
-            var TrackNo137 = new CommonTrack(Text_137, Line_137, Track_137, TrackNo143);
+
+            var TrackNo137 = new CommonTrack(Text_137, Line_137, Track_137, null);
             TrackList["下り閉塞137"] = TrackNo137;
             // 新野崎
-            var TrackNo123 = new CommonTrack(Text_123, Line_123, Track_123, null);
-            TrackList["下り閉塞123"] = TrackNo123;
-            var TrackNo117 = new CommonTrack(Text_117, Line_117, Track_117, TrackNo123);
-            TrackList["下り閉塞117"] = TrackNo117;
-            var TrackNo111 = new CommonTrack(Text_111, Line_111, Track_111, TrackNo117);
-            TrackList["下り閉塞111"] = TrackNo111;
-            var TrackNo105 = new CommonTrack(Text_105, Line_105, Track_105, TrackNo111);
-            TrackList["下り閉塞105"] = TrackNo105;
-            var TrackNo103 = new CommonTrack(Text_103, Line_103, Track_103, TrackNo105);
-            TrackList["下り閉塞103"] = TrackNo103;
 
             var TrackNo89 = new CommonTrack(Text_89, Line_89, Track_89, null);
             TrackList["下り閉塞89"] = TrackNo89;
 
             //津崎    
-            var TrackNo75 = new CommonTrack(Text_75, Line_75, Track_75, null);
-            TrackList["下り閉塞75"] = TrackNo75;
-            var TrackNo71 = new CommonTrack(Text_71, Line_71, Track_71, TrackNo75);
-            TrackList["下り閉塞71"] = TrackNo71;
-            var TrackNo67 = new CommonTrack(Text_67, Line_67, Track_67, TrackNo71);
-            TrackList["下り閉塞67"] = TrackNo67;
-            var TrackNo59 = new CommonTrack(Text_59, Line_59, Track_59, TrackNo67);
-            TrackList["下り閉塞59"] = TrackNo59;
-            var TrackNo55 = new CommonTrack(Text_55, Line_55, Track_55, TrackNo59);
-            TrackList["下り閉塞55"] = TrackNo55;
 
             var TrackNo9 = new CommonTrack(Text_9, Line_9, Track_9, null);
             TrackList["下り閉塞9"] = TrackNo9;
@@ -172,7 +123,7 @@ namespace TatehamaInterlocking.TID
             var TsuzakiW = new StationNearTrack
             (
                 new CommonTrack(Text_W06_1R, Line_W06_1R, null, null),
-                new CommonTrack(Text_W06_TST, Line_75, null, null),
+                new CommonTrack(Text_W06_TST, Line_W06_TST, null, null),
                 Track_W06_W, TrackNo74,
                 new Dictionary<string, string>
                 {
