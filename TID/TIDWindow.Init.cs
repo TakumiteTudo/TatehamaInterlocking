@@ -98,7 +98,18 @@ namespace TatehamaInterlocking.TID
             TrackList["下り閉塞59"] = TrackNo59;
             var TrackNo55 = new CommonTrack(Text_55, Line_55, Track_55, TrackNo59);
             TrackList["下り閉塞55"] = TrackNo55;
+            var TrackNo49 = new CommonTrack(Text_49, Line_49, Track_49, TrackNo55);
+            TrackList["下り閉塞49"] = TrackNo49;
+            var TrackNo45 = new CommonTrack(Text_45, Line_45, Track_45, TrackNo49);
+            TrackList["下り閉塞45"] = TrackNo45;
+            var TrackNo41 = new CommonTrack(Text_41, Line_41, Track_41, TrackNo45);
+            TrackList["下り閉塞41"] = TrackNo41;
+            var TrackNo35 = new CommonTrack(Text_35, Line_35, Track_35, TrackNo41);
+            TrackList["下り閉塞35"] = TrackNo35;
+            var TrackNo27 = new CommonTrack(Text_27, Line_27, Track_27, TrackNo35);
+            TrackList["下り閉塞27"] = TrackNo27;
 
+            //駒野
             var TrackNo9 = new CommonTrack(Text_9, Line_9, Track_9, null);
             TrackList["下り閉塞9"] = TrackNo9;
             var TrackNo7 = new CommonTrack(Text_7, Line_7, Track_7, TrackNo9);
@@ -161,9 +172,9 @@ namespace TatehamaInterlocking.TID
             TrackList["館浜下り場内1LB"] = TatehamaE;
             TrackList["館浜下り場内1LC"] = TatehamaE;
             TrackList["館浜下り場内1LD"] = TatehamaE;
-               
 
-             //津崎   
+
+            //津崎   
             var W06_Track1 = new CommonTrack(Text_W06_Track1, Line_W06_Track1, Track_W06_Track1, null);
             var W06_Track2 = new CommonTrack(Text_W06_Track2, Line_W06_Track2, Track_W06_Track2, null);
             var W06_Track3 = new CommonTrack(Text_W06_Track3, Line_W06_Track3, Track_W06_Track3, null);
