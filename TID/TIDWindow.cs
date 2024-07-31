@@ -33,5 +33,10 @@ namespace TatehamaInterlocking.TID
                 TrackList[info.signalName].SetTrain(info);
             }
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
