@@ -613,6 +613,16 @@ namespace TatehamaInterlocking.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
+        internal static System.Drawing.Bitmap Tatehama_a {
+            get {
+                object obj = ResourceManager.GetObject("Tatehama_a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
         internal static System.Drawing.Bitmap TID_Retsuban_W {
             get {
                 object obj = ResourceManager.GetObject("TID_Retsuban_W", resourceCulture);
@@ -966,6 +976,66 @@ namespace TatehamaInterlocking.Properties {
         internal static System.Drawing.Bitmap TID_Track_W06_6LD_Y {
             get {
                 object obj = ResourceManager.GetObject("TID_Track_W06_6LD_Y", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap TID_Track_W07_3R_R {
+            get {
+                object obj = ResourceManager.GetObject("TID_Track_W07_3R_R", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap TID_Track_W07_3R_Y {
+            get {
+                object obj = ResourceManager.GetObject("TID_Track_W07_3R_Y", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap TID_Track_W07_4R_R {
+            get {
+                object obj = ResourceManager.GetObject("TID_Track_W07_4R_R", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap TID_Track_W07_4R_Y {
+            get {
+                object obj = ResourceManager.GetObject("TID_Track_W07_4R_Y", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap TID_Track_W07_5L_R {
+            get {
+                object obj = ResourceManager.GetObject("TID_Track_W07_5L_R", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap TID_Track_W07_5L_Y {
+            get {
+                object obj = ResourceManager.GetObject("TID_Track_W07_5L_Y", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

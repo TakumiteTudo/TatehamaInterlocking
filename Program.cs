@@ -4,6 +4,8 @@ namespace TatehamaInterlocking
 {
     internal static class Program
     {
+        static internal string ServerAddress = "https://kesigomon.com:62356";
+        //static internal string ServerAddress = "https://kesigomon.com:8090";
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>

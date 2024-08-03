@@ -613,4 +613,25 @@
   <data name="Trans" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\TID\png\Trans.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Tatehama_a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Tatehama\Tatehama_a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W07_3R_R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W07_3R_R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W07_3R_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W07_3R_Y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W07_4R_R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W07_4R_R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W07_4R_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W07_4R_Y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W07_5L_R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W07_5L_R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W07_5L_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W07_5L_Y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

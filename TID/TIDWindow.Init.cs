@@ -173,6 +173,9 @@ namespace TatehamaInterlocking.TID
             TrackList["館浜下り場内1LC"] = TatehamaE;
             TrackList["館浜下り場内1LD"] = TatehamaE;
 
+            TrackNo6.SetBeforeClass(TatehamaE);
+
+
 
             //津崎   
             var W06_Track1 = new CommonTrack(Text_W06_Track1, Line_W06_Track1, Track_W06_Track1, null);
@@ -183,7 +186,7 @@ namespace TatehamaInterlocking.TID
             var TsuzakiW = new StationNearTrack
             (
                 new CommonTrack(Text_W06_1R, Line_W06_1R, null, null),
-                new CommonTrack(Text_W06_TST, Line_75, null, null),
+                new CommonTrack(Text_W06_TST, Line_W06_TST, null, null),
                 Track_W06_W, TrackNo74,
                 new Dictionary<string, string>
                 {
@@ -260,6 +263,16 @@ namespace TatehamaInterlocking.TID
             TrackList["津崎上り出発3R"] = TsuzakiE;
             TrackList["津崎下り場内3LA"] = TsuzakiE;
             TrackList["津崎下り場内3LB"] = TsuzakiE;
+
+            TrackNo75.SetBeforeClass(TsuzakiW);
+            TrackNo86.SetBeforeClass(TsuzakiE);
+
+
+
+            //浜園                        
+            var W07_Track1 = new CommonTrack(Text_W06_Track1, Line_W06_Track1, Track_W06_Track1, null);
+            var W07_Track2 = new CommonTrack(Text_W06_Track2, Line_W06_Track2, Track_W06_Track2, null);
+
 
             //新野崎   
             var W10_Track1 = new CommonTrack(Text_W10_Track1, Line_W10_Track1, Track_W10_Track1, null);
@@ -367,6 +380,9 @@ namespace TatehamaInterlocking.TID
             TrackList["新野崎入換101L"] = ShinNozakiE;
 
 
+            TrackNo136.SetBeforeClass(ShinNozakiW);
+            TrackNo123.SetBeforeClass(ShinNozakiE);
+
 
             var W12_Track1 = new CommonTrack(Text_W12_Track1, Line_W12_Track1, Track_W12_Track1, null);
             var W12_Track2 = new CommonTrack(Text_W12_Track2, Line_W12_Track2, Track_W12_Track2, null);
@@ -430,7 +446,8 @@ namespace TatehamaInterlocking.TID
                                 {"大道寺入換112L", "E番線" }  ,
                                 {"大道寺入換103L", "3番線" }  ,
                                 {"大道寺入換104L", "4番線" }  ,
-                                {"大道寺入換110L", "3番線" }  ,
+                                {"大道寺入換110LC", "3番線" }  ,
+                                {"大道寺入換110LD", "4番線" }  ,
                                 {"大道寺入換110R", "7番線" }
                 },
                 new Dictionary<string, string>
@@ -456,7 +473,8 @@ namespace TatehamaInterlocking.TID
                     {"大道寺入換112L", Properties.Resources.TID_Track_W12_47LE_Y } ,
                     {"大道寺入換103L", TIDTrack.TransPng } ,
                     {"大道寺入換104L", TIDTrack.TransPng } ,
-                    {"大道寺入換110L", Properties.Resources.TID_Track_W12_43RE_Y } ,
+                    {"大道寺入換110LC", Properties.Resources.TID_Track_W12_43RE_Y } ,
+                    {"大道寺入換110LD", Properties.Resources.TID_Track_W12_44RE_Y } ,
                     {"大道寺入換110R", Properties.Resources.TID_Track_W12_47LE_Y }
                 },
                 new Dictionary<string, Image>{
@@ -464,7 +482,8 @@ namespace TatehamaInterlocking.TID
                     {"大道寺入換112L", Properties.Resources.TID_Track_W12_47LE_R } ,
                     {"大道寺入換103L", TIDTrack.TransPng } ,
                     {"大道寺入換104L", TIDTrack.TransPng } ,
-                    {"大道寺入換110L", Properties.Resources.TID_Track_W12_43RE_R } ,
+                    {"大道寺入換110LC", Properties.Resources.TID_Track_W12_43RE_R } ,
+                    {"大道寺入換110LD", Properties.Resources.TID_Track_W12_44RE_R } ,
                     {"大道寺入換110R", Properties.Resources.TID_Track_W12_47LE_R }
                 }
             );
@@ -481,9 +500,9 @@ namespace TatehamaInterlocking.TID
             TrackList["大道寺入換112L"] = DaidojiE;
             TrackList["大道寺入換103L"] = DaidojiE;
             TrackList["大道寺入換104L"] = DaidojiE;
-            TrackList["大道寺入換110L"] = DaidojiE;
+            TrackList["大道寺入換110LC"] = DaidojiE;
+            TrackList["大道寺入換110LD"] = DaidojiE;
             TrackList["大道寺入換110R"] = DaidojiE;
-            TrackNo6.SetBeforeClass(TatehamaE);
 
         }
     }

@@ -69,7 +69,11 @@ namespace TatehamaInterlocking.TID
                 stationNearTrackPic.RemoveImage(RouteToTrackR[info.signalName]);
                 if (arrPlatform != "")
                 {
-                    PlatformToTrack[arrPlatform].ResetRoute();
+                    PlatformToTrack[arrPlatform].ResetTrain(null);
+                }
+                else if (depPlatform != "")
+                {
+                    DepTrackText.ResetTrain(null);
                 }
             }
             else if (info.stationStatus == StationStatus.ROUTE_OPENED)
@@ -106,6 +110,11 @@ namespace TatehamaInterlocking.TID
                     ArrTrackText.ResetTrain(info.diaName);
                     stationNearTrackPic.RemoveImage(RouteToTrackR[info.signalName]);
                     PlatformToTrack[arrPlatform].SetTrain(info);
+                }
+                else if (depPlatform != "")
+                {
+                    DepTrackText.SetTrain(info);
+                    stationNearTrackPic.AddImage(RouteToTrackR[info.signalName]);
                 }
                 else
                 {

@@ -24,6 +24,7 @@ namespace TatehamaInterlocking.TID
             TrackPic = trackPic;
             BeforeTrack = beforeTrack;
             W = w; Y = y; R = r;
+            TrackUnderline.BackColor = TIDTrack.Trans;
         }
 
         public override void SetBeforeClass(TIDTrack track)

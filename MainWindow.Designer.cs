@@ -124,9 +124,9 @@
             ButtonPushError.AutoSize = true;
             ButtonPushError.Location = new Point(5, 424);
             ButtonPushError.Name = "ButtonPushError";
-            ButtonPushError.Size = new Size(143, 16);
+            ButtonPushError.Size = new Size(191, 16);
             ButtonPushError.TabIndex = 7;
-            ButtonPushError.Text = "Ver0.3.0　CN:新町";
+            ButtonPushError.Text = "Ver0.3.1　CodeName:新町";
             // 
             // button8
             // 
