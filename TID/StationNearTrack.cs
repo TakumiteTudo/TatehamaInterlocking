@@ -9,8 +9,8 @@ namespace TatehamaInterlocking.TID
 {
     internal class StationNearTrack : TIDTrack
     {
-        private CommonTrack ArrTrackText;
-        private CommonTrack DepTrackText;
+        private CommonTrack? ArrTrackText;
+        private CommonTrack? DepTrackText;
         private PictureBox TrackPic;
         private TIDTrack? BeforeTrack;
 
@@ -26,7 +26,7 @@ namespace TatehamaInterlocking.TID
 
         private StationNearTrackPic stationNearTrackPic;
 
-        public StationNearTrack(CommonTrack arrTrackText, CommonTrack depTrackText, PictureBox TrackPic, TIDTrack? beforeTrack,
+        public StationNearTrack(CommonTrack? arrTrackText, CommonTrack? depTrackText, PictureBox TrackPic, TIDTrack? beforeTrack,
             Dictionary<string, string> arrRouteToPlatform, Dictionary<string, string> depRouteToPlatform, Dictionary<string, TIDTrack> platformToTrack,
             Dictionary<string, Image> routeToTrackY, Dictionary<string, Image> routeToTrackR)
         {
@@ -41,6 +41,22 @@ namespace TatehamaInterlocking.TID
             RouteToTrackR = routeToTrackR;
             stationNearTrackPic = new StationNearTrackPic();
         }
+
+        public StationNearTrack(CommonTrack? arrTrackText, CommonTrack? depTrackText, PictureBox TrackPic, TIDTrack? beforeTrack,
+            Dictionary<string, string> arrRouteToPlatform, Dictionary<string, string> depRouteToPlatform, Dictionary<string, TIDTrack> platformToTrack,
+            Dictionary<string, Image> routeToTrackY, Dictionary<string, Image> routeToTrackR, StationNearTrackPic stationNearTrackPic)
+        {
+            ArrTrackText = arrTrackText;
+            DepTrackText = depTrackText;
+            this.TrackPic = TrackPic;
+            BeforeTrack = beforeTrack;
+            ArrRouteToPlatform = arrRouteToPlatform;
+            DepRouteToPlatform = depRouteToPlatform;
+            PlatformToTrack = platformToTrack;
+            RouteToTrackY = routeToTrackY;
+            RouteToTrackR = routeToTrackR;
+            this.stationNearTrackPic = stationNearTrackPic;
+        }
         public override void SetBeforeClass(TIDTrack track)
         {
             BeforeTrack = track;
@@ -49,37 +65,44 @@ namespace TatehamaInterlocking.TID
         public override void SetTrain(TrackCircuitInfo info)
         {
             bool before = false;
+            bool TrackOnly = false;
+            string signalName = info.signalName;
             //到着番線一覧
             string arrPlatform = "";
-            if (ArrRouteToPlatform.ContainsKey(info.signalName))
+            if (ArrRouteToPlatform.ContainsKey(signalName))
             {
-                arrPlatform = ArrRouteToPlatform[info.signalName];
+                arrPlatform = ArrRouteToPlatform[signalName];
+                if (arrPlatform.EndsWith("番"))
+                {
+                    TrackOnly = true;
+                    arrPlatform = arrPlatform + "線";
+                }
             }
             //出発番線一覧
             string depPlatform = "";
-            if (DepRouteToPlatform.ContainsKey(info.signalName))
+            if (DepRouteToPlatform.ContainsKey(signalName))
             {
-                depPlatform = DepRouteToPlatform[info.signalName];
+                depPlatform = DepRouteToPlatform[signalName];
             }
 
             //進入状態
             if (info.stationStatus == StationStatus.ROUTE_CLOSED)
             {
-                stationNearTrackPic.RemoveImage(RouteToTrackY[info.signalName]);
-                stationNearTrackPic.RemoveImage(RouteToTrackR[info.signalName]);
+                stationNearTrackPic.RemoveImage(RouteToTrackY[signalName]);
+                stationNearTrackPic.RemoveImage(RouteToTrackR[signalName]);
                 if (arrPlatform != "")
                 {
                     PlatformToTrack[arrPlatform].ResetTrain(null);
                 }
                 else if (depPlatform != "")
                 {
-                    DepTrackText.ResetTrain(null);
+                    DepTrackText?.ResetTrain(null);
                 }
             }
             else if (info.stationStatus == StationStatus.ROUTE_OPENED)
             {
-                stationNearTrackPic.AddImage(RouteToTrackY[info.signalName]);
-                stationNearTrackPic.RemoveImage(RouteToTrackR[info.signalName]);
+                stationNearTrackPic.AddImage(RouteToTrackY[signalName]);
+                stationNearTrackPic.RemoveImage(RouteToTrackR[signalName]);
                 if (arrPlatform != "")
                 {
                     PlatformToTrack[arrPlatform].SetRoute();
@@ -87,15 +110,23 @@ namespace TatehamaInterlocking.TID
             }
             else if (info.stationStatus == StationStatus.ROUTE_ENTERING)
             {
-                stationNearTrackPic.RemoveImage(RouteToTrackY[info.signalName]);
-                stationNearTrackPic.AddImage(RouteToTrackR[info.signalName]);
+                stationNearTrackPic.RemoveImage(RouteToTrackY[signalName]);
+                stationNearTrackPic.AddImage(RouteToTrackR[signalName]);
                 if (arrPlatform != "")
                 {
-                    ArrTrackText.SetTrain(info);
+                    if (TrackOnly)
+                    {
+                        ArrTrackText?.ResetTrain(info.diaName);
+                        PlatformToTrack[arrPlatform].SetTrain(info);
+                    }
+                    else
+                    {
+                        ArrTrackText?.SetTrain(info);
+                    }
                 }
                 else if (depPlatform != "")
                 {
-                    DepTrackText.SetTrain(info);
+                    DepTrackText?.SetTrain(info);
                 }
                 if (depPlatform != "")
                 {
@@ -104,22 +135,22 @@ namespace TatehamaInterlocking.TID
             }
             else if (info.stationStatus == StationStatus.ROUTE_ENTERED)
             {
-                stationNearTrackPic.RemoveImage(RouteToTrackY[info.signalName]);
+                stationNearTrackPic.RemoveImage(RouteToTrackY[signalName]);
                 if (arrPlatform != "")
                 {
-                    ArrTrackText.ResetTrain(info.diaName);
-                    stationNearTrackPic.RemoveImage(RouteToTrackR[info.signalName]);
+                    ArrTrackText?.ResetTrain(info.diaName);
+                    stationNearTrackPic.RemoveImage(RouteToTrackR[signalName]);
                     PlatformToTrack[arrPlatform].SetTrain(info);
                 }
                 else if (depPlatform != "")
                 {
-                    DepTrackText.SetTrain(info);
-                    stationNearTrackPic.AddImage(RouteToTrackR[info.signalName]);
+                    DepTrackText?.SetTrain(info);
+                    stationNearTrackPic.AddImage(RouteToTrackR[signalName]);
                 }
                 else
                 {
-                    DepTrackText.ResetTrain(info.diaName);
-                    stationNearTrackPic.AddImage(RouteToTrackR[info.signalName]);
+                    DepTrackText?.ResetTrain(info.diaName);
+                    stationNearTrackPic.AddImage(RouteToTrackR[signalName]);
                 }
             }
             if (before)
@@ -133,7 +164,7 @@ namespace TatehamaInterlocking.TID
         {
             if (retsuban == ArrString)
             {
-                ArrTrackText.ResetTrain(retsuban);
+                ArrTrackText?.ResetTrain(retsuban);
                 if (ArrPlatform != null)
                 {
                     PlatformToTrack[ArrPlatform].ResetTrain(retsuban);
@@ -141,7 +172,7 @@ namespace TatehamaInterlocking.TID
             }
             else if (retsuban == DepString)
             {
-                DepTrackText.ResetTrain(retsuban);
+                DepTrackText?.ResetTrain(retsuban);
             }
         }
     }

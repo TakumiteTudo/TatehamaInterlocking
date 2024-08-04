@@ -90,7 +90,7 @@ public class Socket
         {
             try
             {
-                var timer = Task.Delay(50);
+                var timer = Task.Delay(100);
                 if (isconnect)
                 {
 

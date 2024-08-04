@@ -634,4 +634,136 @@
   <data name="TID_Track_W07_5L_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\TID\png\TID_Track_W07_5L_Y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TID_Track_W02_1RD0_R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W02_1RD0_R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W02_1RD0_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W02_1RD0_Y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W02_1RD5_R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W02_1RD5_R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W02_1RD5_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W02_1RD5_Y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W02_2L_R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W02_2L_R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W02_2L_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W02_2L_Y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W02_3L_R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W02_3L_R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W02_3L_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W02_3L_Y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W02_41RD0_R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W02_41RD0_R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W02_41RD0_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W02_41RD0_Y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W02_54R_R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W02_54R_R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W02_54R_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W02_54R_Y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W02_5RA_R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W02_5RA_R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W02_5RA_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W02_5RA_Y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W02_5RB_R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W02_5RB_R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W02_5RB_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W02_5RB_Y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W02_6L_R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W02_6L_R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W02_6L_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W02_6L_Y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W02_7R_R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W02_7R_R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W02_7R_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W02_7R_Y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W02_8R_R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W02_8R_R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W02_8R_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W02_8R_Y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W02_9LA_R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W02_9LA_R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W02_9LA_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W02_9LA_Y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W02_9LB_R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W02_9LB_R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W02_9LB_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W02_9LB_Y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W02_9LC_R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W02_9LC_R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W02_9LC_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W02_9LC_Y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W11_1RA_R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W11_1RA_R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W11_1RA_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W11_1RA_Y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W11_1RB_R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W11_1RB_R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W11_1RB_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W11_1RB_Y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W11_1RC_R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W11_1RC_R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W11_1RC_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W11_1RC_Y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W11_2R_R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W11_2R_R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W11_2R_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W11_2R_Y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W11_3L_R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W11_3L_R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W11_3L_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W11_3L_Y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W11_4L_R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W11_4L_R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W11_4L_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W11_4L_Y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W11_5LD_R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W11_5LD_R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W11_5LD_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W11_5LD_Y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W11_5LE_R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W11_5LE_R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TID_Track_W11_5LE_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\TID\png\TID_Track_W11_5LE_Y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

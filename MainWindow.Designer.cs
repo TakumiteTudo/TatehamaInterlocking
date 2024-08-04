@@ -107,6 +107,7 @@
             button6.TabIndex = 5;
             button6.Text = "江ノ原信";
             button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // button7
             // 
@@ -124,9 +125,9 @@
             ButtonPushError.AutoSize = true;
             ButtonPushError.Location = new Point(5, 424);
             ButtonPushError.Name = "ButtonPushError";
-            ButtonPushError.Size = new Size(191, 16);
+            ButtonPushError.Size = new Size(207, 16);
             ButtonPushError.TabIndex = 7;
-            ButtonPushError.Text = "Ver0.3.1　CodeName:新町";
+            ButtonPushError.Text = "Ver0.4.0　CodeName:青木町";
             // 
             // button8
             // 

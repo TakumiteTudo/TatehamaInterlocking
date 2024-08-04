@@ -177,6 +177,136 @@ namespace TatehamaInterlocking.TID
 
 
 
+            //駒野
+            var W02_Track0 = new CommonTrack(Text_W02_Track0, Line_W02_Track0, Track_W02_Track0, null);
+            var W02_Track1 = new CommonTrack(Text_W02_Track1, Line_W02_Track1, Track_W02_Track1, null);
+            var W02_Track2 = new CommonTrack(Text_W02_Track2, Line_W02_Track2, Track_W02_Track2, null);
+            var W02_Track3 = new CommonTrack(Text_W02_Track3, Line_W02_Track3, Track_W02_Track3, null);
+            var W02_Track6L = new CommonTrack(Text_W02_6LT, Line_W02_6LT, null, null);
+            var W02_Yokoku = new CommonTrack(Text_W02_Yokoku, Line_W02_Yokoku, null, null);
+
+            var KomanoW1 = new StationNearTrack(
+                new CommonTrack(Text_W02_1R, Line_W02_1R, null, null),
+                new CommonTrack(Text_W02_TST, Line_W02_TST, null, null),
+                Track_W02_W1, TrackNo9,
+                new Dictionary<string, string>
+                {
+                    {"駒野上り場内1RA", "0番線" }
+                },
+                new Dictionary<string, string>
+                {
+                    {"駒野下り出発1L", "6L番線" },
+                    {"駒野下り出発4L", "5番線" }
+                },
+                new Dictionary<string, TIDTrack>
+                {
+                    {"0番線", W02_Track0 },
+                    {"5番線", W02_Yokoku },
+                    {"6L番線", W02_Track6L }
+                },
+                new Dictionary<string, Image>{
+                    {"駒野上り場内1RA", Properties.Resources.TID_Track_W02_1RD0_Y } ,
+                    {"駒野上り場内1RB", Properties.Resources.TID_Track_W02_1RD5_Y } ,
+                    {"駒野下り出発1L", Properties.Resources.TID_Track_W02_2L_Y } ,
+                    {"駒野下り出発4L", Properties.Resources.TID_Track_W02_3L_Y }
+                },
+                new Dictionary<string, Image>{
+                    {"駒野上り場内1RA", Properties.Resources.TID_Track_W02_1RD0_R } ,
+                    {"駒野上り場内1RB", Properties.Resources.TID_Track_W02_1RD5_R } ,
+                    {"駒野下り出発1L", Properties.Resources.TID_Track_W02_2L_R } ,
+                    {"駒野下り出発4L", Properties.Resources.TID_Track_W02_3L_R }
+                }
+                );
+
+            var KomanoW2 = new StationNearTrack(
+            new CommonTrack(Text_W02_5R, Line_W02_5R, null, null),
+            new CommonTrack(Text_W02_6LT, Line_W02_6LT, null, null),
+            Track_W02_W2, null,
+            new Dictionary<string, string>
+            {
+                    {"駒野上り場内2RB", "1番線" } ,
+                    {"駒野上り場内2RA", "2番線" } ,
+                    {"駒野下り出発2L", "6L番" },
+                    {"駒野入換110R", "1番線" } ,
+            },
+            new Dictionary<string, string>
+            {
+                    {"駒野上り場内2RB", "0番線" },
+                    {"駒野上り場内2RA", "0番線" },
+                    {"駒野下り出発2L", "3番線" },
+                    {"駒野入換110R", "1番線" } ,
+            },
+            new Dictionary<string, TIDTrack>
+            {
+                    {"0番線", W02_Track0 },
+                    {"1番線", W02_Track1 },
+                    {"2番線", W02_Track2 },
+                    {"3番線", W02_Track3 },
+                    {"4番線", W02_Yokoku },
+                    {"6L番線", W02_Track6L },
+            },
+            new Dictionary<string, Image>{
+                {"駒野上り場内2RB", Properties.Resources.TID_Track_W02_5RA_Y } ,
+                {"駒野上り場内2RA", Properties.Resources.TID_Track_W02_5RB_Y } ,
+                {"駒野下り出発2L", Properties.Resources.TID_Track_W02_6L_Y } ,
+                {"駒野入換110R", Properties.Resources.TID_Track_W02_54R_Y }
+            },
+            new Dictionary<string, Image>{
+                {"駒野上り場内2RB", Properties.Resources.TID_Track_W02_5RA_R } ,
+                {"駒野上り場内2RA", Properties.Resources.TID_Track_W02_5RB_R } ,
+                {"駒野下り出発2L", Properties.Resources.TID_Track_W02_6L_R } ,
+                {"駒野入換110R", Properties.Resources.TID_Track_W02_54R_R }
+            }
+        );
+
+            var KomanoE = new StationNearTrack(
+            new CommonTrack(Text_W02_9L, Line_W02_9L, null, null),
+            new CommonTrack(Text_W02_SST, Line_W02_SST, null, null),
+            Track_W02_E, null,
+            new Dictionary<string, string>
+            {
+                    {"駒野下り場内11LA", "3番線" }
+            },
+            new Dictionary<string, string>
+            {
+                    {"駒野上り出発3R", "1番線" },
+                    {"駒野上り出発4R", "2番線" }
+            },
+            new Dictionary<string, TIDTrack>
+            {
+                    {"1番線", W02_Track1 },
+                    {"2番線", W02_Track2 },
+                    {"3番線", W02_Track3 }
+            },
+            new Dictionary<string, Image>{
+                {"駒野上り出発3R", Properties.Resources.TID_Track_W02_7R_Y } ,
+                {"駒野上り出発4R", Properties.Resources.TID_Track_W02_8R_Y } ,
+                {"駒野下り場内11LA", Properties.Resources.TID_Track_W02_9LC_Y }
+            },
+            new Dictionary<string, Image>{
+                {"駒野上り出発3R", Properties.Resources.TID_Track_W02_7R_R } ,
+                {"駒野上り出発4R", Properties.Resources.TID_Track_W02_8R_R } ,
+                {"駒野下り場内11LA", Properties.Resources.TID_Track_W02_9LC_R }
+            }
+        );
+            TrackList["駒野入線予告"] = W02_Yokoku;
+            TrackList["駒野上り場内1RA"] = KomanoW1;
+            TrackList["駒野上り場内1RB"] = KomanoW1;
+            TrackList["駒野下り出発1L"] = KomanoW1;
+            TrackList["駒野下り出発4L"] = KomanoW1;
+            TrackList["駒野上り場内2RB"] = KomanoW2;
+            TrackList["駒野上り場内2RA"] = KomanoW2;
+            TrackList["駒野下り出発2L"] = KomanoW2;
+            TrackList["駒野入換110R"] = KomanoW2;
+            TrackList["駒野上り出発3R"] = KomanoE;
+            TrackList["駒野上り出発4R"] = KomanoE;
+            TrackList["駒野下り場内11LA"] = KomanoE;
+
+
+            TrackNo9.SetBeforeClass(KomanoW1);
+            TrackNo27.SetBeforeClass(KomanoE);
+
+
             //津崎   
             var W06_Track1 = new CommonTrack(Text_W06_Track1, Line_W06_Track1, Track_W06_Track1, null);
             var W06_Track2 = new CommonTrack(Text_W06_Track2, Line_W06_Track2, Track_W06_Track2, null);
@@ -270,9 +400,68 @@ namespace TatehamaInterlocking.TID
 
 
             //浜園                        
-            var W07_Track1 = new CommonTrack(Text_W06_Track1, Line_W06_Track1, Track_W06_Track1, null);
-            var W07_Track2 = new CommonTrack(Text_W06_Track2, Line_W06_Track2, Track_W06_Track2, null);
+            var W07_Track1 = new CommonTrack(Text_W07_Track1, Line_W07_Track1, Track_W07_Track1, null);
+            var W07_Track2 = new CommonTrack(Text_W07_Track2, Line_W07_Track2, Track_W07_Track2, null);
+            var HamazonoW = new StationNearTrack(
+            null,
+            new CommonTrack(Text_W07_TST, Line_W07_TST, null, null),
+            Track_W07_W, TrackNo92,
+            new Dictionary<string, string>
+            {
+                                {"浜園上り場内1R", "1番" }
+            },
+            new Dictionary<string, string>
+            {
+                                {"浜園下り出発1L", "2番線" }
+            },
+            new Dictionary<string, TIDTrack>
+            {
+                        {"1番線", W07_Track1 },
+                        {"2番線", W07_Track2 },
+            },
+            new Dictionary<string, Image>{
+                                {"浜園上り場内1R", TIDTrack.TransPng } ,
+                                {"浜園下り出発1L", Properties.Resources.TID_Track_F_Y }
+            },
+            new Dictionary<string, Image>{
+                                {"浜園上り場内1R", TIDTrack.TransPng } ,
+                                {"浜園下り出発1L", Properties.Resources.TID_Track_F_R }
+            }
+            );
 
+            var HamazonoE = new StationNearTrack(
+                new CommonTrack(Text_W07_5L, Line_W07_5L, null, null),
+                new CommonTrack(Text_W07_SST, Line_W07_SST, null, null),
+                Track_W07_E, TrackNo103,
+                new Dictionary<string, string>
+                {
+                                {"浜園下り場内2L", "2番線" }
+                },
+                new Dictionary<string, string>
+                {
+                                {"浜園上り出発2R", "1番線" }
+                },
+                new Dictionary<string, TIDTrack>
+                {
+                        {"1番線", W07_Track1 },
+                        {"2番線", W07_Track2 },
+                },
+                new Dictionary<string, Image>{
+                        {"浜園下り場内2L", Properties.Resources.TID_Track_W07_5L_Y } ,
+                        {"浜園上り出発2R", Properties.Resources.TID_Track_W07_3R_Y } ,
+                },
+                new Dictionary<string, Image>{
+                        {"浜園下り場内2L", Properties.Resources.TID_Track_W07_5L_R } ,
+                        {"浜園上り出発2R", Properties.Resources.TID_Track_W07_3R_R } ,
+                }
+            );
+
+            TrackList["浜園上り場内1R"] = HamazonoW;
+            TrackList["浜園下り出発1L"] = HamazonoW;
+            TrackList["浜園下り場内2L"] = HamazonoE;
+            TrackList["浜園上り出発2R"] = HamazonoE;
+            TrackNo89.SetBeforeClass(HamazonoW);
+            TrackNo102.SetBeforeClass(HamazonoE);
 
             //新野崎   
             var W10_Track1 = new CommonTrack(Text_W10_Track1, Line_W10_Track1, Track_W10_Track1, null);
@@ -322,9 +511,9 @@ namespace TatehamaInterlocking.TID
             Track_W10_E, TrackNo137,
             new Dictionary<string, string>
             {
-                                            {"新野崎下り場内3L", "3番線" } ,
-                                            {"新野崎下り場内4L", "4番線" } ,
-                                            {"新野崎入換104L", "4番線" },
+                                            {"新野崎下り場内3L", "3番" } ,
+                                            {"新野崎下り場内4L", "4番" } ,
+                                            {"新野崎入換104L", "4番" },
                                             {"新野崎入換111R", "5番線" }
             },
             new Dictionary<string, string>
@@ -384,6 +573,91 @@ namespace TatehamaInterlocking.TID
             TrackNo123.SetBeforeClass(ShinNozakiE);
 
 
+            //江ノ原
+            var W11_YokokuW = new CommonTrack(Text_W11_YokokuW, Line_W11_YokokuW, null, null);
+            var W11_YokokuE = new CommonTrack(Text_W11_YokokuE, Line_W11_YokokuE, null, null);
+            var W11_stationNearTrackPic = new StationNearTrackPic();
+
+            var W11_Nobori = new CommonTrack(Text_W11_Nobori, Line_W11_Nobori, null, null);
+            var W11_Kudari = new CommonTrack(Text_W11_Kudari, Line_W11_Kudari, null, null);
+
+            var EnoharaNobori = new StationNearTrack(
+                W11_Nobori,
+                W11_Nobori,
+                Track_W11, TrackNo146,
+                new Dictionary<string, string>
+                {
+                },
+                new Dictionary<string, string>
+                {
+                    {"江ノ原検車区上り出発2R", "3番線" }
+                },
+                new Dictionary<string, TIDTrack>
+                {
+                    {"3番線", W11_YokokuW }
+                },
+                new Dictionary<string, Image>{
+                    {"江ノ原検車区上り場内1RA", Properties.Resources.TID_Track_W11_1RA_Y } ,
+                    {"江ノ原検車区上り場内1RB", Properties.Resources.TID_Track_W11_1RB_Y } ,
+                    {"江ノ原検車区上り場内1RC", Properties.Resources.TID_Track_W11_1RC_Y } ,
+                    {"江ノ原検車区上り出発2R", Properties.Resources.TID_Track_W11_2R_Y }
+                },
+                new Dictionary<string, Image>{
+                    {"江ノ原検車区上り場内1RA", Properties.Resources.TID_Track_W11_1RA_R } ,
+                    {"江ノ原検車区上り場内1RB", Properties.Resources.TID_Track_W11_1RB_R } ,
+                    {"江ノ原検車区上り場内1RC", Properties.Resources.TID_Track_W11_1RC_R } ,
+                    {"江ノ原検車区上り出発2R", Properties.Resources.TID_Track_W11_2R_R }
+                },
+                W11_stationNearTrackPic
+            );
+
+            var EnoharaKudari = new StationNearTrack(
+                W11_Kudari,
+                W11_Kudari,
+                Track_W11, null,
+                new Dictionary<string, string>
+                {
+                },
+                new Dictionary<string, string>
+                {
+                    {"江ノ原検車区下り出発2L", "1番線" } ,
+                    {"江ノ原検車区下り出発3L", "2番線" }
+                },
+                new Dictionary<string, TIDTrack>
+                {
+                    {"1番線", W11_YokokuE },
+                    {"2番線", W11_YokokuE }
+                },
+                new Dictionary<string, Image>{
+                    {"江ノ原検車区下り出発2L", Properties.Resources.TID_Track_W11_3L_Y } ,
+                    {"江ノ原検車区下り出発3L", Properties.Resources.TID_Track_W11_4L_Y } ,
+                    {"江ノ原検車区下り場内1LA", Properties.Resources.TID_Track_W11_5LD_Y } ,
+                    {"江ノ原検車区下り場内1LB", Properties.Resources.TID_Track_W11_5LE_Y }
+                },
+                new Dictionary<string, Image>{
+                    {"江ノ原検車区下り出発2L", Properties.Resources.TID_Track_W11_3L_R } ,
+                    {"江ノ原検車区下り出発3L", Properties.Resources.TID_Track_W11_4L_R } ,
+                    {"江ノ原検車区下り場内1LA", Properties.Resources.TID_Track_W11_5LD_R } ,
+                    {"江ノ原検車区下り場内1LB", Properties.Resources.TID_Track_W11_5LE_R }
+                },
+                W11_stationNearTrackPic
+            );
+
+            TrackList["江ノ原検車区上り入線予告"] = W11_YokokuW;
+            TrackList["江ノ原検車区下り入線予告"] = W11_YokokuE;
+            TrackList["江ノ原検車区上り場内1RA"] = EnoharaNobori;
+            TrackList["江ノ原検車区上り場内1RB"] = EnoharaNobori;
+            TrackList["江ノ原検車区上り場内1RC"] = EnoharaNobori;
+            TrackList["江ノ原検車区上り出発2R"] = EnoharaNobori;
+            TrackList["江ノ原検車区下り出発2L"] = EnoharaKudari;
+            TrackList["江ノ原検車区下り出発3L"] = EnoharaKudari;
+            TrackList["江ノ原検車区下り場内1LA"] = EnoharaKudari;
+            TrackList["江ノ原検車区下り場内1LB"] = EnoharaKudari;
+
+            TrackNo156.SetBeforeClass(EnoharaNobori);
+            TrackNo151.SetBeforeClass(EnoharaKudari);
+
+
             var W12_Track1 = new CommonTrack(Text_W12_Track1, Line_W12_Track1, Track_W12_Track1, null);
             var W12_Track2 = new CommonTrack(Text_W12_Track2, Line_W12_Track2, Track_W12_Track2, null);
             var W12_Track3 = new CommonTrack(Text_W12_Track3, Line_W12_Track3, Track_W12_Track3, null);
@@ -397,9 +671,9 @@ namespace TatehamaInterlocking.TID
                 Track_W12_W, TrackNo156,
                 new Dictionary<string, string>
                 {
-                                {"大道寺上り場内2R", "1番線" }  ,
-                                {"大道寺上り場内3R", "2番線" }  ,
-                                {"大道寺上り場内8R", "3番線" }
+                                {"大道寺上り場内2R", "1番" }  ,
+                                {"大道寺上り場内3R", "2番" }  ,
+                                {"大道寺上り場内8R", "3番" }
                 },
                 new Dictionary<string, string>
                 {
@@ -504,6 +778,7 @@ namespace TatehamaInterlocking.TID
             TrackList["大道寺入換110LD"] = DaidojiE;
             TrackList["大道寺入換110R"] = DaidojiE;
 
+            EnoharaKudari.SetBeforeClass(DaidojiW); 
         }
     }
 }

@@ -3,6 +3,7 @@ using System.Drawing.Text;
 using System.Linq.Expressions;
 using System.Net.Sockets;
 using System.Reflection;
+using TatehamaInterlocking.Tatehama;
 using TatehamaInterlocking.TID;
 using TatehamaInterlocking.Tsuzaki;
 using static System.Runtime.InteropServices.JavaScript.JSType;
@@ -17,6 +18,8 @@ namespace TatehamaInterlocking
         static internal Dictionary<string, Image> RouteButtonImage0 = new Dictionary<string, Image>();
         static internal Dictionary<string, Image> RouteButtonImage1 = new Dictionary<string, Image>();
 
+        private bool showtatehamaWindow;
+        static private TatehamaKariWindow tatehamaWindow = new TatehamaKariWindow();
         private bool showtsuzakiWindow;
         static private TsuzakiWindow tsuzakiWindow = new TsuzakiWindow();
         private bool showshinNozakiWindow;
@@ -30,12 +33,15 @@ namespace TatehamaInterlocking
         public MainWindow()
         {
             InitializeComponent();
+            tatehamaWindow.Show();
+            tatehamaWindow.Hide();
             tsuzakiWindow.Show();
             tsuzakiWindow.Hide();
             shinNozakiWindow.Show();
             shinNozakiWindow.Hide();
             TIDWindow.Show();
             TIDWindow.Hide();
+            showtatehamaWindow = false;
             showtsuzakiWindow = false;
             showshinNozakiWindow = false;
             showTIDWindow = false;
@@ -103,6 +109,10 @@ namespace TatehamaInterlocking
                             {
                                 return;
                             }
+                        }
+                        if (error == "開通中" || error == "閉鎖中" || error == "進入中")
+                        {
+                            return;
                         }
                         MessageBox.Show($"進路確保を試みましたが、信号サーバーから以下のエラーが返りました。\n{error}", "エラー | 指令卓 | 館浜電鉄　ダイヤ運転", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
@@ -201,14 +211,14 @@ namespace TatehamaInterlocking
 
         private void button1_Click(object sender, EventArgs e)
         {
-            showdee = !showdee;
-            if (showdee)
+            showtatehamaWindow = !showtatehamaWindow;
+            if (showtatehamaWindow)
             {
-                Dee.Show();
+                tatehamaWindow.Show();
             }
             else
             {
-                Dee.Hide();
+                tatehamaWindow.Hide();
             }
         }
 
@@ -222,6 +232,19 @@ namespace TatehamaInterlocking
             else
             {
                 TIDWindow.Hide();
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            showdee = !showdee;
+            if (showdee)
+            {
+                Dee.Show();
+            }
+            else
+            {
+                Dee.Hide();
             }
         }
     }
