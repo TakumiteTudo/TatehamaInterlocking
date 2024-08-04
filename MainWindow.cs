@@ -103,14 +103,11 @@ namespace TatehamaInterlocking
                     {
                         // Todo: エラーメッセージがでるので、それを表示する
                         Debug.WriteLine(error);
-                        if (RouteButtonList.ContainsKey(Name))
-                        {
-                            if (error == "開通中" || error == "閉鎖中" || error == "進入中")
-                            {
-                                return;
-                            }
-                        }
                         if (error == "開通中" || error == "閉鎖中" || error == "進入中")
+                        {
+                            return;
+                        }
+                        if (error.Contains("未開通"))
                         {
                             return;
                         }
@@ -183,31 +180,9 @@ namespace TatehamaInterlocking
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            showtsuzakiWindow = !showtsuzakiWindow;
-            if (showtsuzakiWindow)
-            {
-                tsuzakiWindow.Show();
-            }
-            else
-            {
-                tsuzakiWindow.Hide();
-            }
-        }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            showshinNozakiWindow = !showshinNozakiWindow;
-            if (showshinNozakiWindow)
-            {
-                shinNozakiWindow.Show();
-            }
-            else
-            {
-                shinNozakiWindow.Hide();
-            }
-        }
+
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -220,6 +195,53 @@ namespace TatehamaInterlocking
             {
                 tatehamaWindow.Hide();
             }
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            showtsuzakiWindow = !showtsuzakiWindow;
+            if (showtsuzakiWindow)
+            {
+                tsuzakiWindow.Show();
+            }
+            else
+            {
+                tsuzakiWindow.Hide();
+            }
+        }
+        private void button4_Click(object sender, EventArgs e)
+        {
+            showdee = !showdee;
+            if (showdee)
+            {
+                Dee.Show();
+            }
+            else
+            {
+                Dee.Hide();
+            }
+        }
+        private void button5_Click(object sender, EventArgs e)
+        {
+            showshinNozakiWindow = !showshinNozakiWindow;
+            if (showshinNozakiWindow)
+            {
+                shinNozakiWindow.Show();
+            }
+            else
+            {
+                shinNozakiWindow.Hide();
+            }
+        }
+        private void button6_Click(object sender, EventArgs e)
+        {
+        }
+        private void button7_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -235,17 +257,5 @@ namespace TatehamaInterlocking
             }
         }
 
-        private void button6_Click(object sender, EventArgs e)
-        {
-            showdee = !showdee;
-            if (showdee)
-            {
-                Dee.Show();
-            }
-            else
-            {
-                Dee.Hide();
-            }
-        }
     }
 }

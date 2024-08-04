@@ -61,6 +61,7 @@
             button2.TabIndex = 1;
             button2.Text = "駒　野";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -84,6 +85,7 @@
             button4.TabIndex = 3;
             button4.Text = "浜　園";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // button5
             // 
@@ -119,11 +121,12 @@
             button7.TabIndex = 6;
             button7.Text = "大道寺";
             button7.UseVisualStyleBackColor = false;
+            button7.Click += button7_Click;
             // 
             // ButtonPushError
             // 
             ButtonPushError.AutoSize = true;
-            ButtonPushError.Location = new Point(5, 424);
+            ButtonPushError.Location = new Point(10, 380);
             ButtonPushError.Name = "ButtonPushError";
             ButtonPushError.Size = new Size(207, 16);
             ButtonPushError.TabIndex = 7;
@@ -133,7 +136,7 @@
             // 
             button8.BackColor = Color.DarkGray;
             button8.Font = new Font("ＭＳ ゴシック", 18F, FontStyle.Bold);
-            button8.Location = new Point(580, 320);
+            button8.Location = new Point(300, 320);
             button8.Name = "button8";
             button8.Size = new Size(130, 60);
             button8.TabIndex = 8;
@@ -146,7 +149,7 @@
             AutoScaleDimensions = new SizeF(8F, 16F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SeaShell;
-            ClientSize = new Size(724, 446);
+            ClientSize = new Size(444, 401);
             Controls.Add(button8);
             Controls.Add(ButtonPushError);
             Controls.Add(button7);
