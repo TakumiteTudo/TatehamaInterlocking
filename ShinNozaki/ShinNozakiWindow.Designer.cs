@@ -774,6 +774,7 @@
             Name = "ShinNozakiWindow";
             RightToLeft = RightToLeft.No;
             Text = "新野崎 | 連動盤 | 館浜電鉄　ダイヤ運転";
+            TopMost = true;
             ((System.ComponentModel.ISupportInitialize)BT_1RA).EndInit();
             ((System.ComponentModel.ISupportInitialize)BT_1RB).EndInit();
             ((System.ComponentModel.ISupportInitialize)CancelBtn).EndInit();

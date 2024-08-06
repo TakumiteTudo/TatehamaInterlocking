@@ -78,8 +78,8 @@ public class Socket
         var config = new JsonSerializerOptions();
         config.Converters.Add(new JsonStringEnumConverter());
         client.Serializer = new SystemTextJsonSerializer(config);
-        connect();
-        Task.Run(async () => StartUpdateLoop());
+        Task.Run(() => connect());
+        Task.Run(() => StartUpdateLoop());
     }
 
     private Dictionary<string, TrackCircuitInfo> beforeTrackInfo;
@@ -117,6 +117,7 @@ public class Socket
                         }
                     }
                 }
+
                 await timer;
             }
             catch (Exception e)

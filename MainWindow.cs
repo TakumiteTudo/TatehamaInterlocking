@@ -4,10 +4,14 @@ using System.Linq.Expressions;
 using System.Net.Sockets;
 using System.Reflection;
 using TatehamaInterlocking.Tatehama;
+using TatehamaInterlocking.Komano;
 using TatehamaInterlocking.TID;
 using TatehamaInterlocking.Tsuzaki;
+using TatehamaInterlocking.Daidoji;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using MethodInvoker = System.Windows.Forms.MethodInvoker;
+using TatehamaInterlocking.Enohara;
+using TatehamaInterlocking.Hamazono;
 
 namespace TatehamaInterlocking
 {
@@ -20,30 +24,47 @@ namespace TatehamaInterlocking
 
         private bool showtatehamaWindow;
         static private TatehamaKariWindow tatehamaWindow = new TatehamaKariWindow();
+        private bool showkomanoWindow;
+        static private KomanoKariWindow komanoWindow = new KomanoKariWindow();
         private bool showtsuzakiWindow;
         static private TsuzakiWindow tsuzakiWindow = new TsuzakiWindow();
+        private bool showhamazonoWindow;
+        static private HamazonoKariWindow hamazonoWindow = new HamazonoKariWindow();
         private bool showshinNozakiWindow;
         static private ShinNozakiWindow shinNozakiWindow = new ShinNozakiWindow();
+        private bool showenoharaWindow;
+        static private EnoharaKariWindow enoharaWindow = new EnoharaKariWindow();
+        private bool showdaidojiWindow;
+        static private DaidojiKariWindow daidojiWindow = new DaidojiKariWindow();
         private bool showdee;
         static private Dee Dee = new Dee();
         private bool showTIDWindow;
         static private TIDWindow TIDWindow = new TIDWindow();
-        static private Socket socket = new Socket(Program.ServerAddress);
+        static private Socket socket;
 
         public MainWindow()
         {
             InitializeComponent();
+            TIDWindow.Show();
+            TIDWindow.Hide();
             tatehamaWindow.Show();
             tatehamaWindow.Hide();
+            komanoWindow.Show();
+            komanoWindow.Hide();
             tsuzakiWindow.Show();
             tsuzakiWindow.Hide();
             shinNozakiWindow.Show();
             shinNozakiWindow.Hide();
-            TIDWindow.Show();
-            TIDWindow.Hide();
+            daidojiWindow.Show();
+            daidojiWindow.Hide();
+            socket = new Socket(Program.ServerAddress);
             showtatehamaWindow = false;
+            showkomanoWindow = false;
             showtsuzakiWindow = false;
+            showhamazonoWindow = false;
             showshinNozakiWindow = false;
+            showenoharaWindow = false;
+            showdaidojiWindow = false;
             showTIDWindow = false;
             showdee = false;
             LoadCustomFont();
@@ -198,7 +219,15 @@ namespace TatehamaInterlocking
         }
         private void button2_Click(object sender, EventArgs e)
         {
-
+            showkomanoWindow = !showkomanoWindow;
+            if (showkomanoWindow)
+            {
+                komanoWindow.Show();
+            }
+            else
+            {
+                komanoWindow.Hide();
+            }
         }
         private void button3_Click(object sender, EventArgs e)
         {
@@ -214,14 +243,14 @@ namespace TatehamaInterlocking
         }
         private void button4_Click(object sender, EventArgs e)
         {
-            showdee = !showdee;
-            if (showdee)
+            showhamazonoWindow = !showhamazonoWindow;
+            if (showhamazonoWindow)
             {
-                Dee.Show();
+                hamazonoWindow.Show();
             }
             else
             {
-                Dee.Hide();
+                hamazonoWindow.Hide();
             }
         }
         private void button5_Click(object sender, EventArgs e)
@@ -238,10 +267,27 @@ namespace TatehamaInterlocking
         }
         private void button6_Click(object sender, EventArgs e)
         {
+            showenoharaWindow = !showenoharaWindow;
+            if (showenoharaWindow)
+            {
+                enoharaWindow.Show();
+            }
+            else
+            {
+                enoharaWindow.Hide();
+            }
         }
         private void button7_Click(object sender, EventArgs e)
         {
-
+            showdaidojiWindow = !showdaidojiWindow;
+            if (showdaidojiWindow)
+            {
+                daidojiWindow.Show();
+            }
+            else
+            {
+                daidojiWindow.Hide();
+            }
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -257,5 +303,17 @@ namespace TatehamaInterlocking
             }
         }
 
+        private void ButtonPushError_Click(object sender, EventArgs e)
+        {
+            showdee = !showdee;
+            if (showdee)
+            {
+                Dee.Show();
+            }
+            else
+            {
+                Dee.Hide();
+            }
+        }
     }
 }

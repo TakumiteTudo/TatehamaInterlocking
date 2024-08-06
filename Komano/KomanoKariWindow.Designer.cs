@@ -1,6 +1,6 @@
-﻿namespace TatehamaInterlocking.Tatehama
+﻿namespace TatehamaInterlocking.Komano
 {
-    partial class TatehamaKariWindow
+    partial class KomanoKariWindow
     {
         /// <summary>
         /// Required designer variable.
@@ -28,139 +28,178 @@
         /// </summary>
         private void InitializeComponent()
         {
+            button5 = new Button();
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
             button4 = new Button();
-            button5 = new Button();
             button6 = new Button();
             button7 = new Button();
             button8 = new Button();
             button9 = new Button();
+            button10 = new Button();
+            button11 = new Button();
+            button12 = new Button();
             SuspendLayout();
+            // 
+            // button5
+            // 
+            button5.Location = new Point(12, 148);
+            button5.Name = "button5";
+            button5.Size = new Size(50, 40);
+            button5.TabIndex = 5;
+            button5.Text = "→\r\n1RD5";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // button1
             // 
-            button1.Location = new Point(688, 105);
+            button1.Location = new Point(12, 191);
             button1.Name = "button1";
             button1.Size = new Size(50, 40);
-            button1.TabIndex = 0;
-            button1.Text = "←\r\n5LA";
+            button1.TabIndex = 6;
+            button1.Text = "→\r\n1RD0";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(688, 145);
+            button2.Location = new Point(289, 209);
             button2.Name = "button2";
             button2.Size = new Size(50, 40);
-            button2.TabIndex = 1;
-            button2.Text = "←\r\n5LB";
+            button2.TabIndex = 8;
+            button2.Text = "→\r\n5RB";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
             // button3
             // 
-            button3.Location = new Point(689, 185);
+            button3.Location = new Point(289, 166);
             button3.Name = "button3";
             button3.Size = new Size(50, 40);
-            button3.TabIndex = 2;
-            button3.Text = "←\r\n5LC";
+            button3.TabIndex = 7;
+            button3.Text = "→\r\n5RA";
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
             // button4
             // 
-            button4.Location = new Point(689, 225);
+            button4.BackColor = Color.Lime;
+            button4.Location = new Point(375, 38);
             button4.Name = "button4";
             button4.Size = new Size(50, 40);
-            button4.TabIndex = 3;
-            button4.Text = "←\r\n5LD";
-            button4.UseVisualStyleBackColor = true;
+            button4.TabIndex = 9;
+            button4.Text = "→\r\n54R";
+            button4.UseVisualStyleBackColor = false;
             button4.Click += button4_Click;
-            // 
-            // button5
-            // 
-            button5.Location = new Point(297, 39);
-            button5.Name = "button5";
-            button5.Size = new Size(50, 40);
-            button5.TabIndex = 4;
-            button5.Text = "→\r\n1R";
-            button5.UseVisualStyleBackColor = true;
-            button5.Click += button5_Click;
             // 
             // button6
             // 
-            button6.Location = new Point(297, 110);
+            button6.Location = new Point(732, 41);
             button6.Name = "button6";
             button6.Size = new Size(50, 40);
-            button6.TabIndex = 5;
-            button6.Text = "→\r\n2R";
+            button6.TabIndex = 10;
+            button6.Text = "→\r\n7R";
             button6.UseVisualStyleBackColor = true;
             button6.Click += button6_Click;
             // 
             // button7
             // 
-            button7.Location = new Point(297, 168);
+            button7.Location = new Point(733, 188);
             button7.Name = "button7";
             button7.Size = new Size(50, 40);
-            button7.TabIndex = 6;
-            button7.Text = "→\r\n3R";
+            button7.TabIndex = 11;
+            button7.Text = "→\r\n8R";
             button7.UseVisualStyleBackColor = true;
             button7.Click += button7_Click;
             // 
             // button8
             // 
-            button8.Location = new Point(297, 222);
+            button8.Location = new Point(931, 259);
             button8.Name = "button8";
             button8.Size = new Size(50, 40);
-            button8.TabIndex = 7;
-            button8.Text = "→\r\n4R";
+            button8.TabIndex = 12;
+            button8.Text = "←\r\n9LC";
             button8.UseVisualStyleBackColor = true;
             button8.Click += button8_Click;
             // 
             // button9
             // 
-            button9.Location = new Point(392, 12);
+            button9.Location = new Point(534, 256);
             button9.Name = "button9";
             button9.Size = new Size(50, 40);
-            button9.TabIndex = 8;
-            button9.Text = "取消";
+            button9.TabIndex = 13;
+            button9.Text = "←\r\n6L";
             button9.UseVisualStyleBackColor = true;
             button9.Click += button9_Click;
             // 
-            // TatehamaKariWindow
+            // button10
+            // 
+            button10.Location = new Point(147, 258);
+            button10.Name = "button10";
+            button10.Size = new Size(50, 40);
+            button10.TabIndex = 14;
+            button10.Text = "←\r\n2L";
+            button10.UseVisualStyleBackColor = true;
+            button10.Click += button10_Click;
+            // 
+            // button11
+            // 
+            button11.Location = new Point(266, 93);
+            button11.Name = "button11";
+            button11.Size = new Size(50, 40);
+            button11.TabIndex = 15;
+            button11.Text = "←\r\n3L";
+            button11.UseVisualStyleBackColor = true;
+            button11.Click += button11_Click;
+            // 
+            // button12
+            // 
+            button12.Location = new Point(470, 2);
+            button12.Name = "button12";
+            button12.Size = new Size(50, 40);
+            button12.TabIndex = 16;
+            button12.Text = "取消";
+            button12.UseVisualStyleBackColor = true;
+            button12.Click += button12_Click;
+            // 
+            // KomanoKariWindow
             // 
             AutoScaleMode = AutoScaleMode.None;
-            BackgroundImage = Properties.Resources.Tatehama_a;
-            ClientSize = new Size(1000, 321);
+            BackgroundImage = Properties.Resources.KomanoKari;
+            ClientSize = new Size(1000, 348);
+            Controls.Add(button12);
+            Controls.Add(button11);
+            Controls.Add(button10);
             Controls.Add(button9);
             Controls.Add(button8);
             Controls.Add(button7);
             Controls.Add(button6);
-            Controls.Add(button5);
             Controls.Add(button4);
-            Controls.Add(button3);
             Controls.Add(button2);
+            Controls.Add(button3);
             Controls.Add(button1);
+            Controls.Add(button5);
             Font = new Font("ＭＳ ゴシック", 12F);
-            FormBorderStyle = FormBorderStyle.FixedSingle;
-            Name = "TatehamaKariWindow";
-            Text = "館　浜 | 仮操作盤 | 館浜電鉄　ダイヤ運転";
+            Name = "KomanoKariWindow";
+            Text = "駒　野 | 仮操作盤 | 館浜電鉄　ダイヤ運転";
             TopMost = true;
             ResumeLayout(false);
         }
 
         #endregion
 
+        private Button button5;
         private Button button1;
         private Button button2;
         private Button button3;
         private Button button4;
-        private Button button5;
         private Button button6;
         private Button button7;
         private Button button8;
         private Button button9;
+        private Button button10;
+        private Button button11;
+        private Button button12;
     }
 }

@@ -55,12 +55,15 @@ namespace TatehamaInterlocking.TID
         public override void SetRoute()
         {
             Debug.WriteLine($"目標番線あり{this}");
-            TrackPic.Image = Properties.Resources.TID_Track_F_Y;
+            if (TrackPic != null)
+            {
+                TrackPic.Image = Properties.Resources.TID_Track_F_Y;
+            }
         }
 
         public override void ResetRoute()
         {
-            if (TrackText.Text != "")
+            if (TrackText.Text != "" && TrackPic != null)
             {
                 TrackPic.Image = Properties.Resources.TID_Track_F_W;
             }

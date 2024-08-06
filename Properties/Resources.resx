@@ -766,4 +766,16 @@
   <data name="TID_Track_W11_5LE_Y" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\TID\png\TID_Track_W11_5LE_Y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="DaidojiKari" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Daidoji\DaidojiKari.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EnoharaKari" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Enohara\EnoharaKari.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HamazonoKari" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Hamazono\HamazonoKari.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KomanoKari" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Komano\KomanoKari.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
