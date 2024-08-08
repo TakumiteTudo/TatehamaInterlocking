@@ -118,6 +118,7 @@ public class Socket
                     }
                 }
 
+                MainWindow.TIDWindow.TimeChenge();
                 await timer;
             }
             catch (Exception e)

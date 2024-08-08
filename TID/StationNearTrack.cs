@@ -64,6 +64,7 @@ namespace TatehamaInterlocking.TID
 
         public override void SetTrain(TrackCircuitInfo info)
         {
+            //ToDo：ArrTrackText/DepTrackTextの情報変更をてこLのRで判断するように変更する。
             bool before = false;
             bool TrackOnly = false;
             string signalName = info.signalName;
@@ -110,6 +111,7 @@ namespace TatehamaInterlocking.TID
             }
             else if (info.stationStatus == StationStatus.ROUTE_ENTERING)
             {
+                BeforeTrack?.ResetTrain(info.diaName);
                 stationNearTrackPic.RemoveImage(RouteToTrackY[signalName]);
                 stationNearTrackPic.AddImage(RouteToTrackR[signalName]);
                 if (arrPlatform != "")
@@ -127,6 +129,10 @@ namespace TatehamaInterlocking.TID
                 else if (depPlatform != "")
                 {
                     DepTrackText?.SetTrain(info);
+                }
+                else
+                {
+                    ArrTrackText?.SetTrain(info);
                 }
                 if (depPlatform != "")
                 {
@@ -162,18 +168,8 @@ namespace TatehamaInterlocking.TID
 
         public override void ResetTrain(string? retsuban)
         {
-            if (retsuban == ArrString)
-            {
-                ArrTrackText?.ResetTrain(retsuban);
-                if (ArrPlatform != null)
-                {
-                    PlatformToTrack[ArrPlatform].ResetTrain(retsuban);
-                }
-            }
-            else if (retsuban == DepString)
-            {
-                DepTrackText?.ResetTrain(retsuban);
-            }
+            ArrTrackText?.ResetTrain(retsuban);
+            DepTrackText?.ResetTrain(retsuban);
         }
     }
 }

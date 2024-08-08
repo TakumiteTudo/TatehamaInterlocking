@@ -49,13 +49,13 @@ namespace TatehamaInterlocking.Enohara
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MainWindow.ButtonPush("江ノ原検車区下り出発2L", !Cancel);
+            MainWindow.ButtonPush("江ノ原検車区下り出発3L", !Cancel);
             Cancel = false;
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            MainWindow.ButtonPush("江ノ原検車区下り出発3L", !Cancel);
+            MainWindow.ButtonPush("江ノ原検車区下り出発2L", !Cancel);
             Cancel = false;
         }
 

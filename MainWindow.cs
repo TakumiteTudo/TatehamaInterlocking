@@ -39,7 +39,7 @@ namespace TatehamaInterlocking
         private bool showdee;
         static private Dee Dee = new Dee();
         private bool showTIDWindow;
-        static private TIDWindow TIDWindow = new TIDWindow();
+        static internal TIDWindow TIDWindow = new TIDWindow();
         static private Socket socket;
 
         public MainWindow()

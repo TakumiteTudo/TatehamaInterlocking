@@ -1324,6 +1324,7 @@
             Time.Size = new Size(107, 12);
             Time.TabIndex = 92;
             Time.Text = "現在時刻 12:34:56";
+            Time.MouseDown += Time_Click;
             // 
             // Line_W01_Track1
             // 
@@ -2755,7 +2756,6 @@
             Track_67.Size = new Size(21, 2);
             Track_67.TabIndex = 108;
             Track_67.TabStop = false;
-            Track_67.Click += pictureBox1_Click;
             // 
             // Track_59
             // 
@@ -2766,7 +2766,6 @@
             Track_59.Size = new Size(21, 2);
             Track_59.TabIndex = 108;
             Track_59.TabStop = false;
-            Track_59.Click += pictureBox1_Click;
             // 
             // Track_55
             // 
@@ -2777,7 +2776,6 @@
             Track_55.Size = new Size(21, 2);
             Track_55.TabIndex = 108;
             Track_55.TabStop = false;
-            Track_55.Click += pictureBox1_Click;
             // 
             // Track_49
             // 
@@ -2788,7 +2786,6 @@
             Track_49.Size = new Size(21, 2);
             Track_49.TabIndex = 108;
             Track_49.TabStop = false;
-            Track_49.Click += pictureBox1_Click;
             // 
             // Text_45
             // 
@@ -2816,7 +2813,6 @@
             Track_45.Size = new Size(21, 2);
             Track_45.TabIndex = 108;
             Track_45.TabStop = false;
-            Track_45.Click += pictureBox1_Click;
             // 
             // Track_41
             // 
@@ -2827,7 +2823,6 @@
             Track_41.Size = new Size(21, 2);
             Track_41.TabIndex = 108;
             Track_41.TabStop = false;
-            Track_41.Click += pictureBox1_Click;
             // 
             // Track_35
             // 
@@ -2838,7 +2833,6 @@
             Track_35.Size = new Size(21, 2);
             Track_35.TabIndex = 108;
             Track_35.TabStop = false;
-            Track_35.Click += pictureBox1_Click;
             // 
             // Track_27
             // 
@@ -2849,7 +2843,6 @@
             Track_27.Size = new Size(21, 2);
             Track_27.TabIndex = 108;
             Track_27.TabStop = false;
-            Track_27.Click += pictureBox1_Click;
             // 
             // Line_W10_Track1
             // 
