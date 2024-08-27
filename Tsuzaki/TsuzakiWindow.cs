@@ -10,8 +10,6 @@
         public TsuzakiWindow()
         {
             InitializeComponent();
-            InboundTexts = new StationArrTrackText(new List<Label> { Text_In1, Text_In2, Text_In3, Text_In4 });
-            OutboundTexts = new StationArrTrackText(new List<Label> { Text_Out1, Text_Out2, Text_Out3, Text_Out4 });
             MainWindow.RouteButtonList.Add("津崎上り場内1RB", BT_1RA);
             MainWindow.RouteButtonImage0.Add("津崎上り場内1RB", Properties.Resources.BT_1RA_RL_R_0);
             MainWindow.RouteButtonImage1.Add("津崎上り場内1RB", Properties.Resources.BT_1RA_RL_R_1);
@@ -55,44 +53,47 @@
             switch (name)
             {
                 case "上り閉塞56":
-                    InboundTexts.TrackAddChenge(Train);
+                    Text_In4.Text = Train;
                     break;
                 case "上り閉塞62":
-                    InboundTexts.TrackAddChenge(Train);
+                    Text_In3.Text = Train;
                     break;
                 case "上り閉塞68":
-                    InboundTexts.TrackAddChenge(Train);
+                    Text_In2.Text = Train;
                     break;
                 case "上り閉塞74":
-                    InboundTexts.TrackAddChenge(Train);
+                    Text_In1.Text = Train;
                     break;
                 case "津崎上り場内1RB":
-                    SetTrainHome(Text_1RAT, Text_1RT, InboundTexts, Train, info.stationStatus, first);
+                    SetTrainHome(Text_1RAT, Text_1RT, Text_In1, Train, info.stationStatus, first);
                     break;
                 case "津崎上り場内1RA":
-                    SetTrainHome(Text_1RBT, Text_1RT, InboundTexts, Train, info.stationStatus, first);
+                    SetTrainHome(Text_1RBT, Text_1RT, Text_In1, Train, info.stationStatus, first);
                     break;
                 case "津崎上り出発2R":
                 case "津崎上り出発3R":
                     SetTrainDep(Text_SST, new List<Label> { Text_1RAT, Text_1RBT }, Train, first);
                     break;
+                case "下り閉塞103":
+                    Text_Out4.Text = Train;
+                    break;
                 case "浜園下り場内2L":
-                    OutboundTexts.TrackAddChenge(Train);
+                    Text_Out3.Text = Train;
                     break;
                 case "浜園入換101L":
-                    OutboundTexts.TrackAddChenge(Train);
+                    Text_Out3.Text = Train;
                     break;
                 case "浜園下り出発1L":
-                    OutboundTexts.TrackAddChenge(Train);
+                    Text_Out2.Text = Train;
                     break;
                 case "下り閉塞89":
-                    OutboundTexts.TrackAddChenge(Train);
+                    Text_Out1.Text = Train;
                     break;
                 case "津崎下り場内3LA":
-                    SetTrainHome(Text_6LCT, Text_6LT, OutboundTexts, Train, info.stationStatus, first);
+                    SetTrainHome(Text_6LCT, Text_6LT, Text_Out1, Train, info.stationStatus, first);
                     break;
                 case "津崎下り場内3LB":
-                    SetTrainHome(Text_6LDT, Text_6LT, OutboundTexts, Train, info.stationStatus, first);
+                    SetTrainHome(Text_6LDT, Text_6LT, Text_Out1, Train, info.stationStatus, first);
                     break;
                 case "津崎下り出発1L":
                 case "津崎下り出発2L":

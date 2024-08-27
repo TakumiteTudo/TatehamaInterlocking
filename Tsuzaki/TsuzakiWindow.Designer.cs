@@ -442,8 +442,7 @@
             // 
             // TsuzakiWindow
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleMode = AutoScaleMode.None;
             BackgroundImage = Properties.Resources.Tsuzaki;
             BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(1106, 341);

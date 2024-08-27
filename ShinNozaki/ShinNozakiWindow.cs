@@ -20,8 +20,6 @@ namespace TatehamaInterlocking.Tsuzaki
         public ShinNozakiWindow()
         {
             InitializeComponent();
-            InboundTexts = new StationArrTrackText(new List<Label> { Text_In1, Text_In2, Text_In3, Text_In4 });
-            OutboundTexts = new StationArrTrackText(new List<Label> { Text_Out1, Text_Out2, Text_Out3, Text_Out4 });
             MainWindow.RouteButtonList.Add("新野崎上り場内1RB", BT_1RA);
             MainWindow.RouteButtonImage0.Add("新野崎上り場内1RB", Properties.Resources.BT_1RA_RL_R_0);
             MainWindow.RouteButtonImage1.Add("新野崎上り場内1RB", Properties.Resources.BT_1RA_RL_R_1);
@@ -80,22 +78,22 @@ namespace TatehamaInterlocking.Tsuzaki
             switch (name)
             {
                 case "上り閉塞108":
-                    InboundTexts.TrackAddChenge(Train);
+                    Text_In4.Text = Train;
                     break;
                 case "上り閉塞114":
-                    InboundTexts.TrackAddChenge(Train);
+                    Text_In3.Text = Train;
                     break;
                 case "上り閉塞120":
-                    InboundTexts.TrackAddChenge(Train);
+                    Text_In2.Text = Train;
                     break;
                 case "上り閉塞124":
-                    InboundTexts.TrackAddChenge(Train);
+                    Text_In1.Text = Train;
                     break;
                 case "新野崎上り場内1RB":
-                    SetTrainHome(Text_1RAT, Text_1RT, InboundTexts, Train, info.stationStatus, first);
+                    SetTrainHome(Text_1RAT, Text_1RT, Text_In1, Train, info.stationStatus, first);
                     break;
                 case "新野崎上り場内1RA":
-                    SetTrainHome(Text_1RBT, Text_1RT, InboundTexts, Train, info.stationStatus, first);
+                    SetTrainHome(Text_1RBT, Text_1RT, Text_In1, Train, info.stationStatus, first);
                     break;
                 case "新野崎上り出発11R":
                 case "新野崎上り出発12R":
@@ -111,20 +109,20 @@ namespace TatehamaInterlocking.Tsuzaki
                     SetTrainHome(Text_5LT, Text_5LT, new List<Label> { Text_10LT }, Train, info.stationStatus, first);
                     break;
                 case "下り閉塞151":
-                    OutboundTexts.TrackAddChenge(Train);
+                    Text_Out4.Text = Train;
                     break;
                 case "下り閉塞145":
-                    OutboundTexts.TrackAddChenge(Train);
+                    Text_Out3.Text = Train;
                     break;
                 case "下り閉塞143":
-                    OutboundTexts.TrackAddChenge(Train);
+                    Text_Out2.Text = Train;
                     break;
                 case "下り閉塞137":
-                    OutboundTexts.TrackAddChenge(Train);
+                    Text_Out1.Text = Train;
                     break;
                 case "新野崎下り場内5LA":
                 case "新野崎下り場内5LB":
-                    SetTrainHome(Text_10LT, Text_10LT, OutboundTexts, Train, info.stationStatus, first);
+                    SetTrainHome(Text_10LT, Text_10LT, Text_Out1, Train, info.stationStatus, first);
                     break;
                 case "新野崎下り場内3L":
                     SetTrainHome(Text_4LT, Text_4LT, Text_10LT, Train, info.stationStatus, first);

@@ -126,11 +126,11 @@
             // ButtonPushError
             // 
             ButtonPushError.AutoSize = true;
-            ButtonPushError.Location = new Point(10, 380);
+            ButtonPushError.Location = new Point(4, 381);
             ButtonPushError.Name = "ButtonPushError";
             ButtonPushError.Size = new Size(207, 16);
             ButtonPushError.TabIndex = 7;
-            ButtonPushError.Text = "Ver0.4.1　CodeName:青木町";
+            ButtonPushError.Text = "Ver0.4.2　CodeName:青木町";
             ButtonPushError.Click += ButtonPushError_Click;
             // 
             // button8
