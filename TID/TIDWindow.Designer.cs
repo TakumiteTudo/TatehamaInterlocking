@@ -2997,6 +2997,7 @@
             // TIDWindow
             // 
             AutoScaleMode = AutoScaleMode.None;
+            AutoScroll = true;
             BackgroundImage = Properties.Resources.Background_1;
             BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(1600, 245);
